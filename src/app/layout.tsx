@@ -13,7 +13,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-    metadataBase: new URL('https://lp-nail-designer.vercel.app'), // Placeholder production URL
+    metadataBase: new URL('https://curso-nail-designer.semprenamoda.com.br'),
     title: "Curso Nail Designer Profissional | Do Zero à Agenda Lotada",
     description: "Aprenda a técnica de alongamento que encanta clientes e fature de 3 a 5 mil por mês. Método comprovado para iniciantes.",
     keywords: ["nail designer", "curso de unhas", "alongamento de unhas", "manicure profissional", "renda extra", "curso online"],
