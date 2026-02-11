@@ -42,11 +42,11 @@
 - **T8: Refinamento & Polimento** — Ajustes finais de UI (glassmorphism), SEO (metadata) e acessibilidade (Commit `760f7c9` e `9db2df7`).
 - **T9: Migração para a Raiz** — O conteúdo de `lp-nail-designer/` foi movido para a raiz do workspace para facilitar o acesso e o deploy.
 
-## Cadernos do NotebookLM/LMNN
+## Cadernos do NotebookLM
 *Baseado em `ARQUIVADO/03-PESQUISA/NOTEBOOKS_CRIADOS.txt`*
 
-1.  **LP Nail - 1 - VOC**
-    *   **Objetivo:** Identificar dores, desejos e objeções reais.
+1.  **LP Nail - 1 - VOC (Voice of the Customer / Voz do Cliente)**
+    *   **Objetivo:** Identificar dores, desejos e objeções reais, coleta frases reais de dores e desejos.
     *   **Saída:** Lista de frases de "Voz do Cliente" (ex: "Tenho medo de errar", "Sinto culpa").
 2.  **LP Nail - 2 - Concorrentes**
     *   **Objetivo:** Análise competitiva e identificação de gafes do mercado.
