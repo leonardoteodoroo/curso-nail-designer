@@ -6,7 +6,6 @@ import { X, PlayCircle, AlertTriangle, ArrowDown } from "lucide-react";
 import { Section } from "../layout/Section";
 import { Container } from "../layout/Container";
 import { ImpactBox } from "../ui/ImpactBox";
-// import Image from "next/image"; // Removed for Vite
 import { SectionSeparator } from "../ui/SectionSeparator";
 
 export const OQueNinguemTeContou = () => {

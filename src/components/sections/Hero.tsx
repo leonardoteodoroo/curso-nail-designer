@@ -4,7 +4,6 @@ import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { FlipText } from "../ui/FlipText";
 import { ArrowDown } from "lucide-react";
-// import Image from "next/image"; // Removed for Vite migration
 import { SectionSeparator } from "../ui/SectionSeparator";
 
 export const Hero = () => {

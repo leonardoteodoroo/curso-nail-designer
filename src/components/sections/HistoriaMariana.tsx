@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 import { Section } from "../layout/Section";
 import { Container } from "../layout/Container";
 import { ImpactBox } from "../ui/ImpactBox";
-// import Image from "next/image"; // Removed for Vite
 import { Quote, TrendingUp, Users, Calendar } from "lucide-react";
 
 export const HistoriaMariana = () => {

@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-// import Image from "next/image"; // Removed for Vite
 import { Section } from "../layout/Section";
 import { Container } from "../layout/Container";
 import { motion } from "framer-motion";

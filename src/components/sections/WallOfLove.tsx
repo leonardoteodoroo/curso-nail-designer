@@ -6,7 +6,6 @@ import { Star, DollarSign, Palette, Heart, Users, Award, Sparkles, ImageIcon, Ch
 import { Section } from "../layout/Section";
 import { Container } from "../layout/Container";
 import { AnimatedButton } from "../ui/AnimatedButton";
-// import Image from "next/image"; // Removed for Vite
 
 // Quick testimonial quotes for marquee
 const quickQuotes = [
