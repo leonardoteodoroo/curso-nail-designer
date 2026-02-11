@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Landing Page - Curso Nail Designer Profissional 💅
 
-## Getting Started
+Landing page de alta conversão desenvolvida para venda de curso online de Nail Designer, focada em copywriting persuasivo e design premium.
 
-First, run the development server:
+## 🚀 Tecnologias
 
+- **Framework:** [Next.js 14+](https://nextjs.org) (App Router)
+- **Estilização:** [Tailwind CSS](https://tailwindcss.com) + Design Tokens
+- **Animações:** [Framer Motion](https://www.framer.com/motion/)
+- **Ícones:** [Lucide React](https://lucide.dev)
+- **Fontes:** Inter (Google Fonts)
+
+## ✨ Funcionalidades
+
+- **Hero Section:** Layout Split-Screen com animação de entrada e FlipText.
+- **Copywriting:** Seções estruturadas baseadas em VSL (Dor, Histórias, Revelação, Oferta).
+- **Prova Social:** Carrossel infinito (Marquee) e Cards de Depoimentos.
+- **Interatividade:** Accordion FAQ, Botões com efeitos de brilho e hover.
+- **Performance:** Otimizado para Core Web Vitals e SEO (OpenGraph configurado).
+- **Responsividade:** Totalmente adaptado para Mobile, Tablet e Desktop.
+
+## 📦 Como Rodar Localmente
+
+1. Clone o repositório:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/seu-usuario/lp-nail-designer.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Instale as dependências:
+```bash
+npm install
+# ou
+yarn install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Rode o servidor de desenvolvimento:
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Acesse [http://localhost:3000](http://localhost:3000).
 
-## Learn More
+## 🛠️ Build para Produção
 
-To learn more about Next.js, take a look at the following resources:
+Para gerar a versão otimizada para produção:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm run build
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🚀 Deploy
 
-## Deploy on Vercel
+Recomendado fazer o deploy na [Vercel](https://vercel.com):
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Crie uma conta na Vercel.
+2. Importe o repositório do GitHub.
+3. Clique em Deploy (as configurações padrão do Next.js funcionam automaticamente).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+Desenvolvido para alta conversão.
