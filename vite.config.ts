@@ -14,5 +14,8 @@ export default defineConfig({
             '@': path.resolve(__dirname, './src'),
         },
     },
-    base: '/curso-nail-designer/', // Assuming repo name is 'curso-nail-designer' based on context. Will need verification.
+    base: '/', // Root domain deployment
+    server: {
+        port: 3000,
+    },
 })

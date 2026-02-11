@@ -73,17 +73,23 @@
     --font-family-heading: 'Playfair Display', serif;
 
     /* Colors */
-    --text-primary: #F3F4F6;
-    --text-secondary: #D1D5DB;
+    /* Colors */
+    --text-primary: #1E1E1E;
+    /* Dark text for light background */
+    --text-secondary: #4B5563;
+    /* Gray text */
     --text-muted: #9CA3AF;
     --text-on-dark: #FFFFFF;
     --text-on-brand: #FFFFFF;
-    --text-on-strong: #000000;
+    --text-on-strong: #FFFFFF;
+    /* White on strong CTA */
 
-    --surface-page: #1E1E1E;
-    --surface-section: #252525;
-    --surface-card: #2D2D2D;
-    --surface-subtle: #333333;
+    --surface-page: #FFFFFF;
+    /* WHITE BACKGROUND as requested */
+    --surface-section: #FFF5F7;
+    /* Light pink section (from design system) */
+    --surface-card: #FFFFFF;
+    --surface-subtle: #FFF0F3;
     --surface-elevated: #FFFFFF;
 
     --action-primary: #E8B4B8;
@@ -101,13 +107,13 @@
     /* Gradients */
     --gradient-primary: linear-gradient(135deg, #E8B4B8 0%, #D4AF37 100%);
     --gradient-cta: linear-gradient(135deg, #E8B4B8 0%, #D4AF37 100%);
-    --gradient-hero: linear-gradient(180deg, #FFF5F7 0%, #FAF8F6 100%);
+    --gradient-hero: linear-gradient(180deg, #FFF5F7 0%, #FFFFFF 100%);
 
     /* Status */
     --status-success: #10B981;
     --status-success-surface: #ECFDF5;
     --status-warning: #F59E0B;
-    --status-error: #DC2626;
+    --status-error: #EF4444;
 
     /* Spacing */
     --header-height: 64px;
