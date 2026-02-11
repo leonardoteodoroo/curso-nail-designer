@@ -6,7 +6,7 @@ import { Star, DollarSign, Palette, Heart, Users, Award, Sparkles, ImageIcon, Ch
 import { Section } from "../layout/Section";
 import { Container } from "../layout/Container";
 import { AnimatedButton } from "../ui/AnimatedButton";
-import Image from "next/image";
+// import Image from "next/image"; // Removed for Vite
 
 // Quick testimonial quotes for marquee
 const quickQuotes = [
@@ -188,11 +188,10 @@ export const WallOfLove = () => {
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                         {[1, 2, 3, 4].map((i) => (
                             <div key={i} className="relative aspect-square rounded-xl overflow-hidden bg-gray-100 border border-[var(--border-subtle)] shadow-sm group">
-                                <Image
+                                <img
                                     src={`https://images.unsplash.com/photo-1604654894610-df63bc536371?q=80&w=400&auto=format&fit=crop`} // Generic Nail Image
                                     alt={`Trabalho de aluna ${i}`}
-                                    fill
-                                    className="object-cover transition-transform duration-500 group-hover:scale-110"
+                                    className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"
                                 />
                                 <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                                     <span className="text-white text-xs font-bold bg-black/50 px-3 py-1 rounded-full">Aluna Iniciante</span>

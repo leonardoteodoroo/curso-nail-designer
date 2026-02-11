@@ -13,7 +13,7 @@ import { Garantia } from "@/components/sections/Garantia";
 import { FAQ } from "@/components/sections/FAQ";
 import { Footer } from "@/components/layout/Footer";
 
-export default function Home() {
+function App() {
     return (
         <main className="min-h-screen">
             <Header />
@@ -46,3 +46,5 @@ export default function Home() {
         </main>
     );
 }
+
+export default App;

@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { Section } from "../layout/Section";
 import { Container } from "../layout/Container";
 import { ImpactBox } from "../ui/ImpactBox";
-import Image from "next/image";
+// import Image from "next/image"; // Removed for Vite
 import { Quote, TrendingUp, Users, Calendar } from "lucide-react";
 
 export const HistoriaMariana = () => {
@@ -43,12 +43,10 @@ export const HistoriaMariana = () => {
                         {/* BEFORE */}
                         <div className="relative bg-gray-100">
                             <div className="relative h-64 md:h-80">
-                                <Image
+                                <img
                                     src="https://images.unsplash.com/photo-1531746790095-e5fa288d7c1b?q=80&w=600&auto=format&fit=crop"
                                     alt="Mariana frustrada refazendo unha"
-                                    fill
-                                    sizes="(max-width: 768px) 100vw, 50vw"
-                                    className="object-cover grayscale-[50%] brightness-75"
+                                    className="object-cover w-full h-full grayscale-[50%] brightness-75"
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent" />
                                 <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
@@ -67,12 +65,10 @@ export const HistoriaMariana = () => {
                         {/* AFTER */}
                         <div className="relative bg-[var(--surface-subtle)]">
                             <div className="relative h-64 md:h-80">
-                                <Image
+                                <img
                                     src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=600&auto=format&fit=crop"
                                     alt="Mariana confiante atendendo clientas"
-                                    fill
-                                    sizes="(max-width: 768px) 100vw, 50vw"
-                                    className="object-cover"
+                                    className="object-cover w-full h-full"
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
                                 <div className="absolute bottom-0 left-0 right-0 p-6 text-white">

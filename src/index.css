@@ -31,21 +31,59 @@
 
     --ease-standard: var(--ease-standard);
     --ease-emphasized: var(--ease-emphasized);
+
+    --color-dark-graphite: #1E1E1E;
+
+    /* Animations from previous CSS */
+    --animate-float: float 3s ease-in-out infinite;
+    --animate-pulse-glow: pulse-glow 2s ease-in-out infinite;
+
+    @keyframes float {
+        0% {
+            transform: translateY(0px);
+        }
+
+        50% {
+            transform: translateY(-10px);
+        }
+
+        100% {
+            transform: translateY(0px);
+        }
+    }
+
+    @keyframes pulse-glow {
+
+        0%,
+        100% {
+            opacity: 0.6;
+            transform: scale(1);
+        }
+
+        50% {
+            opacity: 1;
+            transform: scale(1.05);
+        }
+    }
 }
 
 :root {
+    /* Fonts Replacement for Next.js Fonts */
+    --font-family-base: 'Inter', sans-serif;
+    --font-family-heading: 'Playfair Display', serif;
+
     /* Colors */
-    --text-primary: #2C2C2C;
-    --text-secondary: #5A5A5A;
-    --text-muted: #6B7280;
+    --text-primary: #F3F4F6;
+    --text-secondary: #D1D5DB;
+    --text-muted: #9CA3AF;
     --text-on-dark: #FFFFFF;
     --text-on-brand: #FFFFFF;
-    --text-on-strong: #FFFFFF;
+    --text-on-strong: #000000;
 
-    --surface-page: #FAF8F6;
-    --surface-section: #FFF5F7;
-    --surface-card: #FFFFFF;
-    --surface-subtle: #FFF0F3;
+    --surface-page: #1E1E1E;
+    --surface-section: #252525;
+    --surface-card: #2D2D2D;
+    --surface-subtle: #333333;
     --surface-elevated: #FFFFFF;
 
     --action-primary: #E8B4B8;
@@ -217,33 +255,5 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-    }
-}
-
-@keyframes float {
-    0% {
-        transform: translateY(0px);
-    }
-
-    50% {
-        transform: translateY(-10px);
-    }
-
-    100% {
-        transform: translateY(0px);
-    }
-}
-
-@keyframes pulse-glow {
-
-    0%,
-    100% {
-        opacity: 0.6;
-        transform: scale(1);
-    }
-
-    50% {
-        opacity: 1;
-        transform: scale(1.05);
     }
 }

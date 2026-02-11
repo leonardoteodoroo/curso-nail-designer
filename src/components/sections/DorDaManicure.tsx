@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
+// import Image from "next/image"; // Removed for Vite
 import { Section } from "../layout/Section";
 import { Container } from "../layout/Container";
 import { motion } from "framer-motion";
@@ -87,7 +87,7 @@ export const DorDaManicure = () => {
                             <div className="flex flex-col space-y-2 max-w-[280px] bg-[#E5DDD5] p-4 rounded-xl shadow-inner mx-auto my-4 relative">
                                 {/* Pattern Overlay (simulated) */}
                                 <div className="absolute inset-0 opacity-5 bg-[url('https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png')] bg-repeat rounded-xl pointer-events-none"></div>
-                                
+
                                 {/* Message Bubble (Received) */}
                                 <div className="bg-white p-3 rounded-lg rounded-tl-none shadow-sm relative self-start">
                                     <div className="absolute top-0 -left-2 w-0 h-0 border-t-[10px] border-t-white border-l-[10px] border-l-transparent"></div>

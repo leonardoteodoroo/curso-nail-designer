@@ -6,7 +6,7 @@ import { X, PlayCircle, AlertTriangle, ArrowDown } from "lucide-react";
 import { Section } from "../layout/Section";
 import { Container } from "../layout/Container";
 import { ImpactBox } from "../ui/ImpactBox";
-import Image from "next/image";
+// import Image from "next/image"; // Removed for Vite
 import { SectionSeparator } from "../ui/SectionSeparator";
 
 export const OQueNinguemTeContou = () => {
@@ -65,12 +65,10 @@ export const OQueNinguemTeContou = () => {
                                     <PlayCircle size={14} /> Tutorial #1
                                 </div>
                                 <div className="relative h-28 rounded overflow-hidden bg-gray-100">
-                                    <Image
+                                    <img
                                         src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=400&auto=format&fit=crop"
                                         alt="Tutorial confuso de YouTube"
-                                        fill
-                                        sizes="300px"
-                                        className="object-cover"
+                                        className="object-cover w-full h-full"
                                     />
                                 </div>
                                 <p className="text-xs font-bold text-gray-700 mt-2">
@@ -84,12 +82,10 @@ export const OQueNinguemTeContou = () => {
                                     <PlayCircle size={14} /> Tutorial #47
                                 </div>
                                 <div className="relative h-28 rounded overflow-hidden bg-gray-100">
-                                    <Image
+                                    <img
                                         src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?q=80&w=400&auto=format&fit=crop"
                                         alt="Outro tutorial contradizendo o primeiro"
-                                        fill
-                                        sizes="300px"
-                                        className="object-cover"
+                                        className="object-cover w-full h-full"
                                     />
                                 </div>
                                 <p className="text-xs font-bold text-gray-700 mt-2">
@@ -149,12 +145,10 @@ export const OQueNinguemTeContou = () => {
                         <div className="flex flex-col gap-4">
                             <div className="relative rounded-lg overflow-hidden border border-green-200 shadow-sm opacity-60 grayscale-[40%]">
                                 <div className="relative h-32 bg-green-50">
-                                    <Image
+                                    <img
                                         src="https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=400&auto=format&fit=crop"
                                         alt="Professora fazendo unha profissional na aula"
-                                        fill
-                                        sizes="400px"
-                                        className="object-cover"
+                                        className="object-cover w-full h-full"
                                     />
                                     <div className="absolute inset-0 bg-green-900/30" />
                                 </div>
@@ -172,12 +166,10 @@ export const OQueNinguemTeContou = () => {
 
                             <div className="relative rounded-lg overflow-hidden border-2 border-red-200 shadow-md scale-[1.02]">
                                 <div className="relative h-32 bg-red-50">
-                                    <Image
+                                    <img
                                         src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=400&auto=format&fit=crop"
                                         alt="Aluna frustrada tentando em casa"
-                                        fill
-                                        sizes="400px"
-                                        className="object-cover grayscale-[20%]"
+                                        className="object-cover w-full h-full grayscale-[20%]"
                                     />
                                     <div className="absolute inset-0 bg-red-900/20" />
                                 </div>

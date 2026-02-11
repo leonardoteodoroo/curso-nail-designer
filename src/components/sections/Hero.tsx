@@ -4,7 +4,7 @@ import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { FlipText } from "../ui/FlipText";
 import { ArrowDown } from "lucide-react";
-import Image from "next/image";
+// import Image from "next/image"; // Removed for Vite migration
 import { SectionSeparator } from "../ui/SectionSeparator";
 
 export const Hero = () => {
@@ -43,13 +43,10 @@ export const Hero = () => {
                     {...{ style: { y: yLeft, height: '100%', minHeight: '250px' } }}
                 >
                     {/* Background Image */}
-                    <Image
+                    <img
                         src="https://images.unsplash.com/photo-1610992015732-2449b76344bc?q=80&w=1200&auto=format&fit=crop"
                         alt="Mãos fazendo unha com insegurança"
-                        fill
-                        priority
-                        sizes="(max-width: 768px) 100vw, 50vw"
-                        className="object-cover brightness-[0.7] grayscale-[20%]"
+                        className="object-cover w-full h-full brightness-[0.7] grayscale-[20%]"
                     />
 
                     {/* Gradient Overlay */}
@@ -72,13 +69,10 @@ export const Hero = () => {
                     {...{ style: { y: yRight, height: '100%', minHeight: '250px' } }}
                 >
                     {/* Background Image */}
-                    <Image
+                    <img
                         src="https://images.unsplash.com/photo-1604654894610-df63bc536371?q=80&w=1200&auto=format&fit=crop"
                         alt="Manicure profissional confiante"
-                        fill
-                        priority
-                        sizes="(max-width: 768px) 100vw, 50vw"
-                        className="object-cover brightness-[0.9]"
+                        className="object-cover w-full h-full brightness-[0.9]"
                     />
 
                     {/* Gradient Overlay */}
