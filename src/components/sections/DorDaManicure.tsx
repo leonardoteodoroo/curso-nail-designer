@@ -84,9 +84,21 @@ export const DorDaManicure = () => {
                                 A cliente marca. Você prepara tudo. <br />
                                 30 minutos antes, WhatsApp:
                             </p>
-                            <p className="font-bold text-[var(--text-primary)]">
-                                "Oi, preciso desmarcar."
-                            </p>
+                            <div className="flex flex-col space-y-2 max-w-[280px] bg-[#E5DDD5] p-4 rounded-xl shadow-inner mx-auto my-4 relative">
+                                {/* Pattern Overlay (simulated) */}
+                                <div className="absolute inset-0 opacity-5 bg-[url('https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png')] bg-repeat rounded-xl pointer-events-none"></div>
+                                
+                                {/* Message Bubble (Received) */}
+                                <div className="bg-white p-3 rounded-lg rounded-tl-none shadow-sm relative self-start">
+                                    <div className="absolute top-0 -left-2 w-0 h-0 border-t-[10px] border-t-white border-l-[10px] border-l-transparent"></div>
+                                    <p className="text-sm text-gray-800 leading-snug">
+                                        Oi, preciso desmarcar.
+                                    </p>
+                                    <span className="text-[10px] text-gray-400 block text-right mt-1">
+                                        09:42
+                                    </span>
+                                </div>
+                            </div>
                             <p>
                                 Seu estômago afunda. <br />
                                 <em>"Foi algo que EU fiz?"</em>

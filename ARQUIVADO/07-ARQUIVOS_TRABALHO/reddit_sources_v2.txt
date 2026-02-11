@@ -1,0 +1,6 @@
+Searching in r/desabafos for 'manicure cliente'...
+URL: https://www.reddit.com/r/desabafos/search.json?q=manicure+cliente&restrict_sr=1&sort=new&t=week&limit=5
+No posts found matching the criteria.
+Searching in r/brasil for 'manicure curso'...
+URL: https://www.reddit.com/r/brasil/search.json?q=manicure+curso&restrict_sr=1&sort=new&t=week&limit=5
+No posts found matching the criteria.

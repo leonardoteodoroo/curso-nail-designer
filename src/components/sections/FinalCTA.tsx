@@ -4,6 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Check, ShieldCheck, CreditCard, Lock, Zap, RefreshCw, Mail } from "lucide-react";
 import { AnimatedButton } from "../ui/AnimatedButton";
+import { PriceSpoiler } from "../ui/PriceSpoiler";
 import { Section } from "../layout/Section";
 import { Container } from "../layout/Container";
 
@@ -100,53 +101,40 @@ export const FinalCTA = () => {
                             </p>
                         </motion.div>
 
-                        {/* Pricing Card */}
-                        <div className="max-w-md mx-auto relative mb-12">
-                            {/* Glow Effect */}
-                            <div className="absolute -inset-1 bg-gradient-cta rounded-[var(--radius-xl)] blur opacity-30 animate-pulse" />
+                        {/* Pricing Area */}
+                        <div className="max-w-md mx-auto mb-12 space-y-8">
+                            <div className="text-center mb-6">
+                                <h3 className="text-2xl font-bold text-[var(--text-primary)]">
+                                    💅 SIM, QUERO MINHA INDEPENDÊNCIA
+                                </h3>
+                            </div>
 
-                            <div className="relative bg-[var(--surface-card)] rounded-[var(--radius-xl)] p-8 md:p-10 border border-[var(--action-strong)]/20 shadow-[var(--shadow-cta)] text-center">
-                                <div className="mb-6">
-                                    <h3 className="text-2xl font-bold text-[var(--text-primary)] mb-2">
-                                        💅 SIM, QUERO MINHA INDEPENDÊNCIA AGORA
-                                    </h3>
-                                </div>
+                            <PriceSpoiler
+                                initialAnchorPrice="R$ 997,00"
+                                promoPrice="R$ 49,90"
+                                checkoutUrl="#checkout"
+                                className="shadow-[var(--shadow-cta)]"
+                            />
 
-                                {/* Price Anchoring */}
-                                <div className="mb-8 space-y-2">
-                                    <div className="text-[var(--text-muted)] line-through text-lg">R$ 997,00</div>
-                                    <div className="text-[var(--text-muted)] line-through text-base">R$ 297,00</div>
-                                    <div className="text-sm font-bold text-[var(--action-strong)] uppercase tracking-wider bg-[var(--action-strong)]/10 inline-block px-3 py-1 rounded-full mb-2">
-                                        Oferta Especial
-                                    </div>
-                                    <div className="text-5xl md:text-6xl font-black text-[var(--text-primary)] tracking-tighter">
-                                        <span className="text-xl align-top relative top-4">7x</span> 8,16
-                                    </div>
-                                    <div className="text-[var(--text-secondary)] font-medium">
-                                        ou <strong>R$ 49,90 à vista</strong>
-                                    </div>
-                                </div>
-
+                            {/* Value Comparison & Features - Mantidos visíveis para reforçar a oferta */}
+                            <div className="bg-[var(--surface-card)] rounded-xl p-6 border border-[var(--border-subtle)] shadow-sm">
                                 {/* Value Comparison */}
                                 <div className="bg-[var(--surface-subtle)] rounded-lg p-4 mb-6 text-sm text-[var(--text-secondary)]">
                                     <p className="font-medium text-[var(--text-primary)] mb-2">Isso é <strong>menos que:</strong></p>
                                     <ul className="space-y-1 text-left max-w-xs mx-auto">
-                                        <li>• <strong>Meia unha</strong> que você VAI fazer (se cobrar R$ 100)</li>
-                                        <li>• 1 açaí por semana (R$ 8/semana)</li>
+                                        <li>• <strong>Meia unha</strong> que você VAI fazer</li>
+                                        <li>• 1 açaí por semana</li>
                                         <li>• 1 Uber ida+volta</li>
                                     </ul>
-                                    <p className="mt-2 font-medium text-[var(--text-primary)]">
-                                        E você está investindo na <strong>SUA independência financeira</strong>.
-                                    </p>
                                 </div>
 
                                 {/* Feature List */}
-                                <ul className="text-left space-y-3 mb-8 max-w-xs mx-auto">
+                                <ul className="text-left space-y-3 mb-6">
                                     {[
-                                        "Acesso imediato",
+                                        "Acesso imediato e vitalício",
                                         "Todos os bônus inclusos",
-                                        "7 dias de garantia",
-                                        "Comunidade privada",
+                                        "7 dias de garantia incondicional",
+                                        "Comunidade de alunas",
                                         "Certificados profissionais",
                                     ].map((item, idx) => (
                                         <li key={idx} className="flex items-center gap-3 text-sm text-[var(--text-secondary)]">
@@ -156,31 +144,16 @@ export const FinalCTA = () => {
                                     ))}
                                 </ul>
 
-                                {/* CTA */}
-                                <AnimatedButton className="w-full text-lg shadow-xl mb-4">
-                                    QUERO COMEÇAR AGORA
-                                </AnimatedButton>
-
                                 {/* Trust Badges */}
-                                <div className="pt-6 border-t border-[var(--border-subtle)] flex flex-col gap-3">
-                                    <div className="flex items-center justify-center gap-2 text-xs text-[var(--text-secondary)] font-medium">
+                                <div className="pt-4 border-t border-[var(--border-subtle)] flex flex-wrap items-center justify-center gap-4 text-xs text-[var(--text-muted)]">
+                                    <div className="flex items-center gap-1">
                                         <ShieldCheck size={14} className="text-[var(--action-success)]" />
                                         <span>Garantia de 7 Dias</span>
                                     </div>
-                                    <div className="flex items-center justify-center gap-6 text-xs text-[var(--text-muted)]">
-                                        <div className="flex items-center gap-1">
-                                            <Lock size={14} />
-                                            <span>Compra 100% Segura</span>
-                                        </div>
-                                        <span>•</span>
-                                        <div className="flex items-center gap-1">
-                                            <CreditCard size={14} />
-                                            <span>Hotmart</span>
-                                        </div>
+                                    <div className="flex items-center gap-1">
+                                        <Lock size={14} />
+                                        <span>Compra Segura</span>
                                     </div>
-                                    <p className="text-xs text-[var(--text-muted)]">
-                                        💳 Parcele em até 7x no cartão • ✅ Acesso vitalício à plataforma
-                                    </p>
                                 </div>
                             </div>
                         </div>

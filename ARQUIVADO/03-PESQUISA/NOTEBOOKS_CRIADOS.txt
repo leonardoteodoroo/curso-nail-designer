@@ -1,0 +1,80 @@
+# NOTEBOOKS CRIADOS - Fase A (Projeto LP Nail)
+
+## Notebooks do Projeto (6 Cadernos)
+
+### 1. LP Nail - 1 - VOC
+- **ID:** 1107b7b0-0ef6-455e-988d-610e62e8e9ff
+- **URL:** https://notebooklm.google.com/notebook/1107b7b0-0ef6-455e-988d-610e62e8e9ff
+- **Objetivo:** Voz do Cliente (dores, desejos, objeções)
+- **Fontes:** 8 reais + sintético
+- **Status:** ✅ Concluído
+
+### 2. LP Nail - 2 - Concorrentes
+- **ID:** 0c06a79f-d6e9-456b-9e90-15b88c75dac0
+- **URL:** https://notebooklm.google.com/notebook/0c06a79f-d6e9-456b-9e90-15b88c75dac0
+- **Objetivo:** Análise competitiva + gafes
+- **Fontes:** Sintético
+- **Status:** ✅ Concluído
+
+### 3. LP Nail - 3 - Credibilidade
+- **ID:** e8e703b8-b635-4f8d-9a28-acfd8d9e86dc
+- **URL:** https://notebooklm.google.com/notebook/e8e703b8-b635-4f8d-9a28-acfd8d9e86dc
+- **Objetivo:** Credibilidade técnica (ANVISA, SENAC)
+- **Fontes:** 10 oficiais (ANVISA 2024, SENAC, Vigilância Sanitária)
+- **Status:** ✅ Concluído
+
+### 4. LP Nail - 4 - Estrutura UX
+- **ID:** 0c3a3c4e-01f7-487c-aa2b-8f6c4969774b
+- **URL:** https://notebooklm.google.com/notebook/0c3a3c4e-01f7-487c-aa2b-8f6c4969774b
+- **Objetivo:** UX mobile-first + light copy
+- **Fontes:** Deep research
+- **Status:** ✅ Concluído
+
+### 5. LP Nail - 5 - Compliance
+- **ID:** d0d002a9-976c-4ea5-bac3-c8046cc6952f
+- **URL:** https://notebooklm.google.com/notebook/d0d002a9-976c-4ea5-bac3-c8046cc6952f
+- **Objetivo:** CDC + políticas Google/Meta
+- **Fontes:** Deep research
+- **Status:** ✅ Concluído
+
+### 6. LP Nail - 6 - Ads & Criativos
+- **ID:** afa427ef-bac5-48f5-bdd3-0301f9603955
+- **URL:** https://notebooklm.google.com/notebook/afa427ef-bac5-48f5-bdd3-0301f9603955
+- **Objetivo:** Headlines + criativos de anúncios
+- **Fontes:** Deep research
+- **Status:** ✅ Concluído
+
+---
+
+## Apêndices Gerados
+
+1. **APENDICE_CREDIBILIDADE_TECNICA.md** - Normas ANVISA, kit mínimo, certificação
+2. **APENDICE_UX_MOBILE.md** - Princípios UX mobile-first, scannability, light copy
+3. **APENDICE_COMPLIANCE.md** - Copy de garantia CDC, políticas ads, palavras proibidas
+4. **APENDICE_ADS_CRIATIVOS.md** - Headlines testadas, ganchos emocionais, tom de voz
+5. **ARQUETIPOS_PSICOLOGICOS_VOC.md** - 7 arquétipos emocionais de alta conversão
+6. **VOC_REAL_APENDICE.md** - Dados reais de VOC (Reclame Aqui, blogs, Reddit)
+
+---
+
+## Dados Coletados (Resumo)
+
+- ✅ 60+ frases VOC reais
+- ✅ 7 arquétipos psicológicos profundos
+- ✅ 5 normas ANVISA obrigatórias
+- ✅ Kit mínimo profissional (R$150-300)
+- ✅ Copy de garantia CDC pronta
+- ✅ 5 headlines de ads testadas
+- ✅ 3 ganchos emocionais principais
+- ✅ Checklist de compliance Google/Meta
+- ✅ Princípios UX mobile-first
+- ✅ Tom de voz "professora próxima"
+
+---
+
+## Próximos Passos
+
+1. [ ] Limpar notebooks antigos do NotebookLM
+2. [ ] Definir estrutura final da LP (multi-arquétipo)
+3. [ ] Analisar produto real (Hotmart)
+4. [ ] Consolidar roteiro final

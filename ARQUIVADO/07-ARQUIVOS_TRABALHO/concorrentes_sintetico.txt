@@ -1,0 +1,35 @@
+# BENCHMARKING DE CONCORRENTES (Mercado de Manicure Online)
+
+## Concorrente 1: Padrão "Faby Cardoso" (A Técnica Pura)
+*   **Promessa:** "Aprenda a fazer cutilagem funda e esmaltação perfeita."
+*   **Preço:** R$ 49,90 a R$ 97,00 (Vários cursos picados).
+*   **Mecanismo:** Aulas práticas focadas em detalhes técnicos (camada de esmalte, palito).
+*   **Pontos Fortes:** Autoridade técnica, didática visual muito boa.
+*   **Gafes / Brechas:** Sites antigos e poluídos. Foca 100% na técnica e 0% no negócio/postura. A aluna aprende a fazer unha, mas não a lotar agenda.
+*   **Objeção que responde:** "Será que vou aprender?" (Mostra muito close da unha).
+
+## Concorrente 2: Padrão "Paola Chaves" (Alongamento High Ticket)
+*   **Promessa:** "Torne-se uma Nail Designer de Sucesso e fature 5k."
+*   **Preço:** R$ 97,00 (promocional) a R$ 297,00.
+*   **Mecanismo:** Foco em Fibra de Vidro e Gel.
+*   **Pontos Fortes:** Visual mais moderno, fala de independência financeira.
+*   **Gafes / Brechas:** Promessa de renda agressiva ("5k em 30 dias") que gera desconfiança. Muita ênfase em "ficar rica" e pouca em "começar com segurança".
+*   **Objeção que responde:** "Dá dinheiro?" (Mostra extratos e alunas com carro).
+
+## Concorrente 3: Cursos Genéricos de Portal (Ex: Udemy/Hotmart Marketplace)
+*   **Promessa:** "Curso Completo Manicure + Pedicure + Alongamento por R$ 29,90."
+*   **Preço:** Muito baixo (Briga por preço).
+*   **Mecanismo:** "30 cursos em 1".
+*   **Pontos Fortes:** Preço imbatível. Certificado rápido.
+*   **Gafes / Brechas:** "Quem faz tudo não faz nada". Conteúdo raso. Suporte inexistente. A aluna sente que comprou um PDF glorificado.
+*   **Objeção que responde:** "É barato?" (Sim, é o mais barato).
+
+---
+
+## ÂNGULOS "LIGHT COPY" PARA NOS DIFERENCIAR
+
+1.  **Não prometemos "Ficar Rica", prometemos "Agenda Cheia":** Focar na primeira vitória da iniciante, que é ter clientes fiéis, em vez de milhões na conta.
+2.  **Kit de Negócios (A Estrutura):** Diferente da Faby (só técnica), nós damos a planilha de preço e a ficha de anamnese. "Aprenda a ser profissional, não só manicure."
+3.  **Garantia Real (Sem Risco):** Diferente dos genéricos, damos garantia incondicional de 7 dias com reembolso fácil, passando segurança de curso premium.
+4.  **Suporte de Verdade:** "Diferente do curso de R$ 29,90 onde você fala com um robô, aqui temos grupo de alunas."
+5.  **Tecnologia e Acesso:** "Assista no celular enquanto o bebê dorme". Focar na rotina da mãe (Persona), algo que os concorrentes técnicos ignoram.
