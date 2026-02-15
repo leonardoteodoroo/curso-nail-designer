@@ -1,1 +1,0 @@
-import{j as i,m as s}from"./vendor-animation-CGCpvx2p.js";import{c as t}from"./index-BeUK-HYC.js";const d=({children:o,className:r,hoverEffect:a=!1})=>i.jsx(s.div,{className:t("rounded-2xl bg-white border border-zinc-200 shadow-sm p-6","transition-all duration-300",r),whileHover:a?{y:-3,boxShadow:"0 10px 40px rgba(0,0,0,0.08)"}:void 0,children:o});export{d as C};
