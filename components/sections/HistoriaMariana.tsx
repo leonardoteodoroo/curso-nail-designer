@@ -20,7 +20,7 @@ const afterItems = [
 const chatMessages = [
     { text: "Eu tenho MEDO de atender cliente.", time: "10:23" },
     { text: "Prefiro fazer só em amigas. Pé e mão R$30... 😬", time: "10:23" },
-    { text: "Porque se eu cobrar e ficar ruim, vou morrer de vergonha. 😰", time: "10:24" },
+    { text: "Porque se eu cobrar mais caro e ficar ruim, vou morrer de vergonha. 😰", time: "10:24" },
 ];
 
 // ─────────────────────────────────────────────────────────────────────────────
