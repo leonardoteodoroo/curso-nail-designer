@@ -51,7 +51,7 @@ export const Hero = () => {
             </motion.div>
 
             {/* ═══ ÁREA VISUAL: Fotos + Cards + VS ═══ */}
-            <div className="relative flex flex-col md:flex-row md:items-stretch w-full flex-1 min-h-[360px]">
+            <div className="relative flex flex-col md:flex-row md:items-stretch w-full">
 
                 {/* ── REALIDADE A (Topo no mobile, Esquerda no desktop) ── */}
                 <motion.div
@@ -163,10 +163,9 @@ export const Hero = () => {
                     </motion.div>
                 </motion.div>
 
+                {/* ── SCROLL INDICATOR ── */}
+                <ScrollIndicator />
             </div>
-
-            {/* ── SCROLL INDICATOR ── posicionado relativo à section (min-h-[100dvh]) */}
-            <ScrollIndicator />
 
             {/* ═══ TEXTO DE REVELAÇÃO ═══ */}
             <motion.div
