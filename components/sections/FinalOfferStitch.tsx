@@ -17,7 +17,7 @@ export const FinalOfferStitch: React.FC = () => {
                                 <li className="flex items-start gap-3">
                                     <CheckCircle className="text-[#10b77f] shrink-0" size={24} />
                                     <div className="flex-1 flex justify-between border-b border-dashed border-zinc-200 pb-2">
-                                        <span className="text-zinc-700 font-medium">Acesso Vitalício ao Curso Completo</span>
+                                        <span className="text-zinc-700 font-medium">Acesso Vitalício + Atualizações Futuras</span>
                                         <span className="text-zinc-400 line-through text-sm">R$ 697,00</span>
                                     </div>
                                 </li>

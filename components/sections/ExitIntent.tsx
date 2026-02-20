@@ -93,7 +93,7 @@ export const ExitIntent: React.FC = () => {
                             <div className="bg-zinc-50 rounded-xl p-4 mb-4 space-y-2">
                                 {[
                                     "9 módulos completos + 4 bônus",
-                                    "Acesso vitalício com atualizações",
+                                    "Acesso vitalício + atualizações futuras",
                                     "Garantia de 7 dias — risco zero",
                                 ].map((item, i) => (
                                     <div key={i} className="flex items-center gap-2 text-sm text-zinc-700">

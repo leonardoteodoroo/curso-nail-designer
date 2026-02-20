@@ -14,7 +14,7 @@ const faqItems = [
     },
     {
         q: "O acesso é vitalício mesmo?",
-        a: "✅ Sim! Você paga uma vez e tem acesso para sempre. Incluindo todas as atualizações e novos módulos que forem adicionados no futuro.",
+        a: "✅ Sim! Você paga uma vez e tem acesso vitalício + atualizações futuras. Isso inclui todos os novos módulos e melhorias que forem adicionados no futuro.",
     },
     {
         q: "Como funciona a garantia de 7 dias?",
