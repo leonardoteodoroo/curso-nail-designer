@@ -19,7 +19,7 @@ const afterItems = [
 
 const chatMessages = [
     { text: "Eu tenho MEDO de atender cliente.", time: "10:23" },
-    { text: "Prefiro fazer só em amigas. De graça.", time: "10:23" },
+    { text: "Prefiro fazer só em amigas. Pé e mão R$30... 😬", time: "10:23" },
     { text: "Porque se eu cobrar e ficar ruim, vou morrer de vergonha. 😰", time: "10:24" },
 ];
 
@@ -129,8 +129,8 @@ export const HistoriaMariana: React.FC = () => {
                                 </motion.span>
                                 <div
                                     className={`rounded-2xl rounded-bl-sm px-4 py-2.5 text-sm md:text-base leading-snug max-w-[92%] shadow-sm ${msg.highlight
-                                            ? "bg-emerald-50 border border-emerald-100 text-zinc-700"
-                                            : "bg-white border border-zinc-100 text-zinc-600"
+                                        ? "bg-emerald-50 border border-emerald-100 text-zinc-700"
+                                        : "bg-white border border-zinc-100 text-zinc-600"
                                         }`}
                                 >
                                     {msg.text}
