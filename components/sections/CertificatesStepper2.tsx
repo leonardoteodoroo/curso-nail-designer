@@ -10,7 +10,7 @@ export const CertificatesStepperStitch: React.FC = () => {
                 <div className="flex-1 space-y-8">
                     <div>
                         <h2 className="text-3xl lg:text-4xl font-black text-zinc-900 mb-4">25 Certificados Profissionais</h2>
-                        <p className="text-zinc-600 text-lg">Reconhecimento válido em todo território nacional. Seu nome impresso com a chancela de qualidade Nail Designer Pro.</p>
+                        <p className="text-zinc-600 text-lg">Reconhecimento válido em todo território nacional. Seu nome impresso com a chancela de qualidade Nail Designer Academy.</p>
                     </div>
                     <div className="flex flex-col gap-6">
                         {/* Stepper Animado — igual ao Modulos */}
@@ -125,7 +125,7 @@ export const CertificatesStepperStitch: React.FC = () => {
                             <div className="w-16 h-0.5 bg-[#10b77f]/40 my-3"></div>
                             <p className="text-zinc-400 text-sm font-serif italic">Conferido a</p>
                             <p className="text-xl font-script text-zinc-900 my-2 font-bold font-serif">Seu Nome Aqui</p>
-                            <p className="text-zinc-500 text-xs mt-4 max-w-[200px]">Por concluir com êxito a formação completa em Nail Designer Profissional.</p>
+                            <p className="text-zinc-500 text-xs mt-4 max-w-[200px]">Por concluir com êxito a formação completa na Escola Nail Designer.</p>
                             <div className="absolute bottom-6 right-8">
                                 <Verified className="text-amber-400 drop-shadow-md" size={48} />
                             </div>

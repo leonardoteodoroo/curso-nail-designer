@@ -284,7 +284,7 @@ export const Modulos: React.FC = () => {
                         </div>
                     </div>
                     <span className="inline-block bg-emerald-100 text-emerald-700 text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-4">
-                        O Nail Designer
+                        Nail Designer Academy
                     </span>
                     <BlurText
                         text="Escola de Unhas Profissionais"

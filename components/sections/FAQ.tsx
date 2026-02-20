@@ -26,7 +26,7 @@ const faqItems = [
     },
     {
         q: "Já fiz outro curso e não funcionou. Por que esse seria diferente?",
-        a: "✅ Porque a maioria dos cursos ensina SÓ técnica. O Nail Designer ensina o método completo: técnica + mentalidade + negócio. É por isso que temos tantas histórias reais de transformação.",
+        a: "✅ Porque a maioria dos cursos ensina SÓ técnica. A Escola Nail Designer ensina o método completo: técnica + mentalidade + negócio. É por isso que temos tantas histórias reais de transformação.",
     },
     {
         q: "Quais os materiais que vou precisar?",
