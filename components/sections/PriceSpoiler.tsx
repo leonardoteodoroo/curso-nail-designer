@@ -3,7 +3,7 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Lock, Eye, Timer, RefreshCcw, CheckCircle2, AlertCircle } from 'lucide-react';
+import { Lock, Eye, Timer, RefreshCcw, CheckCircle2, AlertCircle, Check } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/Button';
 
@@ -27,7 +27,7 @@ export const PriceSpoiler: React.FC<PriceSpoilerProps> = ({
 }) => {
     const [status, setStatus] = useState<'spoiler' | 'revealed' | 'expired'>('spoiler');
     const [timeLeft, setTimeLeft] = useState(DURATION_SECONDS);
-    const timerRef = useRef<NodeJS.Timeout | null>(null);
+    const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
     // Restore state from sessionStorage on mount
     useEffect(() => {
@@ -277,19 +277,4 @@ export const PriceSpoiler: React.FC<PriceSpoilerProps> = ({
             </AnimatePresence>
         </div>
     );
-                                {/* Feature List */}
-                                <ul className="text-left space-y-3 mb-6">
-                                    {[
-                                        "Acesso imediato e vitalício",
-                                        "Todos os bônus inclusos",
-                                        "7 dias de garantia incondicional",
-                                        "Comunidade de alunas",
-                                        "Certificados profissionais 💅 SIM, QUERO MINHA INDEPENDÊNCIA",
-                                    ].map((item, idx) => (
-                                        <li key={idx} className="flex items-center gap-3 text-sm text-[var(--text-secondary)]">
-                                            <Check size={18} className="text-[var(--action-success)] shrink-0" />
-                                            <span>{item}</span>
-                                        </li>
-                                    ))}
-                                </ul>
 };
