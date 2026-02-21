@@ -181,9 +181,9 @@ export const Hero = () => {
                 </div>
 
                 {/* ── BLOCO DOR DA MANICURE ── */}
-                <div className="mx-auto w-full max-w-[960px] flex flex-col lg:flex-row gap-12 items-center text-center lg:text-left px-0 py-8">
-                    <div className="lg:w-1/2 flex flex-col items-center lg:items-start gap-6">
-                        <h2 className="text-3xl font-bold text-[#1b0d10] leading-tight">
+                <div className="mx-auto w-full max-w-[960px] flex flex-col lg:flex-row gap-12 items-center text-left px-0 py-8">
+                    <div className="lg:w-1/2 flex flex-col items-start gap-6">
+                        <h2 className="text-3xl font-bold text-[#1b0d10] leading-tight w-full text-center lg:text-left">
                             Você se sente <span className="text-[#ec1337]">desvalorizada?</span>
                         </h2>
                         <p className="text-[#1b0d10] text-lg leading-relaxed">
