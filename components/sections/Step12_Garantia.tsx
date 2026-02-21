@@ -44,7 +44,7 @@ export const Garantia: React.FC = () => {
                                 ))}
                             </div>
 
-                            <p className="text-sm font-bold text-emerald-700">
+                            <p className="text-sm font-bold text-emerald-700 text-center md:text-left">
                                 O risco é todo meu. Você só tem a ganhar.
                             </p>
                         </div>

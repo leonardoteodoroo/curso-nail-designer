@@ -14,8 +14,8 @@ export const CertificatesStepperStitch: React.FC = () => {
                     </div>
                     <div className="flex flex-col gap-6">
                         {/* Stepper Animado — igual ao Modulos */}
-                        <h4 className="text-sm font-bold text-zinc-900 mb-2 uppercase tracking-wider">Como funciona:</h4>
-                        <div className="relative max-w-[320px] w-full">
+                        <h4 className="text-sm font-bold text-zinc-900 mb-2 uppercase tracking-wider text-center lg:text-left">Como funciona:</h4>
+                        <div className="relative max-w-[320px] w-full mx-auto lg:mx-0">
                             {/* Linha de Conexão Base */}
                             <div className="absolute top-4 left-0 right-0 h-[2px] bg-emerald-100/60 rounded-full" />
 
@@ -43,7 +43,7 @@ export const CertificatesStepperStitch: React.FC = () => {
                                     transition={{ delay: 0.1, type: "spring", stiffness: 260, damping: 20 }}
                                     className="flex flex-col items-center gap-2"
                                 >
-                                    <div className="w-8 h-8 rounded-full bg-white border-2 border-emerald-500 text-emerald-600 font-bold flex items-center justify-center text-sm ring-4 ring-emerald-50 shadow-md leading-none z-10">
+                                    <div className="w-8 h-8 rounded-full bg-white border-2 border-emerald-500 text-emerald-600 font-bold flex items-center justify-center text-sm ring-4 ring-emerald-50 shadow-md leading-none z-10 w-8 h-8">
                                         1
                                     </div>
                                     <span className="font-bold text-zinc-800 text-[11px] text-center leading-none whitespace-nowrap">
@@ -59,7 +59,7 @@ export const CertificatesStepperStitch: React.FC = () => {
                                     transition={{ delay: 0.6, type: "spring", stiffness: 260, damping: 20 }}
                                     className="flex flex-col items-center gap-2"
                                 >
-                                    <div className="w-8 h-8 rounded-full bg-white border-2 border-emerald-500 text-emerald-600 font-bold flex items-center justify-center text-sm ring-4 ring-emerald-50 shadow-md leading-none z-10">
+                                    <div className="w-8 h-8 rounded-full bg-white border-2 border-emerald-500 text-emerald-600 font-bold flex items-center justify-center text-sm ring-4 ring-emerald-50 shadow-md leading-none z-10 w-8 h-8">
                                         2
                                     </div>
                                     <span className="font-bold text-zinc-800 text-[11px] text-center leading-none whitespace-nowrap">
@@ -75,7 +75,7 @@ export const CertificatesStepperStitch: React.FC = () => {
                                     transition={{ delay: 1.1, type: "spring", stiffness: 260, damping: 20 }}
                                     className="flex flex-col items-center gap-2"
                                 >
-                                    <div className="w-8 h-8 rounded-full bg-emerald-500 text-white font-bold flex items-center justify-center text-sm ring-4 ring-emerald-100 shadow-lg leading-none z-10">
+                                    <div className="w-8 h-8 rounded-full bg-emerald-500 text-white font-bold flex items-center justify-center text-sm ring-4 ring-emerald-100 shadow-lg leading-none z-10 w-8 h-8">
                                         3
                                     </div>
                                     <span className="font-bold text-emerald-800 text-[11px] text-center leading-none whitespace-nowrap bg-emerald-50/80 px-1.5 py-0.5 rounded-full">
@@ -85,7 +85,7 @@ export const CertificatesStepperStitch: React.FC = () => {
                             </div>
                         </div>
 
-                        <p className="text-zinc-400 text-xs italic font-medium">
+                        <p className="text-zinc-400 text-xs italic font-medium text-center lg:text-left mt-2">
                             "Imprima, enquadre e espalhe pelo seu estúdio"
                         </p>
 

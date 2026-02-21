@@ -2,29 +2,33 @@ import React from "react";
 import { DevTag } from "./components/DevTag";
 
 // ── Seções principais ──────────────────────────────────────────────────────
-import { Hero } from "../components/sections/Hero";
-import { DorDaManicure } from "../components/sections/DorDaManicure";
-import { TimelineNailDesigner } from "../components/sections/TimelineNailDesigner";
-import { HistoriaMariana } from "../components/sections/HistoriaMariana";
-import { AntiClimax } from "../components/sections/AntiClimax";
-import { Modulos } from "../components/sections/Modulos";
-import { CarouselStitch } from "../components/sections/CarouselStitch";
-import { WallOfLove } from "../components/sections/WallOfLove";
-import { PriceSpoiler } from "../components/sections/PriceSpoiler";
-import { Garantia } from "../components/sections/Garantia";
-import { FAQ } from "../components/sections/FAQ";
-import { FinalOfferStitch } from "../components/sections/FinalOfferStitch";
-import { ExitIntent } from "../components/sections/ExitIntent";
+import { Hero } from "../components/sections/Step01_Hero";
+
+// Lazy loading das seções abaixo da dobra
+const DorDaManicure = React.lazy(() => import("../components/sections/Step02_DorDaManicure").then(module => ({ default: module.DorDaManicure })));
+const TimelineNailDesigner = React.lazy(() => import("../components/sections/Step03_TimelineNailDesigner").then(module => ({ default: module.TimelineNailDesigner })));
+const HistoriaMariana = React.lazy(() => import("../components/sections/Step04_HistoriaMariana").then(module => ({ default: module.HistoriaMariana })));
+const AntiClimax = React.lazy(() => import("../components/sections/Step05_AntiClimax").then(module => ({ default: module.AntiClimax })));
+const Modulos = React.lazy(() => import("../components/sections/Step07_Modulos").then(module => ({ default: module.Modulos })));
+const CarouselStitch = React.lazy(() => import("../components/sections/Step06_CarouselStitch").then(module => ({ default: module.CarouselStitch })));
+const WallOfLove = React.lazy(() => import("../components/sections/Step09_WallOfLove").then(module => ({ default: module.WallOfLove })));
+const PriceSpoiler = React.lazy(() => import("../components/sections/Step10_PriceSpoiler").then(module => ({ default: module.PriceSpoiler })));
+const Garantia = React.lazy(() => import("../components/sections/Step12_Garantia").then(module => ({ default: module.Garantia })));
+const FAQ = React.lazy(() => import("../components/sections/Step13_FAQ").then(module => ({ default: module.FAQ })));
+const FinalOfferStitch = React.lazy(() => import("../components/sections/Step15_FinalOfferStitch").then(module => ({ default: module.FinalOfferStitch })));
+const ExitIntent = React.lazy(() => import("../components/sections/Step16_ExitIntent").then(module => ({ default: module.ExitIntent })));
 
 // ── Novos componentes ────────────────────────────────────────────────────
-import { CertificatesStepperStitch } from "../components/sections/CertificatesStepper2";
+const CertificatesStepperStitch = React.lazy(() => import("../components/sections/Step08_CertificatesStepper2").then(module => ({ default: module.CertificatesStepperStitch })));
+const OfertaInicial = React.lazy(() => import("../components/sections/Step14_OfertaInicial").then(module => ({ default: module.OfertaInicial })));
+const PriceSpoilerV2 = React.lazy(() => import("../components/sections/Step11_PriceSpoilerV2").then(module => ({ default: module.PriceSpoilerV2 })));
 
 // ── Componentes UI / Utilitários ───────────────────────────────────────────
-import { BackgroundHeading } from "../components/sections/BackgroundHeading";
-import { BlurText } from "../components/sections/BlurText";
-import { StaggerText } from "../components/sections/StaggerText";
-import { GlassCard } from "../components/sections/GlassCard";
-import { ClinicalCard } from "../components/sections/ClinicalCard";
+const BackgroundHeading = React.lazy(() => import("../components/sections/BackgroundHeading").then(module => ({ default: module.BackgroundHeading })));
+const BlurText = React.lazy(() => import("../components/sections/BlurText").then(module => ({ default: module.BlurText })));
+const StaggerText = React.lazy(() => import("../components/sections/StaggerText").then(module => ({ default: module.StaggerText })));
+const GlassCard = React.lazy(() => import("../components/sections/GlassCard").then(module => ({ default: module.GlassCard })));
+const ClinicalCard = React.lazy(() => import("../components/sections/ClinicalCard").then(module => ({ default: module.ClinicalCard })));
 
 // ── Tipo para cada entrada do preview ─────────────────────────────────────
 interface PreviewEntry {
@@ -43,8 +47,10 @@ const sections: PreviewEntry[] = [
     { tag: "#certificates-stepper", component: <CertificatesStepperStitch /> },
     { tag: "#wall-of-love", component: <WallOfLove /> },
     { tag: "#price-spoiler", component: <PriceSpoiler /> },
+    { tag: "#price-spoiler-v2", component: <PriceSpoilerV2 /> },
     { tag: "#garantia", component: <Garantia /> },
     { tag: "#faq", component: <FAQ /> },
+    { tag: "#oferta-inicial", component: <OfertaInicial /> },
     { tag: "#final-offer", component: <FinalOfferStitch /> },
     { tag: "#exit-intent", component: <ExitIntent /> },
 ];
@@ -152,7 +158,9 @@ export default function App() {
                     style={{ position: "relative" }}
                 >
                     <DevTag label={tag} />
-                    {component}
+                    <React.Suspense fallback={<div className="min-h-[200px] flex items-center justify-center bg-zinc-900/50"><div className="w-8 h-8 rounded-full border-4 border-lime-500 border-t-transparent animate-spin"></div></div>}>
+                        {component}
+                    </React.Suspense>
                     {/* Divisor entre seções */}
                     <div
                         style={{

@@ -245,6 +245,8 @@ export const HistoriaMariana: React.FC = () => {
                                         alt="Resultado Mariana — unhas profissionais"
                                         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                                         src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0kMH9InjMv1OFz0C0znAcMLwrMe8F1poA9J3EqYx0O6STxxNhp7hi8qKSveKn5lk53JfvUGc5ILRlMSnAj2lCfXa8eQ6M3iyz7d8XmIldVNnUBcVYqSAxBJvlCPwfzjWGsdE1kt_I9h-_-wWxwQqmYwwaVK5vfa7tMxaHxwmF8_ikGDw1alI_rkI6QS_oUJcs6raiPT_QnRUOfCT4yN_r5E8eCjkzKFn-KvTqXfUpGiwQLU1WUrbT_y1OPJDYhNL1K9izaq6SYXgZ"
+                                        loading="lazy"
+                                        decoding="async"
                                     />
                                     <div className="absolute bottom-3 right-3 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-emerald-700 shadow-lg flex items-center gap-1">
                                         <BadgeCheck size={14} /> Aprovado

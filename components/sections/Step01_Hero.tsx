@@ -222,6 +222,9 @@ export const Hero = () => {
                                             alt="Avatar"
                                             className="w-full h-full object-cover"
                                             src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbXHJPmJDjx7sXNYA9413IDDvta7XLeOsg4Gtok9cyObk9EtUrp_bdgija8hxorwEcsaE_t9rqUK-499XSm-rGtFrJxpnIszz0au-oxuGrBAUk2buy3xcuSE2M1FSpNyLAUJU3Eq2g-GE2PbcKZ7lelLYz_0aE2DjNFHhE20SNBEvmaaiEnhwzsc4mq2wpkHVSmE6NQ05gQhD3wUdiDmbNBBkYK4IThdVcWcJlc06qtZMJWVYySLj3ccMefXTQ9kprNTMFCFKtXwEA"
+                                            fetchPriority="high"
+                                            loading="eager"
+                                            decoding="sync"
                                         />
                                     </div>
                                     <div className="flex-1">

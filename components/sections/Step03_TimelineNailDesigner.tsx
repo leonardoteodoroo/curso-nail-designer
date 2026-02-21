@@ -69,6 +69,8 @@ export const TimelineNailDesigner: React.FC = () => {
                                         src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=400&auto=format&fit=crop"
                                         alt="Tutorial 1"
                                         className="object-cover w-full h-full opacity-90"
+                                        loading="lazy"
+                                        decoding="async"
                                     />
                                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
                                 </div>
@@ -87,6 +89,8 @@ export const TimelineNailDesigner: React.FC = () => {
                                         src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?q=80&w=400&auto=format&fit=crop"
                                         alt="Tutorial 47"
                                         className="object-cover w-full h-full opacity-90"
+                                        loading="lazy"
+                                        decoding="async"
                                     />
                                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
                                 </div>
@@ -125,6 +129,8 @@ export const TimelineNailDesigner: React.FC = () => {
                                         src="https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=400&auto=format&fit=crop"
                                         alt="Na Aula"
                                         className="object-cover w-full h-full opacity-60 grayscale-[30%] group-hover:grayscale-0 group-hover:opacity-100 transition-all"
+                                        loading="lazy"
+                                        decoding="async"
                                     />
                                     <div className="absolute inset-0 bg-emerald-900/10" />
                                 </div>
@@ -141,6 +147,8 @@ export const TimelineNailDesigner: React.FC = () => {
                                         src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=400&auto=format&fit=crop"
                                         alt="Em Casa"
                                         className="object-cover w-full h-full opacity-60 grayscale-[30%] group-hover:grayscale-0 group-hover:opacity-100 transition-all"
+                                        loading="lazy"
+                                        decoding="async"
                                     />
                                     <div className="absolute inset-0 bg-rose-900/10" />
                                 </div>
