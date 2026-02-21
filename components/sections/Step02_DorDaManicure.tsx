@@ -74,7 +74,6 @@ export const DorDaManicure: React.FC = () => {
                         <span className="inline-block bg-rose-50 text-rose-600 text-[10px] md:text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded-full border border-rose-100 self-start">
                           {card.badge}
                         </span>
-
                         <div className="bg-[#dcf8c6] px-3 py-2 rounded-lg rounded-tl-none shadow-sm border border-[#c7eab0] max-w-[85%] relative self-start ml-2">
                           {/* Rabicho da bolha */}
                           <div className="absolute top-0 -left-2 w-0 h-0 border-t-[8px] border-t-[#dcf8c6] border-l-[8px] border-l-transparent" />
