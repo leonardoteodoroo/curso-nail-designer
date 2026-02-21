@@ -8,7 +8,7 @@ export const CertificatesStepperStitch: React.FC = () => {
             <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-[#10b77f]/5 via-transparent to-transparent opacity-50"></div>
             <div className="max-w-5xl mx-auto flex flex-col lg:flex-row gap-12 items-center relative z-10">
                 <div className="flex-1 space-y-8">
-                    <div>
+                    <div className="text-center lg:text-left">
                         <h2 className="text-3xl lg:text-4xl font-black text-zinc-900 mb-4">25 Certificados Profissionais</h2>
                         <p className="text-zinc-600 text-lg">Reconhecimento válido em todo território nacional. Seu nome impresso com a chancela de qualidade Nail Designer Academy.</p>
                     </div>
