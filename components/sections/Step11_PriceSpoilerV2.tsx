@@ -170,7 +170,7 @@ export const PriceSpoilerV2: React.FC<PriceSpoilerV2Props> = ({
                                 <div className="space-y-4">
                                     <div className="space-y-1">
                                         <p className="font-bold text-zinc-800 text-lg leading-tight">
-                                            Preparei uma condição única para você agora.
+                                            Preparei uma condição ÚNICA para VOCÊ agora.
                                         </p>
                                     </div>
 
