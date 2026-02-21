@@ -159,25 +159,25 @@ export const PriceSpoilerV2: React.FC<PriceSpoilerV2Props> = ({
                                         <div className="h-10 w-1/2 bg-white/20 rounded-md animate-pulse blur-[2px]" />
 
                                         <div className="absolute inset-0 flex items-center justify-center">
-                                            <span className="bg-rose-600 text-white px-6 py-3 rounded-full text-xs sm:text-sm font-bold border border-rose-500 shadow-xl flex items-center gap-2 transform group-hover:scale-105 transition-all animate-bounce">
-                                                <Zap className="w-4 h-4 fill-current" />
-                                                CLIQUE PARA ATIVAR OFERTA
+                                            <span className="bg-black/50 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-medium border border-white/10 shadow-lg flex items-center gap-2 transform group-hover:scale-105 transition-transform">
+                                                <Eye className="w-4 h-4" />
+                                                Toque para revelar
                                             </span>
                                         </div>
                                     </div>
                                 </button>
 
-                                <div className="space-y-3">
+                                <div className="space-y-4">
                                     <div className="space-y-1">
-                                        <p className="font-bold text-zinc-800 text-lg">
-                                            O preço está oculto por segurança 😄
+                                        <p className="font-bold text-zinc-800 text-lg leading-tight">
+                                            Preparei uma condição única para você agora.
                                         </p>
                                         <p className="text-sm text-zinc-500">
-                                            Preparei uma condição única para você agora.
+                                            O preço está oculto por segurança <span role="img" aria-label="smile">😄</span>
                                         </p>
                                     </div>
 
-                                    <div className="pt-2 border-t border-zinc-100">
+                                    <div className="pt-3 border-t border-zinc-100">
                                         <p className="text-[10px] leading-relaxed text-zinc-400 italic">
                                             *Ao ativar, você concorda que esta oferta exclusiva ficará disponível <br className="hidden sm:block" />
                                             apenas para esta seção e poderá expirar em breve.
