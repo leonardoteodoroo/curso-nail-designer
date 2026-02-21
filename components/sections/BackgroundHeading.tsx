@@ -18,7 +18,7 @@ export const BackgroundHeading: React.FC<BackgroundHeadingProps> = ({
   return (
     <div
       className={cn(
-        "absolute inset-0 w-full h-full flex items-start md:items-center overflow-hidden pointer-events-none select-none z-0 pt-4 md:pt-0",
+        "absolute inset-0 w-full h-full flex items-center justify-center overflow-hidden pointer-events-none select-none z-0",
         className,
       )}
       aria-hidden="true"
@@ -34,18 +34,18 @@ export const BackgroundHeading: React.FC<BackgroundHeadingProps> = ({
       >
         {/* Renderizamos o conteúdo duas vezes para o loop perfeito */}
         <span
-          className="text-[6rem] md:text-[10rem] lg:text-[13rem] font-black uppercase text-zinc-900/[0.03] leading-none tracking-tighter shrink-0 px-8"
+          className="text-[11rem] md:text-[16rem] lg:text-[22rem] font-black uppercase text-zinc-900/[0.07] leading-none tracking-tighter shrink-0 px-8"
           style={{ fontFamily: "'Playfair Display', serif" }}
         >
           {content} •
         </span>
         <span
-          className="text-[6rem] md:text-[10rem] lg:text-[13rem] font-black uppercase text-zinc-900/[0.03] leading-none tracking-tighter shrink-0 px-8"
+          className="text-[11rem] md:text-[16rem] lg:text-[22rem] font-black uppercase text-zinc-900/[0.07] leading-none tracking-tighter shrink-0 px-8"
           style={{ fontFamily: "'Playfair Display', serif" }}
         >
           {content} •
         </span>
       </motion.div>
-    </div>
+    </div >
   );
 };

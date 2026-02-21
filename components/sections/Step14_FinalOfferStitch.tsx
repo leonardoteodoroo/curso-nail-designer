@@ -104,7 +104,7 @@ export const FinalOfferStitch: React.FC = () => {
             <div className="bg-white rounded-2xl shadow-xl border-2 border-[#10b77f] overflow-hidden relative">
               {/* Discount Badge */}
               <div className="absolute top-0 right-0 bg-[#10b77f] text-white text-xs font-bold px-3 py-1 rounded-bl-lg z-10">
-                -90% OFF
+                ~90% OFF
               </div>
               <div className="bg-emerald-50 p-4 text-center border-b border-emerald-100">
                 <p className="text-emerald-800 font-bold text-sm tracking-wide uppercase">

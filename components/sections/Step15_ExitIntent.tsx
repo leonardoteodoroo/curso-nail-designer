@@ -108,7 +108,7 @@ export const ExitIntent: React.FC = () => {
 
               {/* Preço */}
               <div className="text-center mb-4">
-                <p className="text-sm text-zinc-400 line-through">R$ 997,00</p>
+                <p className="text-sm text-zinc-400 line-through">R$ 497,00</p>
                 <p className="text-3xl font-black text-emerald-600">
                   7x de R$ 8,16
                 </p>

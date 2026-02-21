@@ -24,7 +24,7 @@ export const AntiClimax: React.FC = () => {
       <div className="max-w-4xl mx-auto">
         {/* Headline */}
         <BlurText
-          text="Eu Sei O Que Você Tá Pensando"
+          text="Daí... você pensa que"
           className="text-3xl md:text-5xl text-center mb-10"
         />
 
@@ -59,9 +59,35 @@ export const AntiClimax: React.FC = () => {
           viewport={{ once: true }}
           className="text-center mb-12 space-y-6"
         >
-          <p className="text-xl text-zinc-800 font-bold">
-            Olha... <span className="text-rose-600 italic">EU entendo.</span>
-          </p>
+          <motion.div
+            className="flex flex-wrap items-center justify-center gap-x-2 text-3xl md:text-5xl font-bold mb-2"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-100px" }}
+            variants={{
+              visible: { transition: { staggerChildren: 0.3 } },
+              hidden: {}
+            }}
+          >
+            <motion.span
+              variants={{
+                hidden: { opacity: 0, filter: "blur(10px)", y: 10 },
+                visible: { opacity: 1, filter: "blur(0px)", y: 0, transition: { duration: 0.8, ease: "easeOut" } }
+              }}
+              className="text-zinc-800"
+            >
+              Olha...
+            </motion.span>
+            <motion.span
+              variants={{
+                hidden: { opacity: 0, filter: "blur(10px)", scale: 0.9 },
+                visible: { opacity: 1, filter: "blur(0px)", scale: 1, transition: { duration: 0.8, delay: 0.5, ease: "easeOut" } }
+              }}
+              className="text-rose-600 italic"
+            >
+              EU entendo.
+            </motion.span>
+          </motion.div>
 
           <div className="text-lg text-zinc-600 leading-relaxed max-w-2xl mx-auto space-y-4">
             <p>

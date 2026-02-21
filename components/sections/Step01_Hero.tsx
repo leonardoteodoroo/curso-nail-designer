@@ -7,11 +7,11 @@ const ScrollIndicator = () => {
 
   return (
     <motion.div
-      style={{ opacity }}
-      initial={{ opacity: 0, y: 10 }}
-      animate={{ opacity: 1, y: 0 }}
+      style={{ opacity, x: "-50%" }}
+      initial={{ opacity: 0, y: 10, x: "-50%" }}
+      animate={{ opacity: 1, y: 0, x: "-50%" }}
       transition={{ delay: 1.5, duration: 1 }}
-      className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-2 cursor-pointer mix-blend-multiply"
+      className="absolute bottom-8 left-1/2 z-20 flex flex-col items-center gap-2 cursor-pointer mix-blend-multiply"
       onClick={() =>
         window.scrollBy({ top: window.innerHeight * 0.8, behavior: "smooth" })
       }
@@ -108,10 +108,11 @@ export const Hero = () => {
 
         {/* ── CÍRCULO VS ── */}
         <motion.div
-          initial={{ opacity: 0, scale: 0.5 }}
-          animate={{ opacity: 1, scale: 1 }}
+          style={{ x: "-50%", y: "-50%" }}
+          initial={{ opacity: 0, scale: 0.5, x: "-50%", y: "-50%" }}
+          animate={{ opacity: 1, scale: 1, x: "-50%", y: "-50%" }}
           transition={{ duration: 0.5, delay: 0.8 }}
-          className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-30
+          className="absolute left-1/2 top-1/2 z-30
                                w-14 h-14 md:w-16 md:h-16
                                bg-white rounded-full
                                shadow-[0_4px_20px_rgba(0,0,0,0.15)] border-2 border-zinc-200

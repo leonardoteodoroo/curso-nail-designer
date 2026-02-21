@@ -6,7 +6,7 @@ export const OfertaInicial = () => {
   return (
     <section
       id="oferta-inicial"
-      className="py-20 md:py-32 bg-white relative overflow-hidden"
+      className="pt-20 pb-0 md:pt-32 md:pb-0 bg-white relative overflow-hidden"
     >
       <div className="container px-4 md:px-6 mx-auto">
         <motion.div
@@ -19,9 +19,9 @@ export const OfertaInicial = () => {
             className="text-2xl font-bold text-zinc-900 text-center mb-8 flex items-center justify-center gap-3"
             style={{ fontFamily: "'Playfair Display', serif" }}
           >
-            📋 RECAPITULANDO — Tudo Que Você Recebe:
+            📋 Tudo Que Você Recebe:
           </h3>
-          <div className="space-y-1 mb-12">
+          <div className="space-y-1 mb-2">
             {[
               {
                 item: "Curso Nail Designer Completo (130+ aulas)",
@@ -94,13 +94,12 @@ export const OfertaInicial = () => {
                   </span>
                 </div>
                 <span
-                  className={`text-sm md:text-base font-bold whitespace-nowrap ${
-                    item.type === "price"
-                      ? "text-amber-400/70 line-through"
-                      : item.type === "highlight"
-                        ? "text-amber-500"
-                        : "text-emerald-500"
-                  }`}
+                  className={`text-sm md:text-base font-bold whitespace-nowrap ${item.type === "price"
+                    ? "text-amber-400/70 line-through"
+                    : item.type === "highlight"
+                      ? "text-amber-500"
+                      : "text-emerald-500"
+                    }`}
                 >
                   {item.value}
                 </span>
@@ -113,67 +112,22 @@ export const OfertaInicial = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.8 }}
-              className="flex flex-col items-center justify-center pt-8 pb-4 mt-2"
+              className="flex flex-col items-center text-center justify-center pt-8 pb-0 mt-2 px-4"
             >
-              <span className="text-zinc-400 font-medium text-sm md:text-base mb-1">
-                Valor total se vendido separado:
-              </span>
-              <span className="text-3xl md:text-4xl font-black text-zinc-300 line-through decoration-zinc-400/50 decoration-2">
-                R$ 1.482,00+
-              </span>
+              <h4 className="text-xl md:text-2xl font-bold text-zinc-800 mb-6" style={{ fontFamily: "'Playfair Display', serif" }}>
+                Tudo isso nós comercializamos por <span className="block text-4xl md:text-6xl text-emerald-700 font-black mt-3 sm:mt-4">R$ 497,00</span>
+              </h4>
+              <p className="text-sm md:text-base text-zinc-600 mb-3 max-w-xl mx-auto leading-relaxed">
+                E vale cada centavo. Mas eu conheço a realidade de quem está começando ou querendo crescer nessa área agora. O seu maior obstáculo não é apenas aprender a técnica: <strong>é montar o kit da mesa.</strong>
+              </p>
+              <p className="text-sm md:text-base text-zinc-600 mb-4 max-w-xl mx-auto leading-relaxed">
+                Eu sei que se eu cobrar R$ 497 hoje, talvez falte orçamento para os seus materiais no final do mês.
+                Sendo sincera, <strong className="text-emerald-700">eu só ganho de verdade quando você vira um caso de sucesso e me indica.</strong>
+              </p>
             </motion.div>
           </div>
 
-          {/* Bloco de Preço Final e CTA */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            className="mt-10 bg-white border-2 border-emerald-500 rounded-3xl p-8 py-10 shadow-2xl relative overflow-hidden"
-          >
-            <div className="absolute top-0 right-0 bg-emerald-500 text-white text-xs font-bold px-4 py-1 rounded-bl-xl uppercase tracking-widest">
-              Oferta Especial
-            </div>
-
-            <div className="text-center space-y-2 mb-8">
-              <p className="text-zinc-400 text-sm line-through">
-                De R$ 997,00 por apenas
-              </p>
-              <div className="flex items-center justify-center gap-1">
-                <span className="text-zinc-600 text-xl font-bold mt-2">
-                  7x de
-                </span>
-                <span className="text-5xl md:text-6xl font-black text-emerald-600 tracking-tight">
-                  R$ 8,16
-                </span>
-              </div>
-              <p className="text-emerald-700 font-medium text-sm">
-                ou R$ 49,90 à vista
-              </p>
-            </div>
-
-            <button
-              onClick={() =>
-                window.open(
-                  "https://go.hotmart.com/K104371220N?ap=5bc1&src=btn_oferta",
-                  "_blank",
-                )
-              }
-              className="w-full bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white font-bold py-4 md:py-5 rounded-full shadow-lg hover:shadow-xl hover:scale-[1.02] transition-all duration-300 uppercase tracking-wide text-sm md:text-lg flex items-center justify-center gap-2 mb-4 animate-pulse-slow"
-            >
-              SIM! QUERO GARANTIR MINHA VAGA AGORA
-              <ArrowRight className="w-5 h-5" />
-            </button>
-
-            <div className="flex items-center justify-center gap-4 text-[10px] md:text-xs text-zinc-400 font-medium uppercase tracking-wide">
-              <span className="flex items-center gap-1">
-                <ShieldCheck className="w-3 h-3" /> Compra Segura
-              </span>
-              <span className="flex items-center gap-1">
-                <Sparkles className="w-3 h-3" /> Acesso Imediato
-              </span>
-            </div>
-          </motion.div>
+          {/* Placeholder para a próxima seção de oferta a ser embutida aqui ou abaixo dela */}
         </motion.div>
       </div>
     </section>

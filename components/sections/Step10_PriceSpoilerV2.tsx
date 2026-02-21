@@ -24,10 +24,10 @@ interface PriceSpoilerV2Props {
 }
 
 const STORAGE_KEY = "nail_course_price_timer_v2";
-const DURATION_SECONDS = 120; // 2 minutes
+const DURATION_SECONDS = 420; // 7 minutes
 
 export const PriceSpoilerV2: React.FC<PriceSpoilerV2Props> = ({
-  initialAnchorPrice = "R$ 997,00",
+  initialAnchorPrice = "R$ 497,00",
   promoPrice = "R$ 49,90",
   checkoutUrl = "#",
   className,
@@ -133,7 +133,7 @@ export const PriceSpoilerV2: React.FC<PriceSpoilerV2Props> = ({
   };
 
   return (
-    <section className="py-20 md:py-32 bg-zinc-50 relative overflow-hidden">
+    <section className="pt-0 pb-20 md:pt-0 md:pb-32 bg-white relative overflow-hidden">
       <div className="container px-4 md:px-6 mx-auto flex flex-col items-center">
         <div
           className={cn(
@@ -224,7 +224,7 @@ export const PriceSpoilerV2: React.FC<PriceSpoilerV2Props> = ({
                     OFERTA POR TEMPO LIMITADO
                   </span>
                   <div className="absolute top-0 right-0 h-full flex items-center bg-[#20B27A] text-white text-[11px] sm:text-[12px] font-bold px-3 sm:px-4 rounded-bl-2xl sm:rounded-bl-3xl">
-                    -90% OFF
+                    ~90% OFF
                   </div>
                 </div>
 
