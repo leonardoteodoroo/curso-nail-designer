@@ -1,11 +1,12 @@
+```
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { BookOpen, Palette, Sparkles, MessageCircle, Home, Plus, Minus, CheckCircle2, GraduationCap, ArrowRight, Scissors, Wrench, Trophy, FileText, Eye, Users, ShieldCheck } from "lucide-react";
 import { BlurText } from "../ui/BlurText";
 import { GlassCard } from "../ui/GlassCard";
 import { ClinicalCard } from "../ui/ClinicalCard";
-import { CertificatesStepperStitch } from "./CertificatesStepper2";
-import { OfertaInicial } from "./OfertaInicial";
+import { CertificatesStepperStitch } from "./Step08_CertificatesStepper2";
+import { OfertaInicial } from "./Step14_OfertaInicial";
 
 const modules = [
     {
@@ -312,10 +313,11 @@ export const Modulos: React.FC = () => {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ delay: i * 0.05 }}
-                                className={`rounded-2xl border transition-all duration-300 bg-white ${isOpen
-                                    ? "border-emerald-300 shadow-md ring-1 ring-emerald-500/20"
-                                    : "border-zinc-200 hover:border-emerald-200"
-                                    }`}
+                                className={`rounded - 2xl border transition - all duration - 300 bg - white ${
+    isOpen
+        ? "border-emerald-300 shadow-md ring-1 ring-emerald-500/20"
+        : "border-zinc-200 hover:border-emerald-200"
+} `}
                             >
                                 {/* Header (clicável - estrutura simplificada e padding ajustado) */}
                                 <button
@@ -323,10 +325,11 @@ export const Modulos: React.FC = () => {
                                     className="w-full text-left p-4 md:p-6 flex items-start justify-between gap-4"
                                 >
                                     <div className="flex items-start gap-4 flex-1 min-w-0 pr-2">
-                                        <div className={`w-10 h-10 rounded-full flex items-center justify-center shrink-0 transition-colors mt-1 ${isOpen
-                                            ? "bg-emerald-600 text-white"
-                                            : "bg-emerald-50 text-emerald-600"
-                                            }`}>
+                                        <div className={`w - 10 h - 10 rounded - full flex items - center justify - center shrink - 0 transition - colors mt - 1 ${
+    isOpen
+        ? "bg-emerald-600 text-white"
+        : "bg-emerald-50 text-emerald-600"
+} `}>
                                             <Icon className="w-5 h-5" />
                                         </div>
                                         <div className="flex-1 min-w-0">
@@ -341,10 +344,11 @@ export const Modulos: React.FC = () => {
 
                                     {/* Toggle */}
                                     <div
-                                        className={`w-8 h-8 rounded-full flex items-center justify-center shrink-0 transition-colors mt-2 ${isOpen
-                                            ? "bg-emerald-600 text-white"
-                                            : "bg-emerald-50 text-emerald-600"
-                                            }`}
+                                        className={`w - 8 h - 8 rounded - full flex items - center justify - center shrink - 0 transition - colors mt - 2 ${
+    isOpen
+        ? "bg-emerald-600 text-white"
+        : "bg-emerald-50 text-emerald-600"
+} `}
                                     >
                                         {isOpen ? <Minus className="w-4 h-4" /> : <Plus className="w-4 h-4" />}
                                     </div>
