@@ -172,9 +172,6 @@ export const PriceSpoilerV2: React.FC<PriceSpoilerV2Props> = ({
                                         <p className="font-bold text-zinc-800 text-lg leading-tight">
                                             Preparei uma condição única para você agora.
                                         </p>
-                                        <p className="text-sm text-zinc-500">
-                                            O preço está oculto por segurança <span role="img" aria-label="smile">😄</span>
-                                        </p>
                                     </div>
 
                                     <div className="pt-3 border-t border-zinc-100">
