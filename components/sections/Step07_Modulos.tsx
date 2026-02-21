@@ -1,10 +1,10 @@
-```
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { BookOpen, Palette, Sparkles, MessageCircle, Home, Plus, Minus, CheckCircle2, GraduationCap, ArrowRight, Scissors, Wrench, Trophy, FileText, Eye, Users, ShieldCheck } from "lucide-react";
 import { BlurText } from "../ui/BlurText";
 import { GlassCard } from "../ui/GlassCard";
 import { ClinicalCard } from "../ui/ClinicalCard";
+import { ActionButton } from "../ui/ActionButton";
 import { CertificatesStepperStitch } from "./Step08_CertificatesStepper2";
 import { OfertaInicial } from "./Step14_OfertaInicial";
 
@@ -278,10 +278,8 @@ export const Modulos: React.FC = () => {
             <div className="max-w-4xl mx-auto">
                 {/* Header */}
                 <div className="text-center mb-12">
-                    {/* Logo do Curso — substitua o src quando tiver a imagem */}
                     <div className="flex justify-center mb-6">
                         <div className="w-32 h-32 rounded-2xl border-2 border-dashed border-zinc-300 bg-white flex flex-col items-center justify-center gap-1 text-zinc-400 shadow-sm">
-                            {/* Substitua esta div por: <img src="/logo-curso.png" alt="Logo Nail Designer" className="w-32 h-32 object-contain" /> */}
                             <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 opacity-40" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
                             <span className="text-[10px] font-medium uppercase tracking-wide">Logo</span>
                         </div>
@@ -313,23 +311,20 @@ export const Modulos: React.FC = () => {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ delay: i * 0.05 }}
-                                className={`rounded - 2xl border transition - all duration - 300 bg - white ${
-    isOpen
-        ? "border-emerald-300 shadow-md ring-1 ring-emerald-500/20"
-        : "border-zinc-200 hover:border-emerald-200"
-} `}
+                                className={`rounded-2xl border transition-all duration-300 bg-white ${isOpen
+                                        ? "border-emerald-300 shadow-md ring-1 ring-emerald-500/20"
+                                        : "border-zinc-200 hover:border-emerald-200"
+                                    }`}
                             >
-                                {/* Header (clicável - estrutura simplificada e padding ajustado) */}
                                 <button
                                     onClick={() => setOpenModule(isOpen ? -1 : i)}
                                     className="w-full text-left p-4 md:p-6 flex items-start justify-between gap-4"
                                 >
                                     <div className="flex items-start gap-4 flex-1 min-w-0 pr-2">
-                                        <div className={`w - 10 h - 10 rounded - full flex items - center justify - center shrink - 0 transition - colors mt - 1 ${
-    isOpen
-        ? "bg-emerald-600 text-white"
-        : "bg-emerald-50 text-emerald-600"
-} `}>
+                                        <div className={`w-10 h-10 rounded-full flex items-center justify-center shrink-0 transition-colors mt-1 ${isOpen
+                                                ? "bg-emerald-600 text-white"
+                                                : "bg-emerald-50 text-emerald-600"
+                                            }`}>
                                             <Icon className="w-5 h-5" />
                                         </div>
                                         <div className="flex-1 min-w-0">
@@ -342,19 +337,14 @@ export const Modulos: React.FC = () => {
                                         </div>
                                     </div>
 
-                                    {/* Toggle */}
-                                    <div
-                                        className={`w - 8 h - 8 rounded - full flex items - center justify - center shrink - 0 transition - colors mt - 2 ${
-    isOpen
-        ? "bg-emerald-600 text-white"
-        : "bg-emerald-50 text-emerald-600"
-} `}
-                                    >
+                                    <div className={`w-8 h-8 rounded-full flex items-center justify-center shrink-0 transition-colors mt-2 ${isOpen
+                                            ? "bg-emerald-600 text-white"
+                                            : "bg-emerald-50 text-emerald-600"
+                                        }`}>
                                         {isOpen ? <Minus className="w-4 h-4" /> : <Plus className="w-4 h-4" />}
                                     </div>
                                 </button>
 
-                                {/* Content (expand) */}
                                 <AnimatePresence initial={false}>
                                     {isOpen && (
                                         <motion.div
@@ -405,16 +395,14 @@ export const Modulos: React.FC = () => {
                     <span className="inline-block bg-amber-100 text-amber-700 text-[10px] md:text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-4">
                         🎁 BÔNUS EXCLUSIVOS
                     </span>
-                    <h3
-                        className="text-3xl md:text-5xl font-bold text-zinc-900 mb-4"
-                        style={{ fontFamily: "'Playfair Display', serif" }}
-                    >
+                    <h3 className="text-3xl md:text-5xl font-bold text-zinc-900 mb-4">
                         Você NÃO Vai Ficar Sozinha
                     </h3>
                     <p className="text-zinc-600 max-w-xl mx-auto text-lg">
                         Além das <span className="text-emerald-600 font-extrabold">+130 aulas</span>, você ainda recebe:
                     </p>
                 </div>
+
                 <div className="grid md:grid-cols-2 gap-4 mb-8">
                     {bonuses.map((bonus, i) => {
                         const Icon = bonus.icon;
@@ -427,7 +415,6 @@ export const Modulos: React.FC = () => {
                                 transition={{ delay: i * 0.1 }}
                             >
                                 <ClinicalCard hoverEffect className="p-6 h-full flex flex-col relative overflow-hidden group">
-                                    {/* Icon e Valor */}
                                     <div className="flex justify-between items-start mb-4">
                                         <div className="w-10 h-10 rounded-xl bg-amber-50 flex items-center justify-center text-amber-600">
                                             <Icon size={20} />
@@ -436,21 +423,15 @@ export const Modulos: React.FC = () => {
                                             {bonus.value}
                                         </div>
                                     </div>
-
-                                    {/* Títulos */}
                                     <h4 className="font-bold text-zinc-900 text-sm mb-1">
                                         {bonus.title}
                                     </h4>
                                     <p className="text-[11px] text-zinc-400 mb-3 font-medium lowercase">
                                         {bonus.subtitle}
                                     </p>
-
-                                    {/* Descrição */}
                                     <p className="text-xs text-zinc-600 mb-4 leading-relaxed italic">
                                         {bonus.desc}
                                     </p>
-
-                                    {/* Reason */}
                                     <p className="text-[11px] font-medium text-rose-400 mt-auto">
                                         {bonus.reason}
                                     </p>
@@ -460,7 +441,7 @@ export const Modulos: React.FC = () => {
                     })}
                 </div>
 
-                {/* Super Bônus 7 (Largo) */}
+                {/* Super Bônus 7 */}
                 <motion.div
                     initial={{ opacity: 0, scale: 0.95 }}
                     whileInView={{ opacity: 1, scale: 1 }}
@@ -471,25 +452,21 @@ export const Modulos: React.FC = () => {
                         <div className="absolute top-0 right-0 p-4 opacity-10">
                             <Trophy size={100} className="text-amber-500" />
                         </div>
-
                         <div className="w-16 h-16 rounded-2xl bg-amber-100 flex items-center justify-center text-amber-600 mx-auto mb-6 shadow-sm">
                             <Trophy size={32} />
                         </div>
-
-                        <h3 className="text-xl md:text-2xl font-bold text-zinc-900 mb-4" style={{ fontFamily: "'Playfair Display', serif" }}>
+                        <h3 className="text-xl md:text-2xl font-bold text-zinc-900 mb-4">
                             {superBonus.title}
                         </h3>
-
                         <p className="text-zinc-600 max-w-xl mx-auto mb-6 text-sm md:text-base leading-relaxed">
                             {superBonus.desc}
                         </p>
-
                         <div className="inline-block bg-amber-50 text-amber-700 px-4 py-2 rounded-lg font-bold text-xs md:text-sm border border-amber-100 italic">
                             {superBonus.highlight}
                         </div>
                     </ClinicalCard>
                 </motion.div>
             </div>
-        </section >
+        </section>
     );
 };
