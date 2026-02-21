@@ -66,13 +66,18 @@ export const AntiClimax: React.FC = () => {
             viewport={{ once: true, margin: "-100px" }}
             variants={{
               visible: { transition: { staggerChildren: 0.3 } },
-              hidden: {}
+              hidden: {},
             }}
           >
             <motion.span
               variants={{
                 hidden: { opacity: 0, filter: "blur(10px)", y: 10 },
-                visible: { opacity: 1, filter: "blur(0px)", y: 0, transition: { duration: 0.8, ease: "easeOut" } }
+                visible: {
+                  opacity: 1,
+                  filter: "blur(0px)",
+                  y: 0,
+                  transition: { duration: 0.8, ease: "easeOut" },
+                },
               }}
               className="text-zinc-800"
             >
@@ -81,7 +86,12 @@ export const AntiClimax: React.FC = () => {
             <motion.span
               variants={{
                 hidden: { opacity: 0, filter: "blur(10px)", scale: 0.9 },
-                visible: { opacity: 1, filter: "blur(0px)", scale: 1, transition: { duration: 0.8, delay: 0.5, ease: "easeOut" } }
+                visible: {
+                  opacity: 1,
+                  filter: "blur(0px)",
+                  scale: 1,
+                  transition: { duration: 0.8, delay: 0.5, ease: "easeOut" },
+                },
               }}
               className="text-rose-600 italic"
             >

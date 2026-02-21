@@ -195,10 +195,11 @@ const StitchCardInner: React.FC<{
 }> = ({ review, isCenter }) => {
   return (
     <div
-      className={`bg-white h-full flex flex-col transition-shadow duration-300 ${isCenter
+      className={`bg-white h-full flex flex-col transition-shadow duration-300 ${
+        isCenter
           ? "shadow-2xl border-2 border-rose-100" // Borda rosa sutil no centro
           : "shadow-xl border-2 border-transparent" // Borda transparente
-        }`}
+      }`}
     >
       {/* Image / Avatar - Sempre h-56 */}
       <div className="relative overflow-hidden shrink-0 h-56 w-full">
@@ -243,8 +244,9 @@ const StitchCardInner: React.FC<{
       {/* Content - Sempre p-5 */}
       <div className="relative flex flex-col flex-1 p-5">
         <span
-          className={`inline-flex items-center self-start px-3 py-1 rounded-full text-xs font-semibold mb-2 transition-colors duration-300 ${isCenter ? "bg-[#ee2b5b] text-white" : "bg-rose-50 text-[#ee2b5b]"
-            }`}
+          className={`inline-flex items-center self-start px-3 py-1 rounded-full text-xs font-semibold mb-2 transition-colors duration-300 ${
+            isCenter ? "bg-[#ee2b5b] text-white" : "bg-rose-50 text-[#ee2b5b]"
+          }`}
         >
           {review.status}
         </span>
@@ -417,10 +419,11 @@ export const CarouselStitch: React.FC = () => {
                       key={i}
                       onClick={() => jumpTo(i)}
                       aria-label={`Ir para depoimento ${i + 1}`}
-                      className={`h-2 rounded-full transition-all duration-300 ${i === activeIndex
+                      className={`h-2 rounded-full transition-all duration-300 ${
+                        i === activeIndex
                           ? "w-6 bg-[#ee2b5b]"
                           : "w-2 bg-gray-300 hover:bg-rose-300"
-                        }`}
+                      }`}
                     />
                   ))}
                 </div>
@@ -502,10 +505,11 @@ export const CarouselStitch: React.FC = () => {
                       key={i}
                       onClick={() => jumpTo(i)}
                       aria-label={`Ir para depoimento ${i + 1}`}
-                      className={`h-1.5 rounded-full transition-all duration-300 ${i === activeIndex
+                      className={`h-1.5 rounded-full transition-all duration-300 ${
+                        i === activeIndex
                           ? "w-5 bg-[#ee2b5b]"
                           : "w-1.5 bg-gray-300"
-                        }`}
+                      }`}
                     />
                   ))}
                 </div>
@@ -520,11 +524,16 @@ export const CarouselStitch: React.FC = () => {
               </div>
 
               <div className="flex items-center gap-2 opacity-60">
-                <span className="text-[10px] uppercase tracking-tighter font-bold text-[#ee2b5b]">Deslize para ler</span>
+                <span className="text-[10px] uppercase tracking-tighter font-bold text-[#ee2b5b]">
+                  Deslize para ler
+                </span>
                 <div className="flex gap-1">
                   <motion.div
                     animate={shouldReduceMotion ? { x: 0 } : { x: [0, 5, 0] }}
-                    transition={{ repeat: shouldReduceMotion ? 0 : Infinity, duration: shouldReduceMotion ? 0 : 1.5 }}
+                    transition={{
+                      repeat: shouldReduceMotion ? 0 : Infinity,
+                      duration: shouldReduceMotion ? 0 : 1.5,
+                    }}
                     className="w-1 h-1 rounded-full bg-[#ee2b5b]"
                   />
                   <div className="w-1 h-1 rounded-full bg-[#ee2b5b] opacity-50" />

@@ -8,37 +8,205 @@ import { CheckCircle2 } from "lucide-react";
 import { useReducedMotion } from "framer-motion";
 
 const reviewsRow1 = [
-  { name: "Mariana", age: 28, location: "Rio", text: "Fui de R$25 pra R$120 por unha em 4 meses. Minha renda triplicou.", highlight: "Renda triplicou" },
-  { name: "Carla", age: 35, location: "SP", text: "Saí do salão e hoje faturo R$4.500 por mês trabalhando em casa.", highlight: "Fatura R$4.500" },
-  { name: "Renata", age: 29, location: "Curitiba", text: "Pedi demissão do CLT. Hoje ganho o dobro fazendo o que amo.", highlight: "Dobro do CLT" },
-  { name: "Jéssica", age: 24, location: "BH", text: "Nunca tinha pegado numa lixa. Hoje faço alongamento perfeito.", highlight: "Alongamento perfeito" },
-  { name: "Débora", age: 32, location: "Brasília", text: "Minha curvatura C ficou impecável depois do módulo 2.", highlight: "Curvatura impecável" },
-  { name: "Bruna", age: 27, location: "Recife", text: "Aprendi nail art que ninguém na cidade faz. Sou referência.", highlight: "Sou referência" },
-  { name: "Patrícia", age: 26, location: "POA", text: "Parei de ter vergonha de cobrar. Minha postura mudou completamente.", highlight: "Postura mudou" },
-  { name: "Tatiane", age: 38, location: "Floripa", text: "Com 38 anos recomeçei. Foi a melhor decisão da minha vida.", highlight: "Melhor decisão" },
-  { name: "Fernanda", age: 30, location: "MT", text: "Passei de insegura para a referência da minha região.", highlight: "Referência na região" },
-  { name: "Ana Paula", age: 31, location: "Salvador", text: "Consigo trabalhar e cuidar dos filhos. Monto meu horário.", highlight: "Monto meu horário" },
-  { name: "Camila", age: 22, location: "Goiânia", text: "Pago minha faculdade com unhas. Minha mãe se orgulha.", highlight: "Pagando faculdade" },
-  { name: "Luciana", age: 33, location: "Fortaleza", text: "Sustento minha casa. Não dependo de ninguém.", highlight: "Sustento minha casa" },
-  { name: "Camila ZL", age: 26, location: "SP-ZL", text: "Faturei R$5k no primeiro mês. As clientes me indicam sem parar.", highlight: "Faturei R$5k" },
-  { name: "Débora D", age: 30, location: "Brasília", text: "Fui convidada para dar workshop na minha cidade.", highlight: "Dando workshops" }
+  {
+    name: "Mariana",
+    age: 28,
+    location: "Rio",
+    text: "Fui de R$25 pra R$120 por unha em 4 meses. Minha renda triplicou.",
+    highlight: "Renda triplicou",
+  },
+  {
+    name: "Carla",
+    age: 35,
+    location: "SP",
+    text: "Saí do salão e hoje faturo R$4.500 por mês trabalhando em casa.",
+    highlight: "Fatura R$4.500",
+  },
+  {
+    name: "Renata",
+    age: 29,
+    location: "Curitiba",
+    text: "Pedi demissão do CLT. Hoje ganho o dobro fazendo o que amo.",
+    highlight: "Dobro do CLT",
+  },
+  {
+    name: "Jéssica",
+    age: 24,
+    location: "BH",
+    text: "Nunca tinha pegado numa lixa. Hoje faço alongamento perfeito.",
+    highlight: "Alongamento perfeito",
+  },
+  {
+    name: "Débora",
+    age: 32,
+    location: "Brasília",
+    text: "Minha curvatura C ficou impecável depois do módulo 2.",
+    highlight: "Curvatura impecável",
+  },
+  {
+    name: "Bruna",
+    age: 27,
+    location: "Recife",
+    text: "Aprendi nail art que ninguém na cidade faz. Sou referência.",
+    highlight: "Sou referência",
+  },
+  {
+    name: "Patrícia",
+    age: 26,
+    location: "POA",
+    text: "Parei de ter vergonha de cobrar. Minha postura mudou completamente.",
+    highlight: "Postura mudou",
+  },
+  {
+    name: "Tatiane",
+    age: 38,
+    location: "Floripa",
+    text: "Com 38 anos recomeçei. Foi a melhor decisão da minha vida.",
+    highlight: "Melhor decisão",
+  },
+  {
+    name: "Fernanda",
+    age: 30,
+    location: "MT",
+    text: "Passei de insegura para a referência da minha região.",
+    highlight: "Referência na região",
+  },
+  {
+    name: "Ana Paula",
+    age: 31,
+    location: "Salvador",
+    text: "Consigo trabalhar e cuidar dos filhos. Monto meu horário.",
+    highlight: "Monto meu horário",
+  },
+  {
+    name: "Camila",
+    age: 22,
+    location: "Goiânia",
+    text: "Pago minha faculdade com unhas. Minha mãe se orgulha.",
+    highlight: "Pagando faculdade",
+  },
+  {
+    name: "Luciana",
+    age: 33,
+    location: "Fortaleza",
+    text: "Sustento minha casa. Não dependo de ninguém.",
+    highlight: "Sustento minha casa",
+  },
+  {
+    name: "Camila ZL",
+    age: 26,
+    location: "SP-ZL",
+    text: "Faturei R$5k no primeiro mês. As clientes me indicam sem parar.",
+    highlight: "Faturei R$5k",
+  },
+  {
+    name: "Débora D",
+    age: 30,
+    location: "Brasília",
+    text: "Fui convidada para dar workshop na minha cidade.",
+    highlight: "Dando workshops",
+  },
 ];
 
 const reviewsRow2 = [
-  { name: "Mariana R", age: 25, location: "RJ", text: "Meu perfil saiu de 200 para 3.000 seguidores em 2 meses.", highlight: "3.000 seguidores" },
-  { name: "Tatiane M", age: 40, location: "Interior SP", text: "Com 40 anos e sem internet boa, fiz o curso pelo celular. Deu certo.", highlight: "Curso pelo celular" },
-  { name: "Sandra", age: 45, location: "Interior MG", text: "Nunca tinha feito curso online. Hoje sou a nail designer da cidade.", highlight: "Nail designer da cidade" },
-  { name: "Raimunda", age: 50, location: "Manaus", text: "Meus filhos me ajudaram a baixar o app. Hoje eu que sustento eles.", highlight: "Sustento meus filhos" },
-  { name: "Amanda", age: 34, location: "Campinas", text: "Parei de chorar por cliente que marcava e sumia. Comecei a cobrar sinal de R$30 e faturamento estabilizou.", highlight: "Faturamento estabilizado" },
-  { name: "Letícia", age: 23, location: "Vitória", text: "Fazia unha a R$30 ganhando migalhas no salão. Fui pra casa, dobrei o preço e a clientela acompanhou.", highlight: "Clientela fiel" },
-  { name: "Bárbara", age: 28, location: "Sorocaba", text: "Levava 3h num alongamento, a cliente saía exausta. Agora faço em 1h30 e tenho tempo até para almoçar.", highlight: "Tempo reduzido" },
-  { name: "Aline", age: 31, location: "Natal", text: "As unhas que eu fazia descolavam em 10 dias. Acertei a técnica e agora voltam intactas em 30 dias.", highlight: "Intactas em 30 dias" },
-  { name: "Priscila", age: 36, location: "Belém", text: "Morria de vergonha do meu cantinho improvisado. Entendi que a cliente compra minha técnica, não meu piso.", highlight: "Compram a técnica" },
-  { name: "Juliana", age: 29, location: "Maringá", text: "O nó na garganta na hora de dar o preço acabou. Se pedem desconto, explico o valor e não cedo.", highlight: "Sem descontos" },
-  { name: "Elaine", age: 35, location: "João Pessoa", text: "Sexta eu tranco a agenda às 16h para levar meus filhos no parque. Sem culpa e com as contas pagas.", highlight: "Mais tempo livre" },
-  { name: "Simone", age: 42, location: "Osasco", text: "Comprei os óculos novos do meu marido à vista. Tudo com o dinheiro dos meus alongamentos de fibra.", highlight: "Ganhos reais" },
-  { name: "Carolina", age: 27, location: "Niterói", text: "Meu celular não apita mais com ‘curiosas’. Minha página filtra tudo, hoje eu só atendo quem já vem pagar.", highlight: "Filtro de clientes" },
-  { name: "Fátima", age: 48, location: "Interior PR", text: "Mal sabia mexer no Insta. Montei estrutura pelo celular e hoje durmo enquanto a página vende meus horários.", highlight: "Página vende sozinha" }
+  {
+    name: "Mariana R",
+    age: 25,
+    location: "RJ",
+    text: "Meu perfil saiu de 200 para 3.000 seguidores em 2 meses.",
+    highlight: "3.000 seguidores",
+  },
+  {
+    name: "Tatiane M",
+    age: 40,
+    location: "Interior SP",
+    text: "Com 40 anos e sem internet boa, fiz o curso pelo celular. Deu certo.",
+    highlight: "Curso pelo celular",
+  },
+  {
+    name: "Sandra",
+    age: 45,
+    location: "Interior MG",
+    text: "Nunca tinha feito curso online. Hoje sou a nail designer da cidade.",
+    highlight: "Nail designer da cidade",
+  },
+  {
+    name: "Raimunda",
+    age: 50,
+    location: "Manaus",
+    text: "Meus filhos me ajudaram a baixar o app. Hoje eu que sustento eles.",
+    highlight: "Sustento meus filhos",
+  },
+  {
+    name: "Amanda",
+    age: 34,
+    location: "Campinas",
+    text: "Parei de chorar por cliente que marcava e sumia. Comecei a cobrar sinal de R$30 e faturamento estabilizou.",
+    highlight: "Faturamento estabilizado",
+  },
+  {
+    name: "Letícia",
+    age: 23,
+    location: "Vitória",
+    text: "Fazia unha a R$30 ganhando migalhas no salão. Fui pra casa, dobrei o preço e a clientela acompanhou.",
+    highlight: "Clientela fiel",
+  },
+  {
+    name: "Bárbara",
+    age: 28,
+    location: "Sorocaba",
+    text: "Levava 3h num alongamento, a cliente saía exausta. Agora faço em 1h30 e tenho tempo até para almoçar.",
+    highlight: "Tempo reduzido",
+  },
+  {
+    name: "Aline",
+    age: 31,
+    location: "Natal",
+    text: "As unhas que eu fazia descolavam em 10 dias. Acertei a técnica e agora voltam intactas em 30 dias.",
+    highlight: "Intactas em 30 dias",
+  },
+  {
+    name: "Priscila",
+    age: 36,
+    location: "Belém",
+    text: "Morria de vergonha do meu cantinho improvisado. Entendi que a cliente compra minha técnica, não meu piso.",
+    highlight: "Compram a técnica",
+  },
+  {
+    name: "Juliana",
+    age: 29,
+    location: "Maringá",
+    text: "O nó na garganta na hora de dar o preço acabou. Se pedem desconto, explico o valor e não cedo.",
+    highlight: "Sem descontos",
+  },
+  {
+    name: "Elaine",
+    age: 35,
+    location: "João Pessoa",
+    text: "Sexta eu tranco a agenda às 16h para levar meus filhos no parque. Sem culpa e com as contas pagas.",
+    highlight: "Mais tempo livre",
+  },
+  {
+    name: "Simone",
+    age: 42,
+    location: "Osasco",
+    text: "Comprei os óculos novos do meu marido à vista. Tudo com o dinheiro dos meus alongamentos de fibra.",
+    highlight: "Ganhos reais",
+  },
+  {
+    name: "Carolina",
+    age: 27,
+    location: "Niterói",
+    text: "Meu celular não apita mais com ‘curiosas’. Minha página filtra tudo, hoje eu só atendo quem já vem pagar.",
+    highlight: "Filtro de clientes",
+  },
+  {
+    name: "Fátima",
+    age: 48,
+    location: "Interior PR",
+    text: "Mal sabia mexer no Insta. Montei estrutura pelo celular e hoje durmo enquanto a página vende meus horários.",
+    highlight: "Página vende sozinha",
+  },
 ];
 
 const tickerReviews1 = [...reviewsRow1, ...reviewsRow1, ...reviewsRow1];
@@ -59,13 +227,25 @@ const ReviewCard = ({ review }: { review: Review }) => (
       "{review.text}"
     </p>
     <div className="flex items-center gap-1.5 pointer-events-none text-[10px] md:text-[11px]">
-      <strong className="text-zinc-900 uppercase tracking-tighter">— {review.name}</strong>
-      <span className="text-zinc-500">• {review.age} anos, {review.location}</span>
+      <strong className="text-zinc-900 uppercase tracking-tighter">
+        — {review.name}
+      </strong>
+      <span className="text-zinc-500">
+        • {review.age} anos, {review.location}
+      </span>
     </div>
   </div>
 );
 
-const TickerRow = ({ reviews, direction = "left", speed = 3.0 }: { reviews: Review[], direction?: "left" | "right", speed?: number }) => {
+const TickerRow = ({
+  reviews,
+  direction = "left",
+  speed = 3.0,
+}: {
+  reviews: Review[];
+  direction?: "left" | "right";
+  speed?: number;
+}) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const [contentWidth, setContentWidth] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
@@ -224,11 +404,16 @@ export const WallOfLove: React.FC = () => {
 
         {/* Drag Hint for Mobile */}
         <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex items-center gap-2 opacity-40 md:hidden pointer-events-none z-20">
-          <span className="text-[10px] uppercase tracking-tighter font-bold text-zinc-500">Deslize para ler</span>
+          <span className="text-[10px] uppercase tracking-tighter font-bold text-zinc-500">
+            Deslize para ler
+          </span>
           <div className="flex gap-1">
             <motion.div
               animate={shouldReduceMotion ? { x: 0 } : { x: [0, 5, 0] }}
-              transition={{ repeat: shouldReduceMotion ? 0 : Infinity, duration: shouldReduceMotion ? 0 : 1.5 }}
+              transition={{
+                repeat: shouldReduceMotion ? 0 : Infinity,
+                duration: shouldReduceMotion ? 0 : 1.5,
+              }}
               className="w-1 h-1 rounded-full bg-zinc-400"
             />
             <div className="w-1 h-1 rounded-full bg-zinc-400 opacity-50" />

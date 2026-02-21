@@ -94,12 +94,13 @@ export const OfertaInicial = () => {
                   </span>
                 </div>
                 <span
-                  className={`text-sm md:text-base font-bold whitespace-nowrap ${item.type === "price"
-                    ? "text-amber-400/70 line-through"
-                    : item.type === "highlight"
-                      ? "text-amber-500"
-                      : "text-emerald-500"
-                    }`}
+                  className={`text-sm md:text-base font-bold whitespace-nowrap ${
+                    item.type === "price"
+                      ? "text-amber-400/70 line-through"
+                      : item.type === "highlight"
+                        ? "text-amber-500"
+                        : "text-emerald-500"
+                  }`}
                 >
                   {item.value}
                 </span>
@@ -114,15 +115,28 @@ export const OfertaInicial = () => {
               transition={{ delay: 0.8 }}
               className="flex flex-col items-center text-center justify-center pt-8 pb-0 mt-2 px-4"
             >
-              <h4 className="text-xl md:text-2xl font-bold text-zinc-800 mb-6" style={{ fontFamily: "'Playfair Display', serif" }}>
-                Tudo isso nós comercializamos por <span className="block text-4xl md:text-6xl text-emerald-700 font-black mt-3 sm:mt-4">R$ 497,00</span>
+              <h4
+                className="text-xl md:text-2xl font-bold text-zinc-800 mb-6"
+                style={{ fontFamily: "'Playfair Display', serif" }}
+              >
+                Tudo isso nós comercializamos por{" "}
+                <span className="block text-4xl md:text-6xl text-emerald-700 font-black mt-3 sm:mt-4">
+                  R$ 497,00
+                </span>
               </h4>
               <p className="text-sm md:text-base text-zinc-600 mb-3 max-w-xl mx-auto leading-relaxed">
-                E vale cada centavo. Mas eu conheço a realidade de quem está começando ou querendo crescer nessa área agora. O seu maior obstáculo não é apenas aprender a técnica: <strong>é montar o kit da mesa.</strong>
+                E vale cada centavo. Mas eu conheço a realidade de quem está
+                começando ou querendo crescer nessa área agora. O seu maior
+                obstáculo não é apenas aprender a técnica:{" "}
+                <strong>é montar o kit da mesa.</strong>
               </p>
               <p className="text-sm md:text-base text-zinc-600 mb-4 max-w-xl mx-auto leading-relaxed">
-                Eu sei que se eu cobrar R$ 497 hoje, talvez falte orçamento para os seus materiais no final do mês.
-                Sendo sincera, <strong className="text-emerald-700">eu só ganho de verdade quando você vira um caso de sucesso e me indica.</strong>
+                Eu sei que se eu cobrar R$ 497 hoje, talvez falte orçamento para
+                os seus materiais no final do mês. Sendo sincera,{" "}
+                <strong className="text-emerald-700">
+                  eu só ganho de verdade quando você vira um caso de sucesso e
+                  me indica.
+                </strong>
               </p>
             </motion.div>
           </div>
