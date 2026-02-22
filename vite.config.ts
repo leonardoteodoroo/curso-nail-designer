@@ -10,18 +10,21 @@ export default defineConfig({
     },
   },
   build: {
-    // Minificação mais agressiva para diminuir tamanho do bundle final
+    target: "esnext",
     minify: "esbuild",
     cssMinify: true,
     rollupOptions: {
       output: {
-        // Separação de arquivos maiores em pacotes isolados para ter cache melhor
         manualChunks: {
           vendor: ["react", "react-dom"],
           animations: ["framer-motion"],
-          // Outras bibliotecas que pesam muito se forem agrupadas podem ir pra cá
+          icons: ["lucide-react"],
         },
       },
     },
+  },
+  esbuild: {
+    drop: ["console", "debugger"],
+    legalComments: "none",
   },
 });
