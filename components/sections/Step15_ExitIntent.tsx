@@ -92,7 +92,7 @@ export const ExitIntent: React.FC = () => {
               {/* Mini recap */}
               <div className="bg-zinc-50 rounded-xl p-4 mb-4 space-y-2">
                 {[
-                  "9 módulos completos + 4 bônus",
+                  "Módulos completos + 7 bônus",
                   "Acesso vitalício + atualizações futuras",
                   "Garantia de 7 dias — risco zero",
                 ].map((item, i) => (

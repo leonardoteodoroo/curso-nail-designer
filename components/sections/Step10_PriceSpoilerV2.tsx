@@ -298,6 +298,39 @@ export const PriceSpoilerV2: React.FC<PriceSpoilerV2Props> = ({
                       <span>Acesso Imediato</span>
                     </div>
                   </div>
+
+                  {/* Price Anchoring */}
+                  <motion.div
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.5 }}
+                    className="w-full p-4 sm:p-5 rounded-2xl bg-gradient-to-br from-slate-50 to-slate-100/50 border border-slate-200/60 shadow-sm mt-2"
+                  >
+                    <p className="text-[13px] sm:text-sm text-slate-500 font-medium mb-3.5 text-left border-b border-slate-200/60 pb-2">
+                      Isso é{" "}
+                      <strong className="text-rose-500 font-bold uppercase tracking-wider">
+                        menos
+                      </strong>{" "}
+                      que:
+                    </p>
+                    <ul className="space-y-2.5 text-left">
+                      <li className="flex items-start gap-2.5 text-[13px] sm:text-sm text-slate-600 leading-snug">
+                        <span className="shrink-0">💅</span>
+                        <span>
+                          <strong className="text-slate-800">Meia unha</strong>{" "}
+                          que você VAI fazer (se cobrar R$ 100)
+                        </span>
+                      </li>
+                      <li className="flex items-start gap-2.5 text-[13px] sm:text-sm text-slate-600 leading-snug">
+                        <span className="shrink-0">🍨</span>
+                        <span>1 açaí por semana (R$ 8/semana)</span>
+                      </li>
+                      <li className="flex items-start gap-2.5 text-[13px] sm:text-sm text-slate-600 leading-snug">
+                        <span className="shrink-0">🚗</span>
+                        <span>1 Uber ida+volta</span>
+                      </li>
+                    </ul>
+                  </motion.div>
                 </div>
               </motion.div>
             )}

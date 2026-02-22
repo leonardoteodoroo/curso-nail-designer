@@ -128,9 +128,9 @@ export const FAQ: React.FC = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center"
+          className="text-center mt-12"
         >
-          <GlassCard className="p-8 max-w-md mx-auto bg-emerald-50 border-emerald-200">
+          <GlassCard className="p-6 md:p-8 max-w-md mx-auto bg-emerald-50 border-emerald-200">
             <p className="font-bold text-zinc-900 mb-4">Ainda com dúvida?</p>
             <button
               onClick={() =>
