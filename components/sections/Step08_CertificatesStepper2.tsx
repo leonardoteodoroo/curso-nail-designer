@@ -168,9 +168,17 @@ export const CertificatesStepperStitch: React.FC = () => {
           <div className="relative z-10 rounded-2xl bg-white p-2 shadow-2xl rotate-3 transition hover:rotate-0 duration-500 border-4 border-zinc-100">
             {/* Placeholder de Imagem do Certificado */}
             <div className="aspect-[1.414/1] relative overflow-hidden flex items-center justify-center bg-zinc-100 border border-zinc-200">
+              {/* DEV#placeholder-step08
+                    Prompt Imagen 3:
+                    "Photo of a framed professional certificate hanging on a beauty salon wall,
+                    text reads 'Nail Designer Academy', natural light, slightly off-center angle,
+                    real salon environment, warm tones, shot on iPhone"
+                    negative: digital render, computer screen, white background, perfect composition
+                    Aspect ratio: 1.414:1 (A4 landscape)
+                */}
               <img
-                src="https://placehold.co/800x565/e2e8f0/94a3b8?text=Imagem+do+Certificado"
-                alt="Certificado de Conclusão"
+                src="/images/step08-certificado-nail-designer.webp"
+                alt="Certificado de conclusão impresso e emoldurado na parede do estúdio da aluna, com o nome Escola Nail Designer Academy em destaque"
                 loading="lazy"
                 decoding="async"
                 className="w-full h-full object-cover"

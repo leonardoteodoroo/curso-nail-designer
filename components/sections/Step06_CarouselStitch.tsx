@@ -23,6 +23,29 @@ interface StitchReview {
   isTop?: boolean;
 }
 
+/*
+  DEV#placeholder-step06 — Prompts Imagen 3 por aluna:
+  Padrão geral: "Candid portrait of a Brazilian woman [nome], [age] anos, from [city],
+  smiling naturally but not posing, casual outfit, real home environment or outdoor
+  Brazilian city background, shot on iPhone, soft natural light, no heavy filter, slightly candid look"
+  negative: studio, professional model, perfect lighting, posed photo, stock image
+
+  Paths esperados em /public/images/:
+  - step06-mariana.webp    → Mariana, 28, Rio — sorrindo em frente ao espelho com unhas feitas
+  - step06-vanessa.webp    → Vanessa, 26, Osasco — segurando celular em casa, olhando para câmera com confiança
+  - step06-carla.webp      → Carla, 35, SP — home office improvisado
+  - step06-jessica.webp    → Jéssica, 24, BH — expressão empolgada, casual
+  - step06-ana-paula.webp  → Ana Paula, 31, Salvador — sorriso tímido
+  - step06-renata.webp     → Renata, 29, Curitiba — satisfeita
+  - step06-patricia.webp   → Patrícia, 26, POA — expressão de superação
+  - step06-luciana.webp    → Luciana, 33, Fortaleza — filhos pequenos ao fundo
+  - step06-camila.webp     → Camila, 22, Goiânia — jovem e animada
+  - step06-tatiane.webp    → Tatiane, 38, Florianópolis — madura e confiante
+  - step06-bruna.webp      → Bruna, 27, Recife — tímida mas feliz
+  - step06-debora.webp     → Débora, 32, Brasília — expressão de alívio
+  - step06-fabiana.webp    → Fabiana, 34, Caxias — mesa de unhas montada
+  - step06-gisele.webp     → Gisele, 25, Serra Negra MG — ambiente interiorano
+*/
 const stitchReviews: StitchReview[] = [
   {
     id: 1,
@@ -33,8 +56,7 @@ const stitchReviews: StitchReview[] = [
     detail:
       'Eu refazia a MESMA unha 6, 7 vezes. Chorava de frustração. Achava que nunca ia ficar "perfeita". Hoje eu entendo: perfeito NÃO EXISTE. E minhas clientes AMAM meu trabalho. Cobro R$ 100. Agenda fechada. E EU durmo tranquila.',
     status: "Ex-perfeccionista paralisada",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuBBNGfvLNVrg6zJ_kReJojtdFiNYlhHt6VAKZfLRpsaikpoYiu4QYM4LH6Z6Y-oDNen8ES8Az6Klt0tBXj1z9QXZU8Y1qK_gQ_6uYn-0IYJZVPTi3Lc0ubI4P2Y9mo8TGsmX6sszOYUFe1BkUV-zAgpbeQAyYLkCVeGkQdvTCaM_r8BnZRwSVPXafoA5-3DF-CSJubNUVjZMFQGTor1vCNnqu4G4-R3eUNh5Jhq1_hTrrrspH1c6-3TPt38Dia1YkCjZCKCljpwoLU",
+    image: "/images/step06-mariana.webp",
     initial: "M",
   },
   {
@@ -46,8 +68,7 @@ const stitchReviews: StitchReview[] = [
     detail:
       'Meu marido perdeu o emprego e entrou em depressão. O desespero bateu… Mas eu tinha minha profissão. Trabalhei dobrado. Paguei aluguel. Fiz mercado. Segurei a barra sozinha. Hoje eu sei: Meu Studio não é "bico". É o sustento da minha família.',
     status: "Sustenta a casa sozinha",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuDDin-eqtWk3_V8DOjBhFfNUGhuxjrGBB0MMNSt3osocJDbN20-IYrISMnHExqN4gNdwfdhYzumnnoh37lD5SHI313bL0W22Qe7e8zrY1b1iNNd79hb-X80B1zAgtKrjCvD6ATE1AEQUm-HGfrglayPZLV1HLWqQND6kdJUCbsN-0RUUiTKyYHJDY3Q71CXluIGK21gwwNj6ToS7PRyZ2thckJsrqVnQYGEEZOnqHgGK0mQrEvPeLyU1gXtRrFVjkephf-MRcXxauI",
+    image: "/images/step06-vanessa.webp",
     initial: "V",
     isTop: true,
   },
@@ -60,8 +81,7 @@ const stitchReviews: StitchReview[] = [
     detail:
       'Eu tinha VERGONHA de falar meu preço. "Quanto é?" — "Ahh… R$ 40…" (morrendo por dentro). Hoje respondo com SEGURANÇA: "R$ 120. Aceita cartão ou Pix?" O que mudou? EU mudei.',
     status: "Aprendeu a se valorizar",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuAJS4dSC7OCp-SmDkmgCZCcBEgq1Biu-LCtJypuIFfOs8nPR2DRg8O2AQC1CAicCk-R74CSs1COXBDudA5Se3wrTmxN21L1O6Rxu1ZUTZLUoE0giixt6UWF2w3x4IzndZXAsPKkO9OLBosj8tJuLYGW_PvRru9snG7y36tkCmv4vc6SxPHMsO3yFw5ENXNbJBRh7z5U4BGlyckjp7tTkpt_n8yyjEsjTOWfzTj2XyXo0F238x-WaK4g778T0CVVo4Zx0PpqXnBD7hY",
+    image: "/images/step06-carla.webp",
     initial: "C",
   },
   {
@@ -73,6 +93,7 @@ const stitchReviews: StitchReview[] = [
     detail:
       'Eu tremia LITERALMENTE na frente da cliente. Suava frio. Mão tremendo. Pensava: "Ela tá julgando tudo que eu faço." Descobri que isso é ANSIEDADE SOCIAL. E que dá pra trabalhar mesmo com isso. Hoje minha agenda vive lotada. E não tremo mais.',
     status: "Venceu a ansiedade",
+    image: "/images/step06-jessica.webp",
     initial: "J",
   },
   {
@@ -84,6 +105,7 @@ const stitchReviews: StitchReview[] = [
     detail:
       "Eu ODEIO aparecer. Não posto foto. Não faço stories. Nem tenho Instagram profissional. E mesmo assim… Minha agenda lota SÓ com WhatsApp e indicação. Você NÃO precisa ser influencer pra viver disso.",
     status: "Agenda lotada sem redes sociais",
+    image: "/images/step06-ana-paula.webp",
     initial: "A",
   },
   {
@@ -95,6 +117,7 @@ const stitchReviews: StitchReview[] = [
     detail:
       "Já fiz 3 cursos de unha. Gastei mais de R$ 2.000. NENHUM me ensinou como REALMENTE trabalhar. Só técnica. Nada de negócio. Nada de confiança. Esse foi o PRIMEIRO que me fez virar profissional DE VERDADE. Hoje eu faturei R$ 4.800 no último mês.",
     status: "Finalmente encontrou o curso certo",
+    image: "/images/step06-renata.webp",
     initial: "R",
   },
   {
@@ -106,6 +129,7 @@ const stitchReviews: StitchReview[] = [
     detail:
       '"Eu não tenho dom." "Não nasci pra isso." EU me sabotava TODOS OS DIAS. Até entender: Dom é MITO. Técnica é TREINO. Hoje eu sou a manicure mais procurada do meu bairro. E eu NÃO nasci sabendo. EU APRENDI.',
     status: "Parou de se sabotar",
+    image: "/images/step06-patricia.webp",
     initial: "P",
   },
   {
@@ -117,6 +141,7 @@ const stitchReviews: StitchReview[] = [
     detail:
       'Tenho 2 filhos pequenos. Toda vez que eu pensava em trabalhar… Vinha a CULPA. "Sou má mãe por querer ganhar meu dinheiro?" Hoje eu trabalho em casa. Atendo enquanto eles dormem ou estão na escola. Faturei R$ 3.200 mês passado. E meus filhos estão ÓTIMOS.',
     status: "Mãe empreendedora sem culpa",
+    image: "/images/step06-luciana.webp",
     initial: "L",
   },
   {
@@ -128,6 +153,7 @@ const stitchReviews: StitchReview[] = [
     detail:
       "Nunca tinha pegado no alicate. ZERO experiência. Comecei do absolutamente NADA. 3 meses depois: Primeira cliente pagante. R$ 80. EU chorei de emoção. Hoje, 1 ano depois, atendo 4 clientes/dia.",
     status: "Começou do zero",
+    image: "/images/step06-camila.webp",
     initial: "C",
   },
   {
@@ -139,6 +165,7 @@ const stitchReviews: StitchReview[] = [
     detail:
       'Eu JÁ fazia unha há 5 anos. Mas ganhava MIXARIA. R$ 30, R$ 40… "Pra ajudar a pagar conta." O problema NÃO era técnica. Era PRECIFICAÇÃO + POSICIONAMENTO. Hoje cobro R$ 110. É a MESMA unha. Mas eu me valorizo.',
     status: "Finalmente se valorizou",
+    image: "/images/step06-tatiane.webp",
     initial: "T",
   },
   {
@@ -150,6 +177,7 @@ const stitchReviews: StitchReview[] = [
     detail:
       'Sou MUITO tímida. Cliente cancelava última hora… Eu não tinha coragem nem de cobrar a taxa. "Tá ok, sem problemas!" (chorando por dentro). Aprendi SCRIPTS PRONTOS. Hoje eu tenho POLÍTICA DE CANCELAMENTO. E as clientes respeitam. Mudou TUDO.',
     status: "Aprendeu a se impor",
+    image: "/images/step06-bruna.webp",
     initial: "B",
   },
   {
@@ -161,6 +189,7 @@ const stitchReviews: StitchReview[] = [
     detail:
       'Eu tinha PAVOR de cliente "chata". "E se ela reclamar?" "E se ela me humilhar?" Aprendi a fazer ANAMNESE. Aprendi a ALINHAR EXPECTATIVA. Aprendi o que FALAR se der errado. Hoje eu atendo até as "difíceis". E elas viram minhas clientes fiéis.',
     status: "Conquistou sua independência",
+    image: "/images/step06-debora.webp",
     initial: "D",
   },
   {
@@ -172,6 +201,7 @@ const stitchReviews: StitchReview[] = [
     detail:
       'Eu achava que ninguém ia pagar R$ 100 aqui no meu bairro. "As meninas daqui não têm dinheiro." Era o que EU pensava. Mas aprendi: Quanto mais LONGE dos salões chiques… MAIOR a fidelidade da cliente. Minhas clientes não me trocam. Agenda lotada só com indicação. Zero gasto com anúncio.',
     status: "Lotou a agenda no bairro",
+    image: "/images/step06-fabiana.webp",
     initial: "F",
   },
   {
@@ -183,6 +213,7 @@ const stitchReviews: StitchReview[] = [
     detail:
       "Cidade pequena não dá dinheiro. Era o que EU acreditava. Mas descobri: Quanto MENOR a cidade… MENOS concorrência. Sou a ÚNICA da minha região que faz fibra de vidro profissional. Clientes vêm de 3 cidades vizinhas pra mim.",
     status: "Referência na região",
+    image: "/images/step06-gisele.webp",
     initial: "G",
   },
 ];

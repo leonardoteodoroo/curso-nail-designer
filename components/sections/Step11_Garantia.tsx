@@ -14,9 +14,22 @@ export const Garantia: React.FC = () => {
           className="bg-emerald-50 border border-emerald-200 rounded-2xl p-6 md:p-8"
         >
           <div className="flex flex-col md:flex-row items-start gap-6">
-            {/* Ícone */}
-            <div className="w-16 h-16 rounded-full bg-emerald-100 flex items-center justify-center shrink-0 mx-auto md:mx-0">
-              <ShieldCheck className="w-8 h-8 text-emerald-600" />
+            {/* DEV#placeholder-step11
+                Prompt Imagen 3:
+                "Candid photo of a relaxed Brazilian woman in her 30s smiling at her laptop at home,
+                peaceful expression, soft daylight window, casual home environment, natural colors,
+                no retouching, shot on iPhone"
+                negative: stock photo, office background, professional lighting
+                Aspect ratio: 1:1
+            */}
+            <div className="w-16 h-16 rounded-xl overflow-hidden shrink-0 mx-auto md:mx-0">
+              <img
+                src="/images/step11-garantia-confianca.webp"
+                alt="Mulher brasileira sorrindo em frente ao notebook com expressão tranquila e confiante, ambiente doméstico, luz suave"
+                loading="lazy"
+                decoding="async"
+                className="w-full h-full object-cover"
+              />
             </div>
 
             {/* Conteúdo */}

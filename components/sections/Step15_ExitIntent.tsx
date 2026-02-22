@@ -75,8 +75,22 @@ export const ExitIntent: React.FC = () => {
             {/* Conteúdo */}
             <div className="p-5 md:p-6">
               <div className="text-center mb-4">
-                <div className="w-12 h-12 rounded-full bg-emerald-100 flex items-center justify-center mx-auto mb-3">
-                  <Gift className="w-6 h-6 text-emerald-600" />
+                {/* DEV#placeholder-step15
+                    Prompt Imagen 3:
+                    "Extreme close-up macro of a nail technician's hands applying gel to a client's nails
+                    in a home nail studio, focused hands, blurred background showing a cozy room, warm lamp
+                    light, real and intimate atmosphere, 60mm macro style, shot on smartphone"
+                    negative: studio professional photo, plain background, commercial shoot
+                    Aspect ratio: 16:9
+                */}
+                <div className="w-full h-32 rounded-xl overflow-hidden mb-3">
+                  <img
+                    src="/images/step15-exit-intent.webp"
+                    alt="Mãos de manicure profissional trabalhando com precisão em unhas de gel, close-up, luz de estúdio improvisado em casa"
+                    loading="eager"
+                    decoding="async"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <h3
                   className="text-lg md:text-xl font-bold text-zinc-900 mb-1"

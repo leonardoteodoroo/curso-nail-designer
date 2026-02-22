@@ -140,6 +140,29 @@ export const AntiClimax: React.FC = () => {
             </ul>
           </div>
         </motion.div>
+        {/* DEV#placeholder-step05
+            Prompt Imagen 3:
+            "Candid portrait of a Brazilian woman in her 30s sitting at a kitchen table studying on
+            her smartphone, open notebook beside her, afternoon natural window light, focused expression,
+            casual home clothes, no makeup, shot on iPhone"
+            negative: stock photo, professional model, studio lighting, clean background
+            Aspect ratio: 3:4
+        */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.97 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="flex justify-center my-8"
+        >
+          <img
+            src="/images/step05-mulher-estudando-cel.webp"
+            alt="Mulher brasileira em casa assistindo aulas no celular com caderno aberto ao lado, concentrada, luz de dia"
+            loading="lazy"
+            decoding="async"
+            className="w-full max-w-sm rounded-2xl object-cover aspect-[3/4]"
+          />
+        </motion.div>
 
         {/* Lista "Você vai precisar" */}
         <div className="max-w-2xl mx-auto mb-12">

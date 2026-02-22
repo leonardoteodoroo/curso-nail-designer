@@ -43,13 +43,38 @@ export const DorDaManicure: React.FC = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="text-lg text-zinc-600 leading-relaxed mb-12"
+          className="text-lg text-zinc-600 leading-relaxed mb-8"
         >
           Olha, eu também já estive aí. Sei como é querer fazer tudo perfeito e
           sentir que nunca é o suficiente. Sei como é ter medo de cobrar o que
           merece. E sei especialmente como é ter a agenda cancelada em cima da
           hora.
         </motion.p>
+
+        {/* DEV#placeholder-step02
+            Prompt Imagen 3:
+            "Candid photo of a Brazilian woman in her late 20s sitting at a small cluttered nail desk
+            in her bedroom, looking tired and overwhelmed, nail polish bottles scattered, bad lighting
+            from a single window, shot on iPhone, slightly underexposed, natural shadow, real home
+            environment, no studio lighting, no makeup artist, UGC style, 35mm portrait"
+            negative: studio background, professional lighting, stock photo, perfect makeup, clean background
+            Aspect ratio: 4:3
+        */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.3 }}
+          className="mb-10"
+        >
+          <img
+            src="/images/step02-manicure-frustrada.webp"
+            alt="Manicure com expressão de cansaço olhando para a mesa de trabalho bagunçada, kit de unhas espalhado, luz natural de quarto"
+            loading="lazy"
+            decoding="async"
+            className="w-full max-w-lg mx-auto rounded-2xl object-cover aspect-[4/3] block"
+          />
+        </motion.div>
 
         {/* Pain Cards */}
         <div className="space-y-8">

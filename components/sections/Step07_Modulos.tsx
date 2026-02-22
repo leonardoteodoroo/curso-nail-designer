@@ -304,26 +304,22 @@ export const Modulos: React.FC = () => {
       <div className="max-w-4xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
+          {/* DEV#placeholder-step07
+              Prompt Imagen 3:
+              "Screenshot of an online nail course lesson playing on a laptop screen, showing a
+              close-up of hands doing gel nails in the video, Brazilian Portuguese interface, warm home
+              lighting, real laptop on wooden table, slightly angled shot"
+              negative: perfect composition, stock photo, empty laptop screen
+              Aspect ratio: 4:3
+          */}
           <div className="flex justify-center mb-6">
-            <div className="w-32 h-32 rounded-2xl border-2 border-dashed border-zinc-300 bg-white flex flex-col items-center justify-center gap-1 text-zinc-400 shadow-sm">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="w-8 h-8 opacity-40"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={1.5}
-                  d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
-                />
-              </svg>
-              <span className="text-[10px] font-medium uppercase tracking-wide">
-                Logo
-              </span>
-            </div>
+            <img
+              src="/images/step07-aula-preview.webp"
+              alt="Captura de tela do ambiente de aulas do curso Nail Designer, mostrando vídeo de instrução de técnica de gel"
+              loading="lazy"
+              decoding="async"
+              className="w-32 h-32 rounded-2xl object-cover border-2 border-dashed border-zinc-200 shadow-sm"
+            />
           </div>
           <span className="inline-block bg-emerald-100 text-emerald-700 text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-4">
             Nail Designer Academy

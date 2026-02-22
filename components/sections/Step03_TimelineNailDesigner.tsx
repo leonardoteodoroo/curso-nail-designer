@@ -77,10 +77,17 @@ export const TimelineNailDesigner: React.FC = () => {
                 <div className="flex items-center gap-1.5 mb-2 text-rose-500 font-bold text-[10px] uppercase tracking-wider">
                   <PlayCircle size={14} /> Tutorial #1
                 </div>
+                {/* DEV#placeholder-step03-img1
+                    Prompt Imagen 3:
+                    "Blurry screenshot of a YouTube tutorial on a phone screen showing nail art technique,
+                    low resolution, slightly out of focus, hand holding phone, natural room lighting,
+                    UGC candid shot, iPhone capture"
+                    negative: professional camera, clean screenshot, editorial
+                */}
                 <div className="relative h-20 md:h-28 rounded-lg overflow-hidden bg-gray-50 border border-gray-100">
                   <img
-                    src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=400&auto=format&fit=crop"
-                    alt="Tutorial 1"
+                    src="/images/step03-tutorial-youtube-1.webp"
+                    alt="Print de tela de um vídeo do YouTube ensinando nail art de forma desorganizada, qualidade de captura de celular"
                     className="object-cover w-full h-full opacity-90"
                     loading="lazy"
                     decoding="async"
@@ -97,10 +104,17 @@ export const TimelineNailDesigner: React.FC = () => {
                 <div className="flex items-center gap-1.5 mb-2 text-blue-500 font-bold text-[10px] uppercase tracking-wider">
                   <PlayCircle size={14} /> Tutorial #47
                 </div>
+                {/* DEV#placeholder-step03-img2
+                    Prompt Imagen 3:
+                    "Photo of a phone screen showing a different YouTube nail art tutorial at an angle
+                    on a bed, daylight room, candid and slightly motion-blurred, Brazilian bedroom
+                    environment, real life feel, shot on Samsung Galaxy"
+                    negative: studio lighting, professional photo, tripod, clean composition
+                */}
                 <div className="relative h-20 md:h-28 rounded-lg overflow-hidden bg-gray-50 border border-gray-100">
                   <img
-                    src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?q=80&w=400&auto=format&fit=crop"
-                    alt="Tutorial 47"
+                    src="/images/step03-tutorial-youtube-2.webp"
+                    alt="Outra tela de vídeo no YouTube com título diferente ensinando algo contraditório ao primeiro tutorial"
                     className="object-cover w-full h-full opacity-90"
                     loading="lazy"
                     decoding="async"
@@ -144,10 +158,16 @@ export const TimelineNailDesigner: React.FC = () => {
             <div className="grid grid-cols-2 gap-3 mt-4">
               {/* Na Aula */}
               <div className="group relative rounded-xl overflow-hidden border border-emerald-100 shadow-sm transition-all hover:shadow-md">
+                {/* DEV#placeholder-step03-img3
+                    Prompt Imagen 3:
+                    "Close-up macro photo of long acrylic nails being applied in a bright classroom
+                    setting, clear and sharp, professional-looking nails in progress, warm light, 60mm macro lens"
+                    negative: dark, blurry, incomplete, unprofessional
+                */}
                 <div className="h-16 md:h-20 bg-emerald-50">
                   <img
-                    src="https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=400&auto=format&fit=crop"
-                    alt="Na Aula"
+                    src="/images/step03-na-aula-perfeita.webp"
+                    alt="Close-up de unhas alongadas perfeitas sendo feitas em sala de aula com iluminação boa"
                     className="object-cover w-full h-full opacity-60 grayscale-[30%] group-hover:grayscale-0 group-hover:opacity-100 transition-all"
                     loading="lazy"
                     decoding="async"
@@ -166,10 +186,17 @@ export const TimelineNailDesigner: React.FC = () => {
 
               {/* Em Casa */}
               <div className="group relative rounded-xl overflow-hidden border border-rose-100 shadow-sm transition-all hover:shadow-md scale-[1.02]">
+                {/* DEV#placeholder-step03-img4
+                    Prompt Imagen 3:
+                    "Candid photo of a failed DIY nail attempt at home, uneven gel nails with bubbles
+                    and lumps, bad lighting from a lamp, shot on iPhone from above, real home table
+                    with tissue, messy workspace"
+                    negative: studio photo, good result, professional nails
+                */}
                 <div className="h-16 md:h-20 bg-rose-50">
                   <img
-                    src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=400&auto=format&fit=crop"
-                    alt="Em Casa"
+                    src="/images/step03-em-casa-desastre.webp"
+                    alt="Tentativa caseira de fazer unhas que deu errado, resultado amador com bolhas e desalinhamento"
                     className="object-cover w-full h-full opacity-60 grayscale-[30%] group-hover:grayscale-0 group-hover:opacity-100 transition-all"
                     loading="lazy"
                     decoding="async"

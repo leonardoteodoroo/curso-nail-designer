@@ -392,9 +392,17 @@ export const WallOfLove: React.FC = () => {
       <div className="relative w-full py-20 mt-4 mb-12 overflow-hidden flex flex-col items-center justify-center">
         {/* Placeholder de Imagem de Fundo cobrindo a área atrás dos depoimentos */}
         <div className="absolute inset-0 z-0 select-none pointer-events-none">
+          {/* DEV#placeholder-step13
+              Prompt Imagen 3:
+              "Overhead photo of a bulletin board or gallery wall covered with printed polaroid-style
+              photos of Brazilian women showing their nail art results, warm ambient lighting, home
+              studio feel, candid energy, slightly blurry edges, shot on iPhone"
+              negative: digital mockup, perfect grid, studio composition
+              Aspect ratio: 16:6 (landscape banner)
+          */}
           <img
-            src="https://placehold.co/1920x600/e2e8f0/94a3b8?text=Imagem+De+Fundo+Do+Mural"
-            alt="Fundo do Mural"
+            src="/images/step13-mural-fundo.webp"
+            alt="Colagem de fotos de alunas exibindo unhas feitas com satisfação, como um mural visual de resultados reais"
             loading="lazy"
             decoding="async"
             className="w-full h-full object-cover opacity-50 mix-blend-multiply"

@@ -282,10 +282,19 @@ export const HistoriaMariana: React.FC = () => {
                 className="bg-white rounded-xl shadow-2xl border border-emerald-100 p-2 mb-8"
               >
                 <div className="relative aspect-video bg-zinc-100 rounded-lg overflow-hidden mb-3 group">
+                  {/* DEV#placeholder-step04
+                    Prompt Imagen 3:
+                    "Flat lay photo shot from above of a Brazilian woman's hands showing perfectly shaped
+                    nude gel nails, taken in a home studio environment, natural window light, slightly
+                    warm tone, no filters, iPhone photo, real-life home table background with a cup of
+                    coffee in the corner"
+                    negative: studio background, white backdrop, stock photo, commercial photo
+                    Aspect ratio: 16:9
+                */}
                   <img
-                    alt="Resultado Mariana — unhas profissionais"
+                    alt="Foto tirada de cima das mãos de uma mulher exibindo unhas alongadas em gel nude, feitas em casa de forma profissional, luz natural de janela"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0kMH9InjMv1OFz0C0znAcMLwrMe8F1poA9J3EqYx0O6STxxNhp7hi8qKSveKn5lk53JfvUGc5ILRlMSnAj2lCfXa8eQ6M3iyz7d8XmIldVNnUBcVYqSAxBJvlCPwfzjWGsdE1kt_I9h-_-wWxwQqmYwwaVK5vfa7tMxaHxwmF8_ikGDw1alI_rkI6QS_oUJcs6raiPT_QnRUOfCT4yN_r5E8eCjkzKFn-KvTqXfUpGiwQLU1WUrbT_y1OPJDYhNL1K9izaq6SYXgZ"
+                    src="/images/step04-resultado-mariana.webp"
                     loading="lazy"
                     decoding="async"
                   />
