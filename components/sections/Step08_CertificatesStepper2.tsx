@@ -166,32 +166,57 @@ export const CertificatesStepperStitch: React.FC = () => {
         </div>
         <div className="flex-1 relative">
           <div className="relative z-10 rounded-2xl bg-white p-2 shadow-2xl rotate-3 transition hover:rotate-0 duration-500 border-4 border-zinc-100">
-            {/* Abstract representation of a certificate */}
-            <div className="aspect-[1.414/1] bg-slate-50 border-2 border-[#10b77f]/20 p-8 flex flex-col items-center justify-center text-center relative overflow-hidden">
-              <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
-              <div className="h-16 w-16 mb-4 text-[#10b77f] opacity-20">
-                <Award size={64} />
-              </div>
-              <h3 className="text-2xl font-serif text-zinc-800 mb-1">
-                Certificado de Conclusão
-              </h3>
-              <div className="w-16 h-0.5 bg-[#10b77f]/40 my-3"></div>
-              <p className="text-zinc-400 text-sm font-serif italic">
-                Conferido a
-              </p>
-              <p className="text-xl font-script text-zinc-900 my-2 font-bold font-serif">
-                Seu Nome Aqui
-              </p>
-              <p className="text-zinc-500 text-xs mt-4 max-w-[200px]">
-                Por concluir com êxito a formação completa na Escola Nail
-                Designer.
-              </p>
-              <div className="absolute bottom-6 right-8">
-                <Verified className="text-amber-400 drop-shadow-md" size={48} />
-              </div>
+            {/* Placeholder de Imagem do Certificado */}
+            <div className="aspect-[1.414/1] relative overflow-hidden flex items-center justify-center bg-zinc-100 border border-zinc-200">
+              <img
+                src="https://placehold.co/800x565/e2e8f0/94a3b8?text=Imagem+do+Certificado"
+                alt="Certificado de Conclusão"
+                loading="lazy"
+                decoding="async"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
           <div className="absolute -bottom-4 -right-4 -z-10 h-full w-full rounded-2xl bg-[#10b77f]/10 rotate-6"></div>
+        </div>
+      </div>
+
+      {/* Ticker Infinito de Alunas com Certificado */}
+      <div className="relative mt-24 mb-6 w-full overflow-hidden flex flex-col items-center">
+        <h4 className="text-sm font-bold text-zinc-400 mb-6 uppercase tracking-wider text-center">
+          Junte-se a milhares de alunas certificadas
+        </h4>
+
+        <div className="relative w-full max-w-[100vw] flex overflow-hidden group">
+          <motion.div
+            animate={{ x: ["0%", "-50%"] }}
+            transition={{
+              duration: 30, // ajustável para velocidade
+              ease: "linear",
+              repeat: Infinity,
+            }}
+            className="flex gap-4 w-max px-4 group-hover:[animation-play-state:paused]"
+          >
+            {/* Array duplicado para criar o efeito infinito sem quebra */}
+            {[...Array(10), ...Array(10)].map((_, i) => (
+              <div
+                key={i}
+                className="w-48 h-64 md:w-56 md:h-72 rounded-xl border-4 border-white shadow-xl bg-zinc-100 overflow-hidden flex-shrink-0 relative"
+              >
+                <img
+                  src={`https://placehold.co/400x600/e2e8f0/94a3b8?text=Aluna+${(i % 10) + 1}`}
+                  alt={`Aluna certificada ${(i % 10) + 1}`}
+                  loading="lazy"
+                  decoding="async"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            ))}
+          </motion.div>
+
+          {/* Sombras laterais para fade out do carrossel infinito */}
+          <div className="absolute inset-y-0 left-0 w-12 md:w-32 bg-gradient-to-r from-zinc-50 to-transparent pointer-events-none z-10" />
+          <div className="absolute inset-y-0 right-0 w-12 md:w-32 bg-gradient-to-l from-zinc-50 to-transparent pointer-events-none z-10" />
         </div>
       </div>
     </section>

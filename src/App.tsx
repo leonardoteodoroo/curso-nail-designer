@@ -77,6 +77,11 @@ const CertificatesStepperStitch = React.lazy(() =>
     (module) => ({ default: module.CertificatesStepperStitch }),
   ),
 );
+const Step16_Footer = React.lazy(() =>
+  import("../components/sections/Step16_Footer").then((module) => ({
+    default: module.Step16_Footer,
+  })),
+);
 
 // ── Componentes UI / Utilitários ───────────────────────────────────────────
 
@@ -102,6 +107,7 @@ const sections: PreviewEntry[] = [
   { tag: "#wall-of-love", component: <WallOfLove /> },
   { tag: "#final-offer", component: <FinalOfferStitch /> },
   { tag: "#exit-intent", component: <ExitIntent /> },
+  { tag: "#footer", component: <Step16_Footer /> },
 ];
 
 const allEntries = [...sections];

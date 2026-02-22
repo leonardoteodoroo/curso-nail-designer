@@ -389,9 +389,19 @@ export const WallOfLove: React.FC = () => {
       </div>
 
       {/* Tickers Area - Edge-to-Edge */}
-      <div className="relative w-full py-6 mt-4 mb-2 overflow-hidden flex flex-col items-center justify-center">
-        {/* Letreiro Background passando exatamente atrás dos cards */}
-        <BackgroundHeading text="MURAL • DO • AMOR • ❤️" />
+      <div className="relative w-full py-20 mt-4 mb-12 overflow-hidden flex flex-col items-center justify-center">
+        {/* Placeholder de Imagem de Fundo cobrindo a área atrás dos depoimentos */}
+        <div className="absolute inset-0 z-0 select-none pointer-events-none">
+          <img
+            src="https://placehold.co/1920x600/e2e8f0/94a3b8?text=Imagem+De+Fundo+Do+Mural"
+            alt="Fundo do Mural"
+            loading="lazy"
+            decoding="async"
+            className="w-full h-full object-cover opacity-50 mix-blend-multiply"
+          />
+          {/* Overlay opcional para garantir a legibilidade dos cards */}
+          <div className="absolute inset-0 bg-white/40 backdrop-blur-[2px]"></div>
+        </div>
 
         <div className="relative z-10 flex flex-col gap-4 w-full scale-105">
           <TickerRow reviews={tickerReviews1} direction="left" speed={1.75} />
