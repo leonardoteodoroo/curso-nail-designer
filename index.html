@@ -17,8 +17,25 @@
     />
     <meta property="og:type" content="website" />
     <title>Curso Nail Designer Escola de Unhas Profissionais</title>
+    <!-- Preload das imagens LCP do Hero (acima da dobra — Realidade A e B) -->
+    <link
+      rel="preload"
+      href="/images/step01-hero-unha-simples.webp"
+      as="image"
+      type="image/webp"
+      fetchpriority="high"
+    />
+    <link
+      rel="preload"
+      href="/images/step01-hero-unha-premium.webp"
+      as="image"
+      type="image/webp"
+      fetchpriority="high"
+    />
+    <!-- Fonts: preconnect para reduzir latência de DNS/TCP -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"

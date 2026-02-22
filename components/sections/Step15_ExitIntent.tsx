@@ -87,7 +87,7 @@ export const ExitIntent: React.FC = () => {
                   <img
                     src="/images/step15-exit-intent.webp"
                     alt="Mãos de manicure profissional trabalhando com precisão em unhas de gel, close-up, luz de estúdio improvisado em casa"
-                    loading="lazy"
+                    loading="eager"
                     decoding="async"
                     className="w-full h-full object-cover"
                   />

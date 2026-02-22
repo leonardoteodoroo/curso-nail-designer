@@ -60,22 +60,15 @@ export const Hero = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="relative w-full md:w-1/2 aspect-[4/3] md:aspect-auto md:min-h-[450px]"
         >
-          {/* DEV#placeholder-step01-A
-              Prompt Imagen 3:
-              "Candid close-up photo of a Brazilian woman's hand resting on a couch, showing short, uneven nails with chipped light pink nail polish, one nail visibly broken, slightly dark cuticles, natural indoor home lighting, no ring, no jewelry, casual vibe, slight motion blur on the hand, shot on iPhone 13, warm afternoon light coming from a window, slightly desaturated tones
-              Aspect ratio: 16:9
-              negative: studio background, professional manicure, perfect nails, stock photo, bright lighting, white backdrop, posed hand model"
-          */}
-          <div className="absolute inset-0 bg-zinc-100 flex items-center justify-center overflow-hidden">
-            <img
-              src="/images/step01-hero-unha-simples.webp"
-              alt="Mão com unhas curtas, cutículas ressecadas e esmalte lascado, representando a realidade comum em serviços de baixo valor"
-              fetchPriority="high"
-              loading="eager"
-              decoding="sync"
-              className="w-full h-full object-cover"
-            />
-          </div>
+          {/* Imagem Realidade A — LCP acima da dobra: fetchPriority high */}
+          <img
+            src="/images/step01-hero-unha-simples.webp"
+            alt="Mãos com unhas simples e cobrança baixa de R$25 — manicure desvalorizada"
+            fetchPriority="high"
+            loading="eager"
+            decoding="sync"
+            className="absolute inset-0 w-full h-full object-cover"
+          />
 
           {/* Card REALIDADE A — TOPO-ESQUERDA, ROTAÇÃO INVERTIDA 20° ↗ */}
           <motion.div
@@ -140,22 +133,15 @@ export const Hero = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="relative w-full md:w-1/2 aspect-[4/3] md:aspect-auto md:min-h-[450px]"
         >
-          {/* DEV#placeholder-step01-B
-              Prompt Imagen 3:
-              "Candid close-up photo of a Brazilian woman's hand resting on a marble kitchen counter, showing perfectly shaped almond gel nails in a warm nude-mauve tone, glossy finish, subtle shimmer, elegant but not over-the-top, natural window light with warm golden tone, one delicate gold ring on middle finger, slight bokeh background with kitchen decor, shot on iPhone 14 Pro
-              Aspect ratio: 16:9
-              negative: studio setup, white backdrop, artificial lighting, stock photo, overly edited, fake-looking nails, acrylic glamor style"
-          */}
-          <div className="absolute inset-0 bg-zinc-100 flex items-center justify-center overflow-hidden">
-            <img
-              src="/images/step01-hero-unha-premium.webp"
-              alt="Mão com unhas amendoadas em gel perfeitamente modeladas, acabamento brilhante impecável, representando serviço de alto valor"
-              fetchPriority="high"
-              loading="eager"
-              decoding="sync"
-              className="w-full h-full object-cover"
-            />
-          </div>
+          {/* Imagem Realidade B — above fold: fetchPriority high */}
+          <img
+            src="/images/step01-hero-unha-premium.webp"
+            alt="Mãos com unhas gel premium cobrando R$120 — nail designer valorizada"
+            fetchPriority="high"
+            loading="eager"
+            decoding="sync"
+            className="absolute inset-0 w-full h-full object-cover"
+          />
 
           {/* Card REALIDADE B — FUNDO-DIREITA, ROTAÇÃO INVERTIDA -20° ↘ */}
           <motion.div
@@ -260,12 +246,6 @@ export const Hero = () => {
               <div className="bg-white rounded-2xl overflow-hidden shadow-sm">
                 <div className="bg-[#075E54] p-3 flex items-center gap-3 text-white">
                   <div className="w-8 h-8 rounded-full bg-gray-300 overflow-hidden">
-                    {/* DEV#placeholder-step01-C
-                        Prompt Imagen 3:
-                        "Candid portrait of a Brazilian woman in her late 20s, skeptical and slightly uncertain expression, looking at her phone, wearing casual clothes, sitting in a simple home interior, soft natural window light, no makeup, real-looking skin, slightly messy hair, photo taken from a social media profile picture angle — slightly above, chest up, neutral background of a home wall or kitchen
-                        Aspect ratio: 16:9
-                        negative: professional headshot, studio lighting, model pose, stock photo, perfect makeup, ring light"
-                    */}
                     <img
                       alt="Avatar da Cliente Indecisa no WhatsApp"
                       className="w-full h-full object-cover"
@@ -283,10 +263,12 @@ export const Hero = () => {
                   </div>
                 </div>
                 <div
-                  className="bg-[#ECE5DD] p-4 h-64 flex flex-col gap-3 overflow-hidden"
+                  className="bg-[#ECE5DD] p-4 h-64 flex flex-col gap-3 overflow-hidden bg-cover bg-center"
                   style={{
                     backgroundImage:
-                      "url('https://lh3.googleusercontent.com/aida-public/AB6AXuACLJ5IAhx1PBhgztxxh_Eb-TbsvcpRdhH5hYzDun6T90tABaCILwaj4c8ohLKR0RRdwY72_Pggw3C79LDUobRarSeCdn4GYymJVRwrwIYlsCRldtd86ENoKnAXnYXXsmZ5QugxZBMD0_8PqoC2Hm2KML_qydOC1hP65_qeT40gg_TKbXVZaTsOI9KxjBuhVs927zwDQL0eA5YJ8Wh8p8oMFdmN63qz7CtWZMrQQTsfUdhC6rZEGT99pXp4DRHzPSzK2fB1nFKNUSQQ')",
+                      "url('/images/step01-hero-cliente-indecisa.webp')",
+                    backgroundBlendMode: "overlay",
+                    backgroundColor: "rgba(236,229,221,0.92)",
                   }}
                 >
                   <div className="self-start bg-white p-2 rounded-lg rounded-tl-none shadow-sm max-w-[80%]">

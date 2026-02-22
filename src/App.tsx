@@ -153,38 +153,28 @@ export default function App() {
       </div>
 
       {/* Renderização de cada fragmento */}
-      {allEntries.map(({ tag, component }) => {
-        const isHero = tag === "#hero";
-
-        return (
-          <div key={tag} style={{ position: "relative" }}>
-            <DevTag label={tag} />
-
-            {isHero ? (
-              component
-            ) : (
-              <React.Suspense
-                fallback={
-                  <div className="min-h-[200px] flex items-center justify-center bg-zinc-900/50">
-                    <div className="w-8 h-8 rounded-full border-4 border-lime-500 border-t-transparent animate-spin"></div>
-                  </div>
-                }
-              >
-                {component}
-              </React.Suspense>
-            )}
-
-            {/* Divisor entre seções */}
-            <div
-              style={{
-                height: "2px",
-                background:
-                  "linear-gradient(to right, transparent, rgba(163,230,53,0.3), transparent)",
-              }}
-            />
-          </div>
-        );
-      })}
+      {allEntries.map(({ tag, component }) => (
+        <div key={tag} style={{ position: "relative" }}>
+          <DevTag label={tag} />
+          <React.Suspense
+            fallback={
+              <div className="min-h-[200px] flex items-center justify-center bg-zinc-900/50">
+                <div className="w-8 h-8 rounded-full border-4 border-lime-500 border-t-transparent animate-spin"></div>
+              </div>
+            }
+          >
+            {component}
+          </React.Suspense>
+          {/* Divisor entre seções */}
+          <div
+            style={{
+              height: "2px",
+              background:
+                "linear-gradient(to right, transparent, rgba(163,230,53,0.3), transparent)",
+            }}
+          />
+        </div>
+      ))}
     </div>
   );
 }
