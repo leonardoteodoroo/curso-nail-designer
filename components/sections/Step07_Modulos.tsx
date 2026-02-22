@@ -463,9 +463,14 @@ export const Modulos: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-4 mb-8">
+        <div className="grid grid-cols-2 gap-2 sm:gap-4 mb-8">
           {bonuses.map((bonus, i) => {
             const Icon = bonus.icon;
+            const colonIdx = bonus.title.indexOf(": ");
+            const bonusLabel =
+              colonIdx !== -1 ? bonus.title.slice(0, colonIdx) : bonus.title;
+            const courseName =
+              colonIdx !== -1 ? bonus.title.slice(colonIdx + 2) : "";
             return (
               <motion.div
                 key={i}
@@ -476,26 +481,34 @@ export const Modulos: React.FC = () => {
               >
                 <ClinicalCard
                   hoverEffect
-                  className="p-6 h-full flex flex-col relative overflow-hidden group"
+                  className="p-3 sm:p-6 h-full flex flex-col relative overflow-hidden group"
                 >
-                  <div className="flex justify-between items-start mb-4">
-                    <div className="w-10 h-10 rounded-xl bg-amber-50 flex items-center justify-center text-amber-600">
-                      <Icon size={20} />
+                  {/* Header: ícone | BÔNUS X | preço */}
+                  <div className="flex items-center gap-1.5 sm:gap-2 mb-2 sm:mb-3">
+                    <div className="w-7 h-7 sm:w-10 sm:h-10 rounded-xl bg-amber-50 flex items-center justify-center text-amber-600 shrink-0">
+                      <Icon size={14} className="sm:hidden" />
+                      <Icon size={20} className="hidden sm:block" />
                     </div>
-                    <div className="bg-amber-100 text-amber-700 px-3 py-1 rounded-full text-[10px] font-bold line-through">
+                    <span className="font-black text-amber-600 text-[11px] sm:text-[13px] uppercase tracking-wider leading-tight flex-1 min-w-0">
+                      {bonusLabel}
+                    </span>
+                    <div className="bg-amber-100 text-amber-700 px-1.5 sm:px-3 py-0.5 sm:py-1 rounded-full text-[8px] sm:text-[10px] font-bold line-through shrink-0">
                       {bonus.value}
                     </div>
                   </div>
-                  <h4 className="font-bold text-zinc-900 text-sm mb-1">
-                    {bonus.title}
-                  </h4>
-                  <p className="text-[11px] text-zinc-400 mb-3 font-medium lowercase">
+                  {/* Nome do curso */}
+                  {courseName && (
+                    <h4 className="font-bold text-zinc-900 text-[10px] sm:text-sm mb-1 sm:mb-2 leading-tight">
+                      {courseName}
+                    </h4>
+                  )}
+                  <p className="text-[9px] sm:text-[11px] text-zinc-400 mb-1.5 sm:mb-3 font-medium lowercase leading-tight">
                     {bonus.subtitle}
                   </p>
-                  <p className="text-xs text-zinc-600 mb-4 leading-relaxed italic">
+                  <p className="text-[9px] sm:text-xs text-zinc-600 mb-2 sm:mb-4 leading-snug italic">
                     {bonus.desc}
                   </p>
-                  <p className="text-[11px] font-medium text-rose-400 mt-auto">
+                  <p className="text-[9px] sm:text-[11px] font-medium text-emerald-600 mt-auto leading-tight">
                     {bonus.reason}
                   </p>
                 </ClinicalCard>
