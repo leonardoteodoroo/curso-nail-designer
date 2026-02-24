@@ -4,7 +4,9 @@ import { ShieldCheck, CheckCircle2 } from "lucide-react";
 
 export const Garantia: React.FC = () => {
   return (
-    <section id="garantia-lp2" className="bg-white py-16 md:py-20 px-4">
+    <section id="garantia" data-section="garantia" className="bg-white py-16 md:py-20 px-4">
+      {/* Alias legado para CTAs que apontam para garantia-lp2 */}
+      <span id="garantia-lp2" aria-hidden="true" />
       <div className="max-w-2xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

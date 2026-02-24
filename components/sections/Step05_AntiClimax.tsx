@@ -20,7 +20,9 @@ const requirements = [
 
 export const AntiClimax: React.FC = () => {
   return (
-    <section id="anti-climax-lp2" className="bg-white py-16 md:py-24 px-4">
+    <section id="anti-climax" data-section="anti-climax" className="bg-white py-16 md:py-24 px-4">
+      {/* Alias legado para CTAs que apontam para anti-climax-lp2 */}
+      <span id="anti-climax-lp2" aria-hidden="true" />
       <div className="max-w-4xl mx-auto">
         {/* Headline */}
         <BlurText

@@ -32,7 +32,7 @@ const ScrollIndicator = () => {
 
 export const Hero = () => {
   return (
-    <section className="min-h-[100dvh] flex flex-col bg-white overflow-hidden relative">
+    <section id="hero" data-section="hero" className="min-h-[100dvh] flex flex-col bg-white overflow-hidden relative">
       {/* ═══ TÍTULO ═══ */}
       <motion.div
         initial={{ opacity: 0, y: -20 }}

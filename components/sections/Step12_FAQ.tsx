@@ -42,7 +42,9 @@ export const FAQ: React.FC = () => {
   const [openIndex, setOpenIndex] = useState(0);
 
   return (
-    <section id="faq-lp2" className="bg-zinc-50 py-16 md:py-24 px-4">
+    <section id="faq" data-section="faq" className="bg-zinc-50 py-16 md:py-24 px-4">
+      {/* Alias legado para CTAs que apontam para faq-lp2 */}
+      <span id="faq-lp2" aria-hidden="true" />
       <div className="max-w-4xl mx-auto">
         {/* Header */}
         <div className="text-center mb-10">

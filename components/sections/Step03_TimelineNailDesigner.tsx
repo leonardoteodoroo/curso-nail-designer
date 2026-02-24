@@ -35,6 +35,8 @@ export const TimelineNailDesigner: React.FC = () => {
 
   return (
     <div
+      id="timeline"
+      data-section="timeline"
       ref={containerRef}
       className="relative py-20 px-4 max-w-4xl mx-auto font-sans"
     >

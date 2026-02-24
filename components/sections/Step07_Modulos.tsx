@@ -300,7 +300,9 @@ export const Modulos: React.FC = () => {
   const [openModule, setOpenModule] = useState(0);
 
   return (
-    <section id="oferta-lp2" className="bg-zinc-50 py-16 md:py-24 px-4">
+    <section id="modulos" data-section="modulos" className="bg-zinc-50 py-16 md:py-24 px-4">
+      {/* Alias legado para CTAs que apontam para oferta-lp2 */}
+      <span id="oferta-lp2" aria-hidden="true" />
       <div className="max-w-4xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">

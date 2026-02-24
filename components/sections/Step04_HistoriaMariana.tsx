@@ -46,7 +46,7 @@ const chatMessages = [
 
 export const HistoriaMariana: React.FC = () => {
   return (
-    <section className="bg-zinc-50 py-16 md:py-20 px-4">
+    <section id="historia-mariana" data-section="historia-mariana" className="bg-zinc-50 py-16 md:py-20 px-4">
       <div className="max-w-4xl mx-auto">
         {/* ══ COPY ESTRATÉGICA (V2) ══════════════════════════════════ */}
 

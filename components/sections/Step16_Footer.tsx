@@ -2,7 +2,7 @@ import React from "react";
 
 export const Step16_Footer: React.FC = () => {
   return (
-    <footer className="bg-[#111111] text-[#a1a1aa] py-6 px-4 border-t border-[#27272a] font-sans text-xs flex flex-col items-center text-center">
+    <footer id="footer" data-section="footer" className="bg-[#111111] text-[#a1a1aa] py-6 px-4 border-t border-[#27272a] font-sans text-xs flex flex-col items-center text-center">
       <div className="max-w-4xl w-full flex flex-col items-center gap-4">
         {/* DEV#disclaimer-transparencia */}
         <div className="text-[9px] sm:text-[10px] leading-relaxed opacity-60 space-y-2 font-normal text-balance">

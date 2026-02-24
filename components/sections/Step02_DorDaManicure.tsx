@@ -29,7 +29,7 @@ const painCards = [
 
 export const DorDaManicure: React.FC = () => {
   return (
-    <section className="bg-white py-16 md:py-24 px-4">
+    <section id="dor-da-manicure" data-section="dor-da-manicure" className="bg-white py-16 md:py-24 px-4">
       <div className="max-w-4xl mx-auto">
         {/* Headline */}
         <BlurText

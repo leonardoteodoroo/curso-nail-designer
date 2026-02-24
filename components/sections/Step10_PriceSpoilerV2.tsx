@@ -133,7 +133,7 @@ export const PriceSpoilerV2: React.FC<PriceSpoilerV2Props> = ({
   };
 
   return (
-    <section className="pt-0 pb-20 md:pt-0 md:pb-32 bg-white relative overflow-hidden">
+    <section id="price-spoiler-v2" data-section="price-spoiler-v2" className="pt-0 pb-20 md:pt-0 md:pb-32 bg-white relative overflow-hidden">
       <div className="container px-4 md:px-6 mx-auto flex flex-col items-center">
         <div
           className={cn(

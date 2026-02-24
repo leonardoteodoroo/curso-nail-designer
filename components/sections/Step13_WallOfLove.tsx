@@ -369,7 +369,7 @@ export const WallOfLove: React.FC = () => {
   const shouldReduceMotion = useReducedMotion();
 
   return (
-    <section className="bg-white py-16 md:py-24 overflow-hidden relative flex flex-col">
+    <section id="wall-of-love" data-section="wall-of-love" className="bg-white py-16 md:py-24 overflow-hidden relative flex flex-col">
       <div className="max-w-6xl mx-auto relative z-10 px-4">
         {/* Headline */}
         <div className="text-center mb-12">

@@ -6,6 +6,7 @@ export const OfertaInicial = () => {
   return (
     <section
       id="oferta-inicial"
+      data-section="oferta-inicial"
       className="pt-20 pb-0 md:pt-32 md:pb-0 bg-white relative overflow-hidden"
     >
       <div className="container px-4 md:px-6 mx-auto">
@@ -94,13 +95,12 @@ export const OfertaInicial = () => {
                   </span>
                 </div>
                 <span
-                  className={`text-sm md:text-base font-bold whitespace-nowrap ${
-                    item.type === "price"
+                  className={`text-sm md:text-base font-bold whitespace-nowrap ${item.type === "price"
                       ? "text-amber-400/70 line-through"
                       : item.type === "highlight"
                         ? "text-amber-500"
                         : "text-emerald-500"
-                  }`}
+                    }`}
                 >
                   {item.value}
                 </span>

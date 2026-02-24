@@ -13,7 +13,7 @@ import {
 
 export const CertificatesStepperStitch: React.FC = () => {
   return (
-    <section className="bg-zinc-50 px-6 py-16 lg:px-20 overflow-hidden relative font-sans">
+    <section id="certificates-stepper" data-section="certificates-stepper" className="bg-zinc-50 px-6 py-16 lg:px-20 overflow-hidden relative font-sans">
       <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-[#10b77f]/5 via-transparent to-transparent opacity-50"></div>
       <div className="max-w-5xl mx-auto flex flex-col lg:flex-row gap-12 items-center relative z-10">
         <div className="flex-1 space-y-8">

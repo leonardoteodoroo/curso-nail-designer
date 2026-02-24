@@ -10,7 +10,7 @@ import {
 
 export const FinalOfferStitch: React.FC = () => {
   return (
-    <section className="w-full py-16 px-4 md:px-8 lg:px-12 bg-zinc-50 font-display">
+    <section id="final-offer" data-section="final-offer" className="w-full py-16 px-4 md:px-8 lg:px-12 bg-zinc-50 font-display">
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
           {/* Part 1: Recap Stack (Left Side) */}

@@ -227,8 +227,8 @@ const StitchCardInner: React.FC<{
   return (
     <div
       className={`bg-white h-full flex flex-col transition-shadow duration-300 ${isCenter
-          ? "shadow-2xl border-2 border-rose-100" // Borda rosa sutil no centro
-          : "shadow-xl border-2 border-transparent" // Borda transparente
+        ? "shadow-2xl border-2 border-rose-100" // Borda rosa sutil no centro
+        : "shadow-xl border-2 border-transparent" // Borda transparente
         }`}
     >
       {/* Image / Avatar - Sempre h-56 */}
@@ -371,6 +371,8 @@ export const CarouselStitch: React.FC = () => {
 
   return (
     <section
+      id="carousel-stitch"
+      data-section="carousel-stitch"
       className="w-full py-12 lg:py-20 relative bg-[#f8f6f6]"
       style={{ overflowX: "hidden" }}
     >
@@ -459,8 +461,8 @@ export const CarouselStitch: React.FC = () => {
                       onClick={() => jumpTo(i)}
                       aria-label={`Ir para depoimento ${i + 1}`}
                       className={`h-2 rounded-full transition-all duration-300 ${i === activeIndex
-                          ? "w-6 bg-[#ee2b5b]"
-                          : "w-2 bg-gray-300 hover:bg-rose-300"
+                        ? "w-6 bg-[#ee2b5b]"
+                        : "w-2 bg-gray-300 hover:bg-rose-300"
                         }`}
                     />
                   ))}
@@ -484,7 +486,7 @@ export const CarouselStitch: React.FC = () => {
               <button
                 onClick={() =>
                   document
-                    .getElementById("modulos-lp2")
+                    .getElementById("oferta-lp2")
                     ?.scrollIntoView({ behavior: "smooth" })
                 }
                 className="inline-flex items-center gap-2 rounded-full bg-[#ee2b5b] hover:bg-[#d41f4e] text-white font-bold px-8 py-4 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 uppercase tracking-wide text-sm"
@@ -544,8 +546,8 @@ export const CarouselStitch: React.FC = () => {
                       onClick={() => jumpTo(i)}
                       aria-label={`Ir para depoimento ${i + 1}`}
                       className={`h-1.5 rounded-full transition-all duration-300 ${i === activeIndex
-                          ? "w-5 bg-[#ee2b5b]"
-                          : "w-1.5 bg-gray-300"
+                        ? "w-5 bg-[#ee2b5b]"
+                        : "w-1.5 bg-gray-300"
                         }`}
                     />
                   ))}
