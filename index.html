@@ -67,7 +67,7 @@
     fbq("track", "PageView");
   </script>
   <!-- End Facebook Pixel Code -->
-  <script type="module" crossorigin src="/assets/index-DQVMYRpf.js"></script>
+  <script type="module" crossorigin src="/assets/index-txAcUKM3.js"></script>
   <link rel="modulepreload" crossorigin href="/assets/animations-B3TenYOA.js">
   <link rel="modulepreload" crossorigin href="/assets/vendor-CeQJCxyJ.js">
   <link rel="modulepreload" crossorigin href="/assets/icons-x2nYY7B5.js">
@@ -88,6 +88,40 @@
       src="https://www.facebook.com/tr?id=563316966782879&ev=PageView&noscript=1" />
   </noscript>
   <div id="root"></div>
+
+  <!-- Section View dataLayer — GTM scroll tracking por seção -->
+  <script>
+    (function () {
+      function initSectionTracking() {
+        var observed = {};
+        var sections = document.querySelectorAll('[data-section]');
+        if (!sections.length) return;
+        var observer = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            var name = entry.target.getAttribute('data-section');
+            if (entry.isIntersecting && !observed[name]) {
+              observed[name] = true;
+              window.dataLayer = window.dataLayer || [];
+              window.dataLayer.push({
+                event: 'section_view',
+                section_name: name,
+                scroll_depth: Math.round(
+                  ((window.scrollY + window.innerHeight) / document.body.scrollHeight) * 100
+                ) + '%'
+              });
+            }
+          });
+        }, { threshold: 0.4 });
+        sections.forEach(function (s) { observer.observe(s); });
+      }
+
+      if ('requestIdleCallback' in window) {
+        requestIdleCallback(initSectionTracking, { timeout: 3000 });
+      } else {
+        setTimeout(initSectionTracking, 1500);
+      }
+    })();
+  </script>
 </body>
 
 </html>
