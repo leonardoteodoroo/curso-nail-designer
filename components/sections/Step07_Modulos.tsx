@@ -352,8 +352,8 @@ export const Modulos: React.FC = () => {
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.05 }}
                 className={`rounded-2xl border transition-all duration-300 bg-white ${isOpen
-                    ? "border-emerald-300 shadow-md ring-1 ring-emerald-500/20"
-                    : "border-zinc-200 hover:border-emerald-200"
+                  ? "border-emerald-300 shadow-md ring-1 ring-emerald-500/20"
+                  : "border-zinc-200 hover:border-emerald-200"
                   }`}
               >
                 <button
@@ -363,8 +363,8 @@ export const Modulos: React.FC = () => {
                   <div className="flex items-start gap-4 flex-1 min-w-0 pr-2">
                     <div
                       className={`w-10 h-10 rounded-full flex items-center justify-center shrink-0 transition-colors mt-1 ${isOpen
-                          ? "bg-emerald-600 text-white"
-                          : "bg-emerald-50 text-emerald-600"
+                        ? "bg-emerald-600 text-white"
+                        : "bg-emerald-50 text-emerald-600"
                         }`}
                     >
                       <Icon className="w-5 h-5" />
@@ -381,8 +381,8 @@ export const Modulos: React.FC = () => {
 
                   <div
                     className={`w-8 h-8 rounded-full flex items-center justify-center shrink-0 transition-colors mt-2 ${isOpen
-                        ? "bg-emerald-600 text-white"
-                        : "bg-emerald-50 text-emerald-600"
+                      ? "bg-emerald-600 text-white"
+                      : "bg-emerald-50 text-emerald-600"
                       }`}
                   >
                     {isOpen ? (
@@ -534,6 +534,33 @@ export const Modulos: React.FC = () => {
               {superBonus.highlight}
             </div>
           </ClinicalCard>
+        </motion.div>
+
+        {/* CTA Light Copy — Pós-Bônus */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="text-center"
+        >
+          <button
+            onClick={() =>
+              window.open(
+                "https://go.hotmart.com/K104371220N?ap=cf94&src=modulos_bonus",
+                "_blank",
+              )
+            }
+            className="group inline-flex items-center gap-3 bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold px-10 py-5 rounded-2xl text-lg transition-all duration-300 shadow-xl shadow-emerald-600/25 hover:-translate-y-0.5"
+          >
+            <span>Quero tudo isso por R$ 39,90</span>
+            <span className="inline-block transition-transform duration-300 group-hover:translate-x-1">
+              →
+            </span>
+          </button>
+          <p className="text-xs text-zinc-400 mt-3">
+            Acesso imediato • 7 dias de garantia
+          </p>
         </motion.div>
       </div>
     </section>

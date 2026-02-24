@@ -517,10 +517,25 @@ export const WallOfLove: React.FC = () => {
                 </div>
               ))}
             </div>
-            <p className="text-lg font-bold text-zinc-800">
+            <p className="text-lg font-bold text-zinc-800 mb-8">
               A única diferença entre você e elas?{" "}
               <span className="text-emerald-600">Uma decisão.</span>
             </p>
+            {/* CTA Light Copy */}
+            <button
+              onClick={() =>
+                window.open(
+                  "https://go.hotmart.com/K104371220N?ap=cf94&src=wall_of_love",
+                  "_blank",
+                )
+              }
+              className="group inline-flex items-center gap-2 bg-zinc-900 hover:bg-zinc-800 text-white font-bold px-8 py-4 rounded-2xl text-base transition-all duration-300 shadow-lg hover:-translate-y-0.5 mx-auto"
+            >
+              <span>Ok. Eu tomo essa decisão agora</span>
+              <span className="inline-block transition-transform duration-300 group-hover:translate-x-1">
+                →
+              </span>
+            </button>
           </ClinicalCard>
         </motion.div>
       </div>

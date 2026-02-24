@@ -214,6 +214,29 @@ export const AntiClimax: React.FC = () => {
             .
           </p>
         </motion.div>
+
+        {/* CTA Light Copy */}
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.3 }}
+          className="text-center mt-8"
+        >
+          <button
+            onClick={() =>
+              document
+                .getElementById("oferta-lp2")
+                ?.scrollIntoView({ behavior: "smooth" })
+            }
+            className="group inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-8 py-4 rounded-2xl text-base transition-all duration-300 shadow-lg shadow-emerald-600/20 hover:-translate-y-0.5"
+          >
+            <span>48 mil funcionou. Eu vou ser a próxima</span>
+            <span className="inline-block transition-transform duration-300 group-hover:translate-x-1">
+              →
+            </span>
+          </button>
+        </motion.div>
       </div>
     </section>
   );

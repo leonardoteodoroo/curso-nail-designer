@@ -256,6 +256,29 @@ export const TimelineNailDesigner: React.FC = () => {
           </TimelineItemNode>
         </div>
       </div>
+
+      {/* CTA Light Copy */}
+      <motion.div
+        initial={{ opacity: 0, y: 16 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5, delay: 0.2 }}
+        className="text-center mt-12"
+      >
+        <button
+          onClick={() =>
+            document
+              .getElementById("oferta-lp2")
+              ?.scrollIntoView({ behavior: "smooth" })
+          }
+          className="group inline-flex items-center gap-2 border-2 border-zinc-900 hover:bg-zinc-900 hover:text-white text-zinc-900 font-semibold px-8 py-4 rounded-2xl text-base transition-all duration-300 hover:-translate-y-0.5"
+        >
+          <span>E se tivesse alguém que ensina tudo isso?</span>
+          <span className="inline-block transition-transform duration-300 group-hover:translate-x-1">
+            →
+          </span>
+        </button>
+      </motion.div>
     </div>
   );
 };

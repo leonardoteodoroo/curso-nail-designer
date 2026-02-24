@@ -70,11 +70,10 @@ export const FAQ: React.FC = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-50px" }}
                 transition={{ duration: 0.3, delay: i * 0.05 }}
-                className={`rounded-2xl border transition-all duration-300 overflow-hidden ${
-                  isOpen
+                className={`rounded-2xl border transition-all duration-300 overflow-hidden ${isOpen
                     ? "bg-white border-emerald-500 shadow-md ring-1 ring-emerald-500/20"
                     : "bg-white border-zinc-200 hover:border-emerald-300"
-                }`}
+                  }`}
               >
                 <button
                   onClick={() => setOpenIndex(isOpen ? -1 : i)}
@@ -85,11 +84,10 @@ export const FAQ: React.FC = () => {
                     {item.q}
                   </span>
                   <span
-                    className={`w-8 h-8 rounded-full flex items-center justify-center shrink-0 transition-colors duration-300 ${
-                      isOpen
+                    className={`w-8 h-8 rounded-full flex items-center justify-center shrink-0 transition-colors duration-300 ${isOpen
                         ? "bg-emerald-600 text-white"
                         : "bg-emerald-50 text-emerald-600"
-                    }`}
+                      }`}
                   >
                     {isOpen ? (
                       <Minus className="w-4 h-4" />
@@ -135,13 +133,14 @@ export const FAQ: React.FC = () => {
             <button
               onClick={() =>
                 window.open(
-                  "https://go.hotmart.com/K104371220N?ap=5bc1&src=btn_faq",
+                  "https://go.hotmart.com/K104371220N?ap=cf94&src=faq",
                   "_blank",
                 )
               }
-              className="w-full py-4 rounded-full bg-gradient-to-r from-emerald-500 to-teal-500 text-white font-bold uppercase tracking-wide shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
+              className="group w-full py-4 px-6 rounded-full bg-gradient-to-r from-emerald-500 to-teal-500 text-white font-bold shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2"
             >
-              TESTAR POR 7 DIAS SEM RISCO
+              <span>Ainda na dúvida? Entra com 7 dias pra decidir</span>
+              <span className="inline-block transition-transform duration-300 group-hover:translate-x-1">→</span>
             </button>
             <p className="text-xs text-zinc-400 mt-2">
               Compra 100% Segura • Acesso Imediato

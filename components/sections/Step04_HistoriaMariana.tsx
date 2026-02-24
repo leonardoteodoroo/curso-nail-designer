@@ -164,8 +164,8 @@ export const HistoriaMariana: React.FC = () => {
                 </motion.span>
                 <div
                   className={`rounded-2xl rounded-bl-sm px-4 py-2.5 text-sm md:text-base leading-snug max-w-[92%] shadow-sm ${msg.highlight
-                      ? "bg-emerald-50 border border-emerald-100 text-zinc-700"
-                      : "bg-white border border-zinc-100 text-zinc-600"
+                    ? "bg-emerald-50 border border-emerald-100 text-zinc-700"
+                    : "bg-white border border-zinc-100 text-zinc-600"
                     }`}
                 >
                   {msg.text}
@@ -587,7 +587,7 @@ export const HistoriaMariana: React.FC = () => {
               }
               className="group relative inline-flex items-center gap-3 bg-zinc-900 hover:bg-zinc-800 text-white font-extrabold px-10 py-5 rounded-2xl text-base md:text-lg transition-all duration-300 shadow-2xl hover:shadow-zinc-900/40 hover:-translate-y-0.5 uppercase tracking-wide"
             >
-              <span>Quero aprender esse sistema</span>
+              <span>Quero o meu sistema. Igual ao da Mariana</span>
               <span className="inline-block transition-transform duration-300 group-hover:translate-x-1">
                 →
               </span>

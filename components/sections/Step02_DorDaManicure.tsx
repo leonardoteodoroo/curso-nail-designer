@@ -177,6 +177,32 @@ export const DorDaManicure: React.FC = () => {
           >
             Não é culpa sua.
           </motion.p>
+
+          {/* CTA Light Copy */}
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.6 }}
+            className="pt-6"
+          >
+            <button
+              onClick={() =>
+                document
+                  .getElementById("oferta-lp2")
+                  ?.scrollIntoView({ behavior: "smooth" })
+              }
+              className="group inline-flex items-center gap-2 bg-zinc-900 hover:bg-zinc-800 text-white font-semibold px-8 py-4 rounded-2xl text-base transition-all duration-300 shadow-lg hover:shadow-zinc-900/30 hover:-translate-y-0.5"
+            >
+              <span>Tem um jeito diferente. Me conta como</span>
+              <span className="inline-block transition-transform duration-300 group-hover:translate-x-1">
+                →
+              </span>
+            </button>
+            <p className="text-xs text-zinc-400 mt-3">
+              Sem compromisso — só curiosidade
+            </p>
+          </motion.div>
         </div>
       </div>
     </section>
