@@ -2,29 +2,7 @@
 <html lang="pt-BR">
 
 <head>
-  <!-- Google Tag Manager -->
-  <script>
-    (function (w, d, s, l, i) {
-      w[l] = w[l] || [];
-      w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-      var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s),
-        dl = l != "dataLayer" ? "&l=" + l : "";
-      j.async = true;
-      j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-      f.parentNode.insertBefore(j, f);
-    })(window, document, "script", "dataLayer", "GTM-M4CHW3MC");
-  </script>
-  <!-- End Google Tag Manager -->
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CX8VDZBR85"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'G-CX8VDZBR85');
-  </script>
-  <!-- End Google tag -->
+  <!-- Scripts do GTM/GA4 adiados para otimização de performance. Veja o final do body. -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description"
@@ -44,29 +22,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap"
     rel="stylesheet" />
-  <!-- Facebook Pixel Code -->
-  <script>
-    !(function (f, b, e, v, n, t, s) {
-      if (f.fbq) return;
-      n = f.fbq = function () {
-        n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
-      };
-      if (!f._fbq) f._fbq = n;
-      n.push = n;
-      n.loaded = !0;
-      n.version = "2.0";
-      n.queue = [];
-      t = b.createElement(e);
-      t.async = !0;
-      t.src = v;
-      s = b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t, s);
-    })(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js");
-    fbq("init", "4197145117266394");
-    fbq("init", "563316966782879");
-    fbq("track", "PageView");
-  </script>
-  <!-- End Facebook Pixel Code -->
+  <!-- Script do Facebook Pixel adiado para otimização de performance. Veja o final do body. -->
 </head>
 
 <body>
@@ -116,6 +72,70 @@
       } else {
         setTimeout(initSectionTracking, 1500);
       }
+    })();
+  </script>
+
+  <!-- Lazy Load — Otimização de Performance (Adiando tags pesadas) -->
+  <script>
+    (function() {
+      var isTrackingInitialized = false;
+
+      function initTracking() {
+        if (isTrackingInitialized) return;
+        isTrackingInitialized = true;
+
+        // Injeta Google Tag Manager (GTM)
+        setTimeout(function() {
+          (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+            var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != "dataLayer" ? "&l=" + l : "";
+            j.async = true; j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+            f.parentNode.insertBefore(j, f);
+          })(window, document, "script", "dataLayer", "GTM-M4CHW3MC");
+        }, 50);
+
+        // Injeta Google Analytics (GA4)
+        setTimeout(function() {
+          var gtagScript = document.createElement("script");
+          gtagScript.src = "https://www.googletagmanager.com/gtag/js?id=G-CX8VDZBR85";
+          gtagScript.async = true;
+          document.head.appendChild(gtagScript);
+
+          window.dataLayer = window.dataLayer || [];
+          window.gtag = window.gtag || function() { window.dataLayer.push(arguments); };
+          window.gtag('js', new Date());
+          window.gtag('config', 'G-CX8VDZBR85');
+        }, 150);
+
+        // Injeta Facebook Pixel (Meta)
+        setTimeout(function() {
+          !(function (f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function () { n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments); };
+            if (!f._fbq) f._fbq = n;
+            n.push = n; n.loaded = !0; n.version = "2.0"; n.queue = [];
+            t = b.createElement(e); t.async = !0; t.src = v;
+            s = b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s);
+          })(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js");
+          fbq("init", "4197145117266394");
+          fbq("init", "563316966782879");
+          fbq("track", "PageView");
+        }, 300);
+
+        // Remove listeners para não repetir a injeção
+        ['scroll', 'mousemove', 'touchstart', 'keydown', 'click'].forEach(function(e) {
+          window.removeEventListener(e, initTracking, { passive: true });
+        });
+      }
+
+      // Ativa nos primeiros sinais de interação do usuário
+      ['scroll', 'mousemove', 'touchstart', 'keydown', 'click'].forEach(function(e) {
+        window.addEventListener(e, initTracking, { passive: true, once: true });
+      });
+
+      // Fallback de garantia: se o usuário ficar inativo, carrega os scripts após 4 segundos
+      setTimeout(initTracking, 4000);
     })();
   </script>
 </body>
