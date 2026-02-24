@@ -121,7 +121,7 @@ export const FinalOfferStitch: React.FC = () => {
                 <button
                   onClick={() =>
                     window.open(
-                      "https://go.hotmart.com/K104371220N?ap=cf94&src=final_offer",
+                      "https://go.hotmart.com/K104371220N?ap=5bc1&src=final_offer",
                       "_blank",
                     )
                   }

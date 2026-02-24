@@ -101,7 +101,7 @@ const sections: PreviewEntry[] = [
   { tag: "#modulos", component: <Modulos /> },
   { tag: "#certificates-stepper", component: <CertificatesStepperStitch /> },
   { tag: "#oferta-inicial", component: <OfertaInicial /> },
-  { tag: "#price-spoiler-v2", component: <PriceSpoilerV2 checkoutUrl="https://go.hotmart.com/K104371220N?ap=cf94&src=price_spoiler" /> },
+  { tag: "#price-spoiler-v2", component: <PriceSpoilerV2 checkoutUrl="https://go.hotmart.com/K104371220N?ap=5bc1&src=price_spoiler" /> },
   { tag: "#garantia", component: <Garantia /> },
   { tag: "#faq", component: <FAQ /> },
   { tag: "#wall-of-love", component: <WallOfLove /> },

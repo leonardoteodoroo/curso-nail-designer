@@ -29,7 +29,7 @@ const DURATION_SECONDS = 420; // 7 minutes
 export const PriceSpoilerV2: React.FC<PriceSpoilerV2Props> = ({
   initialAnchorPrice = "R$ 497,00",
   promoPrice = "R$ 49,90",
-  checkoutUrl = "https://go.hotmart.com/K104371220N?ap=cf94&src=price_spoiler",
+  checkoutUrl = "https://go.hotmart.com/K104371220N?ap=5bc1&src=price_spoiler",
   className,
   onAnalytics = (event, data) => console.log(`[Analytics] ${event}`, data),
 }) => {

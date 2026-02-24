@@ -525,7 +525,7 @@ export const WallOfLove: React.FC = () => {
             <button
               onClick={() =>
                 window.open(
-                  "https://go.hotmart.com/K104371220N?ap=cf94&src=wall_of_love",
+                  "https://go.hotmart.com/K104371220N?ap=5bc1&src=wall_of_love",
                   "_blank",
                 )
               }

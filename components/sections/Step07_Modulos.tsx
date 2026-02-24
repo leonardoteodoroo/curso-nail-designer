@@ -535,33 +535,6 @@ export const Modulos: React.FC = () => {
             </div>
           </ClinicalCard>
         </motion.div>
-
-        {/* CTA Light Copy — Pós-Bônus */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-          className="text-center"
-        >
-          <button
-            onClick={() =>
-              window.open(
-                "https://go.hotmart.com/K104371220N?ap=cf94&src=modulos_bonus",
-                "_blank",
-              )
-            }
-            className="group inline-flex items-center gap-3 bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold px-10 py-5 rounded-2xl text-lg transition-all duration-300 shadow-xl shadow-emerald-600/25 hover:-translate-y-0.5"
-          >
-            <span>Quero tudo isso por R$ 39,90</span>
-            <span className="inline-block transition-transform duration-300 group-hover:translate-x-1">
-              →
-            </span>
-          </button>
-          <p className="text-xs text-zinc-400 mt-3">
-            Acesso imediato • 7 dias de garantia
-          </p>
-        </motion.div>
       </div>
     </section>
   );

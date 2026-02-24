@@ -71,8 +71,8 @@ export const FAQ: React.FC = () => {
                 viewport={{ once: true, margin: "-50px" }}
                 transition={{ duration: 0.3, delay: i * 0.05 }}
                 className={`rounded-2xl border transition-all duration-300 overflow-hidden ${isOpen
-                    ? "bg-white border-emerald-500 shadow-md ring-1 ring-emerald-500/20"
-                    : "bg-white border-zinc-200 hover:border-emerald-300"
+                  ? "bg-white border-emerald-500 shadow-md ring-1 ring-emerald-500/20"
+                  : "bg-white border-zinc-200 hover:border-emerald-300"
                   }`}
               >
                 <button
@@ -85,8 +85,8 @@ export const FAQ: React.FC = () => {
                   </span>
                   <span
                     className={`w-8 h-8 rounded-full flex items-center justify-center shrink-0 transition-colors duration-300 ${isOpen
-                        ? "bg-emerald-600 text-white"
-                        : "bg-emerald-50 text-emerald-600"
+                      ? "bg-emerald-600 text-white"
+                      : "bg-emerald-50 text-emerald-600"
                       }`}
                   >
                     {isOpen ? (
@@ -133,7 +133,7 @@ export const FAQ: React.FC = () => {
             <button
               onClick={() =>
                 window.open(
-                  "https://go.hotmart.com/K104371220N?ap=cf94&src=faq",
+                  "https://go.hotmart.com/K104371220N?ap=5bc1&src=faq",
                   "_blank",
                 )
               }
