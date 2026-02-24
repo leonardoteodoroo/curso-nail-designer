@@ -133,7 +133,7 @@ export const ExitIntent: React.FC = () => {
               <button
                 onClick={() =>
                   window.open(
-                    "https://go.hotmart.com/K104371220N?ap=5bc1&src=exit_intent",
+                    "https://go.hotmart.com/K104371220N?ap=cf94&src=exit_intent",
                     "_blank",
                   )
                 }
