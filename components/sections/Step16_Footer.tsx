@@ -36,23 +36,15 @@ export const Step16_Footer: React.FC = () => {
         <div className="flex flex-col items-center gap-0.5 text-[10px] sm:text-xs">
           <p className="font-medium text-zinc-300">
             Suporte WhatsApp:{" "}
-            <a
-              href="https://api.whatsapp.com/send?phone=5562999918702"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-emerald-500/80 hover:text-emerald-400 underline underline-offset-2"
-            >
+            <span className="text-emerald-500/80">
               (62) 99991-8702
-            </a>
+            </span>
           </p>
           <p className="font-medium text-zinc-300">
             E-mail:{" "}
-            <a
-              href="mailto:sac@semprenamoda.com.br"
-              className="text-emerald-500/80 hover:text-emerald-400 underline underline-offset-2"
-            >
+            <span className="text-emerald-500/80">
               sac@semprenamoda.com.br
-            </a>
+            </span>
           </p>
           <p className="text-[9px] opacity-60 mt-1 italic">
             Atendimento: Seg a Sex: 09h às 20h | Sáb: 10h às 14h.

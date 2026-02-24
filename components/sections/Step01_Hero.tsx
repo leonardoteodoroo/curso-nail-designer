@@ -41,13 +41,16 @@ export const Hero = () => {
         className="text-center pt-2 pb-6 md:py-10 px-4 bg-white relative z-20"
       >
         <h1
-          className="text-3xl md:text-5xl font-bold text-zinc-900 leading-tight"
+          className="text-5xl md:text-7xl lg:text-8xl font-black text-zinc-900 leading-none tracking-tight"
           style={{ fontFamily: "'Playfair Display', serif" }}
         >
-          Duas Mulheres!
+          Duas{" "}
+          <span className="italic bg-gradient-to-r from-[#ec1337] to-rose-500 bg-clip-text text-transparent pr-2 pb-2 inline-block">
+            Mulheres!
+          </span>
         </h1>
-        <p className="text-base md:text-xl text-zinc-500 mt-1 md:mt-2 font-medium">
-          Mesma Idade. Mesma Cidade.
+        <p className="text-base md:text-xl text-zinc-400 mt-3 md:mt-4 font-medium tracking-wide uppercase">
+          Mesma Idade.&nbsp;&nbsp;Mesma Cidade.
         </p>
       </motion.div>
 
@@ -263,13 +266,7 @@ export const Hero = () => {
                   </div>
                 </div>
                 <div
-                  className="bg-[#ECE5DD] p-4 h-64 flex flex-col gap-3 overflow-hidden bg-cover bg-center"
-                  style={{
-                    backgroundImage:
-                      "url('/images/step01-hero-cliente-indecisa.webp')",
-                    backgroundBlendMode: "overlay",
-                    backgroundColor: "rgba(236,229,221,0.92)",
-                  }}
+                  className="bg-[#ECE5DD] p-4 h-64 flex flex-col gap-3 overflow-hidden"
                 >
                   <div className="self-start bg-white p-2 rounded-lg rounded-tl-none shadow-sm max-w-[80%]">
                     <p className="text-sm text-gray-800">

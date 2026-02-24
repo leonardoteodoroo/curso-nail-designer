@@ -77,7 +77,7 @@ export const HistoriaMariana: React.FC = () => {
             className="text-3xl md:text-4xl font-bold mb-2 text-zinc-900"
             style={{ fontFamily: "'Playfair Display', serif" }}
           >
-            A História de Mariana
+            Você já conheceu alguém assim?
           </h3>
           <p className="text-lg text-zinc-400 mb-6">
             (Agora você vai entender)
@@ -163,11 +163,10 @@ export const HistoriaMariana: React.FC = () => {
                   ›
                 </motion.span>
                 <div
-                  className={`rounded-2xl rounded-bl-sm px-4 py-2.5 text-sm md:text-base leading-snug max-w-[92%] shadow-sm ${
-                    msg.highlight
+                  className={`rounded-2xl rounded-bl-sm px-4 py-2.5 text-sm md:text-base leading-snug max-w-[92%] shadow-sm ${msg.highlight
                       ? "bg-emerald-50 border border-emerald-100 text-zinc-700"
                       : "bg-white border border-zinc-100 text-zinc-600"
-                  }`}
+                    }`}
                 >
                   {msg.text}
                 </div>
@@ -210,8 +209,14 @@ export const HistoriaMariana: React.FC = () => {
                 className="rounded-2xl overflow-hidden shadow-xl border border-zinc-200 mb-8 bg-white"
               >
                 <div className="bg-[#075E54] p-3 flex items-center gap-3">
-                  <div className="w-9 h-9 bg-zinc-300 rounded-full flex items-center justify-center text-[#075E54] font-bold text-sm">
-                    M
+                  <div className="w-9 h-9 rounded-full overflow-hidden bg-zinc-300 shrink-0">
+                    <img
+                      src="/images/step06-mariana.webp"
+                      alt="Foto de perfil da Mariana"
+                      loading="lazy"
+                      decoding="async"
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                   <div>
                     <p className="font-semibold text-white text-sm">

@@ -199,21 +199,24 @@ export const CertificatesStepperStitch: React.FC = () => {
           <motion.div
             animate={{ x: ["0%", "-50%"] }}
             transition={{
-              duration: 30, // ajustável para velocidade
+              duration: 35, // velocidade confortável
               ease: "linear",
               repeat: Infinity,
             }}
             className="flex gap-4 w-max px-4 group-hover:[animation-play-state:paused]"
           >
-            {/* Array duplicado para criar o efeito infinito sem quebra */}
-            {[...Array(10), ...Array(10)].map((_, i) => (
+            {/* 29 imagens reais, duplicadas para loop infinito perfeito */}
+            {[
+              ...Array.from({ length: 29 }, (_, i) => i + 1).filter(n => n !== 26),
+              ...Array.from({ length: 29 }, (_, i) => i + 1).filter(n => n !== 26),
+            ].map((n, i) => (
               <div
                 key={i}
                 className="w-48 h-64 md:w-56 md:h-72 rounded-xl border-4 border-white shadow-xl bg-zinc-100 overflow-hidden flex-shrink-0 relative"
               >
                 <img
-                  src={`https://placehold.co/400x600/e2e8f0/94a3b8?text=Aluna+${(i % 10) + 1}`}
-                  alt={`Aluna certificada ${(i % 10) + 1}`}
+                  src={`/images/certificadoaluna${n}.webp`}
+                  alt={`Aluna ${n} certificada pelo curso Nail Designer Academy`}
                   loading="lazy"
                   decoding="async"
                   className="w-full h-full object-cover"

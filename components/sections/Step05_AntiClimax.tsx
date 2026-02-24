@@ -160,7 +160,7 @@ export const AntiClimax: React.FC = () => {
             alt="Mulher brasileira em casa assistindo aulas no celular com caderno aberto ao lado, concentrada, luz de dia"
             loading="lazy"
             decoding="async"
-            className="w-full max-w-sm rounded-2xl object-cover aspect-[3/4]"
+            className="w-full max-w-2xl rounded-2xl object-cover aspect-[16/9]"
           />
         </motion.div>
 

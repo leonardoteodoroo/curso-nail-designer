@@ -226,11 +226,10 @@ const StitchCardInner: React.FC<{
 }> = ({ review, isCenter }) => {
   return (
     <div
-      className={`bg-white h-full flex flex-col transition-shadow duration-300 ${
-        isCenter
+      className={`bg-white h-full flex flex-col transition-shadow duration-300 ${isCenter
           ? "shadow-2xl border-2 border-rose-100" // Borda rosa sutil no centro
           : "shadow-xl border-2 border-transparent" // Borda transparente
-      }`}
+        }`}
     >
       {/* Image / Avatar - Sempre h-56 */}
       <div className="relative overflow-hidden shrink-0 h-56 w-full">
@@ -275,9 +274,8 @@ const StitchCardInner: React.FC<{
       {/* Content - Sempre p-5 */}
       <div className="relative flex flex-col flex-1 p-5">
         <span
-          className={`inline-flex items-center self-start px-3 py-1 rounded-full text-xs font-semibold mb-2 transition-colors duration-300 ${
-            isCenter ? "bg-[#ee2b5b] text-white" : "bg-rose-50 text-[#ee2b5b]"
-          }`}
+          className={`inline-flex items-center self-start px-3 py-1 rounded-full text-xs font-semibold mb-2 transition-colors duration-300 ${isCenter ? "bg-[#ee2b5b] text-white" : "bg-rose-50 text-[#ee2b5b]"
+            }`}
         >
           {review.status}
         </span>
@@ -414,12 +412,22 @@ export const CarouselStitch: React.FC = () => {
 
             <div className="flex items-center gap-4 pt-2">
               <div className="flex -space-x-3">
-                {[1, 2, 3].map((i) => (
+                {[
+                  { src: "/images/step06-mariana.webp", alt: "Aluna Mariana" },
+                  { src: "/images/step06-jessica.webp", alt: "Aluna Jéssica" },
+                  { src: "/images/step06-carla.webp", alt: "Aluna Carla" },
+                ].map(({ src, alt }) => (
                   <div
-                    key={i}
-                    className="w-10 h-10 rounded-full border-2 border-white bg-rose-100 flex items-center justify-center text-[#ee2b5b] text-xs font-bold"
+                    key={src}
+                    className="w-10 h-10 rounded-full border-2 border-white overflow-hidden bg-rose-100 flex-shrink-0"
                   >
-                    {i}
+                    <img
+                      src={src}
+                      alt={alt}
+                      loading="lazy"
+                      decoding="async"
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                 ))}
               </div>
@@ -450,11 +458,10 @@ export const CarouselStitch: React.FC = () => {
                       key={i}
                       onClick={() => jumpTo(i)}
                       aria-label={`Ir para depoimento ${i + 1}`}
-                      className={`h-2 rounded-full transition-all duration-300 ${
-                        i === activeIndex
+                      className={`h-2 rounded-full transition-all duration-300 ${i === activeIndex
                           ? "w-6 bg-[#ee2b5b]"
                           : "w-2 bg-gray-300 hover:bg-rose-300"
-                      }`}
+                        }`}
                     />
                   ))}
                 </div>
@@ -536,11 +543,10 @@ export const CarouselStitch: React.FC = () => {
                       key={i}
                       onClick={() => jumpTo(i)}
                       aria-label={`Ir para depoimento ${i + 1}`}
-                      className={`h-1.5 rounded-full transition-all duration-300 ${
-                        i === activeIndex
+                      className={`h-1.5 rounded-full transition-all duration-300 ${i === activeIndex
                           ? "w-5 bg-[#ee2b5b]"
                           : "w-1.5 bg-gray-300"
-                      }`}
+                        }`}
                     />
                   ))}
                 </div>

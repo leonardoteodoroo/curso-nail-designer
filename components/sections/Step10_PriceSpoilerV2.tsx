@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   Lock,
@@ -272,6 +272,28 @@ export const PriceSpoilerV2: React.FC<PriceSpoilerV2Props> = ({
                       {formatTime(timeLeft)}
                     </span>
                   </div>
+
+                  {/* Frase dinâmica de data */}
+                  {(() => {
+                    try {
+                      const now = new Date();
+                      const diaSemana = now.toLocaleDateString("pt-BR", { weekday: "long" });
+                      const dia = now.getDate();
+                      const mes = now.toLocaleDateString("pt-BR", { month: "long" });
+                      const texto = `Condição reservada somente agora, ${diaSemana} dia ${dia} de ${mes}.`;
+                      return (
+                        <p className="text-[11px] text-orange-700/80 font-medium text-center mt-1 italic">
+                          {texto}
+                        </p>
+                      );
+                    } catch {
+                      return (
+                        <p className="text-[11px] text-orange-700/80 font-medium text-center mt-1 italic">
+                          Válido somente hoje. Não perca esta oportunidade.
+                        </p>
+                      );
+                    }
+                  })()}
 
                   <Button
                     onClick={handleCtaClick}
