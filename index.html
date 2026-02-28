@@ -81,7 +81,7 @@
 
   <!-- Lazy Load — Otimização de Performance (Adiando tags pesadas) -->
   <script>
-    (function() {
+    (function () {
       var isTrackingInitialized = false;
 
       function initTracking() {
@@ -89,7 +89,7 @@
         isTrackingInitialized = true;
 
         // Injeta Google Tag Manager (GTM)
-        setTimeout(function() {
+        setTimeout(function () {
           (function (w, d, s, l, i) {
             w[l] = w[l] || [];
             w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
@@ -100,20 +100,20 @@
         }, 50);
 
         // Injeta Google Analytics (GA4)
-        setTimeout(function() {
+        setTimeout(function () {
           var gtagScript = document.createElement("script");
           gtagScript.src = "https://www.googletagmanager.com/gtag/js?id=G-CX8VDZBR85";
           gtagScript.async = true;
           document.head.appendChild(gtagScript);
 
           window.dataLayer = window.dataLayer || [];
-          window.gtag = window.gtag || function() { window.dataLayer.push(arguments); };
+          window.gtag = window.gtag || function () { window.dataLayer.push(arguments); };
           window.gtag('js', new Date());
           window.gtag('config', 'G-CX8VDZBR85');
         }, 150);
 
         // Injeta Facebook Pixel (Meta)
-        setTimeout(function() {
+        setTimeout(function () {
           !(function (f, b, e, v, n, t, s) {
             if (f.fbq) return;
             n = f.fbq = function () { n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments); };
@@ -122,6 +122,7 @@
             t = b.createElement(e); t.async = !0; t.src = v;
             s = b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s);
           })(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js");
+          fbq("init", "767638842697123");
           fbq("init", "4197145117266394");
           fbq("init", "563316966782879");
           fbq("init", "2111601372970031");
@@ -129,13 +130,13 @@
         }, 300);
 
         // Remove listeners para não repetir a injeção
-        ['scroll', 'mousemove', 'touchstart', 'keydown', 'click'].forEach(function(e) {
+        ['scroll', 'mousemove', 'touchstart', 'keydown', 'click'].forEach(function (e) {
           window.removeEventListener(e, initTracking, { passive: true });
         });
       }
 
       // Ativa nos primeiros sinais de interação do usuário
-      ['scroll', 'mousemove', 'touchstart', 'keydown', 'click'].forEach(function(e) {
+      ['scroll', 'mousemove', 'touchstart', 'keydown', 'click'].forEach(function (e) {
         window.addEventListener(e, initTracking, { passive: true, once: true });
       });
 
